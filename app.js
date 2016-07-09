@@ -2,7 +2,7 @@
 function updateDoorstate(){
 
   console.log("Updating doorstate!");
-  $.get("https://vspace.one/spaceapi.json", function(data, textStatus){
+  $.get("vspace.one/spaceapi.json", function(data, textStatus){
     if(data.state.open == 1){
       $("#doorstate").addClass("label-success");
       $("#doorstate").removeClass("label-danger");
