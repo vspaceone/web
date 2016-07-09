@@ -1,136 +1,155 @@
 <!--TODO
-Bilder verkleinern
-einlesen
-Resourcen ans Ende ?
-Räume auf wiki seiten verlinken + Bilder
-coole Netzinteraktion einfügen siehe http://www.crit-research.it/
+	Bilder verkleinern
+	einlesen
+	Resourcen ans Ende ?
+	Räume auf wiki seiten verlinken + Bilder
+	coole Netzinteraktion einfügen siehe http://www.crit-research.it/
 -->
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
-  <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
-</head>
-<body>
-  <style>
-  body {
-      font: 20px Montserrat, sans-serif;
-      line-height: 1.8;
-      color: #f5f6f7;
-  }
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 {
-      background-color: #08A059; /* Green */
-      color: #ffffff;
-  }
-  .bg-2 {
-      background-color: #474e5d; /* Dark Blue */
-      color: #ffffff;
-  }
-  .bg-3 {
-      background-color: #ffffff; /* White */
-      color: #555555;
-  }
-  .bg-4 {
-      background-color: #2f2f2f; /* Black Gray */
-      color: #fff;
-  }
-  .container-fluid {
-      padding-top: 70px;
-      padding-bottom: 70px;
-  }
-  .navbar {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
-      letter-spacing: 5px;
-  }
-  .navbar-nav  li a:hover {
-      color: #1abc9c !important;
-  }
-  </style>
-</head>
-<body>
+	<head>
+		<title>Bootstrap Example</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+		<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<body>
+		<style>
+body {
+	font: 20px Montserrat, sans-serif;
+	line-height: 1.8;
+	color: #f5f6f7;
+}
+	p {font-size: 16px;}
+	.margin {margin-bottom: 45px;}
+	.bg-1 {
+		background-color: #08A059; /* Green */
+		color: #ffffff;
+	}
+	.bg-2 {
+		background-color: #474e5d; /* Dark Blue */
+		color: #ffffff;
+	}
+	.bg-3 {
+		background-color: #ffffff; /* White */
+		color: #555555;
+	}
+	.bg-4 {
+		background-color: #2f2f2f; /* Black Gray */
+		color: #fff;
+	}
+	.container-fluid {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+	.navbar {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		border: 0;
+		border-radius: 0;
+		margin-bottom: 0;
+		font-size: 12px;
+		letter-spacing: 5px;
+	}
+	.navbar-nav  li a:hover {
+		color: #1abc9c !important;
+	}
+		</style>
+		</head>
+		<body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">vspace.one</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#Was">WAS</a></li>
-        <li><a href="#Wo">WO</a></li>
-        <li><a href="https://wiki.vspace.one">WIKI</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+			<!-- Navbar -->
+			<nav class="navbar navbar-default">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">vspace.one</a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav navbar-right">
+							<li><div id="doorstate" class="label label-success">open</label></li>
+							<li><a href="#Was">WAS</a></li>
+							<li><a href="#Wo">WO</a></li>
+							<li><a href="https://wiki.vspace.one">WIKI</a></li>
+						</ul>
+								</div>
+					</div>
+			</nav>
 
-<!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Was ist der vspace.one ?</h3>
-  <img src="pic/logo_vspaceone.svg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-  <h3>Wir sind ein Maker- und Hackerspace.</h3>
-</div>
+			<!-- First Container -->
+			<div class="container-fluid bg-1 text-center">
+				<h3 class="margin">Was ist der vspace.one ?</h3>
+				<img src="pic/logo_vspaceone.svg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+				<h3>Wir sind ein Maker- und Hackerspace.</h3>
+			</div>
 
-<!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin">Für wenn sind wir ?</h3>
-  <p>Wir sind für alle; interessierte Schüler, Studierende und Erwachsene, welche sich für kreativen Technikgebrauch interessieren.
-    <!--<span class="glyphicon glyphicon-search"></span> Search -->
-  </a>
-</div>
+			<!-- Second Container -->
+			<div class="container-fluid bg-2 text-center">
+				<h3 class="margin">Für wenn sind wir ?</h3>
+				<p>Wir sind für alle; interessierte Schüler, Studierende und Erwachsene, welche sich für kreativen Technikgebrauch interessieren.
+				<!--<span class="glyphicon glyphicon-search"></span> Search -->
+				</a>
+			</div>
 
-<!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">
-  <h3 class="margin" id=Was>Was haben wir ?</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p>Für unsere Verbindung und Vernetzung in aller Welt sorgt ein HighSpeed-Router. Für Gäste betreiben wir einen <a href=https://freifunk.net/> Freifunk Zugangspunkt </a>.</p>
-      <img src="pic/pexels-photo-97975.jpeg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4">
-      <p>Für die Erstellung cooler Projekte, haben wir eine Vielzahl an Werkzeugen und Maschinen (z.B. 3D-Drucker). Eine aktuelle Liste gibt es im <a href="https://wiki.vspace.one"> Wiki</a>. </p>
-      <img src="pic/Schraubenschlüssel.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4">
-      <p>Wir haben zwei moderne Räume. In der Brücke haben wir bequeme Sofas, Beamer und einen Kühlschrank. Im Maschinenraum, kann an allen Projekten gearbeitet werden.</p>
-      <img src="pic/Mainboard.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div>
+			<!-- Third Container (Grid) -->
+			<div class="container-fluid bg-3 text-center">
+				<h3 class="margin" id=Was>Was haben wir ?</h3><br>
+				<div class="row">
+					<div class="col-sm-4">
+						<p>Für unsere Verbindung und Vernetzung in aller Welt sorgt ein HighSpeed-Router. Für Gäste betreiben wir einen <a href=https://freifunk.net/> Freifunk Zugangspunkt </a>.</p>
+						<img src="pic/pexels-photo-97975.jpeg" class="img-responsive margin" style="width:100%" alt="Image">
+					</div>
+					<div class="col-sm-4">
+						<p>Für die Erstellung cooler Projekte, haben wir eine Vielzahl an Werkzeugen und Maschinen (z.B. 3D-Drucker). Eine aktuelle Liste gibt es im <a href="https://wiki.vspace.one"> Wiki</a>. </p>
+						<img src="pic/Schraubenschlüssel.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+					</div>
+					<div class="col-sm-4">
+						<p>Wir haben zwei moderne Räume. In der Brücke haben wir bequeme Sofas, Beamer und einen Kühlschrank. Im Maschinenraum, kann an allen Projekten gearbeitet werden.</p>
+						<img src="pic/Mainboard.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+					</div>
+				</div>
+			</div>
 
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin" id=Wo>Wo findest du uns?</h3>
-  <p>Wir sind in der Doppelstadt Villingen-Schwenningen.
-	<p>Unsere Andresse lautet:<br>
-	Wilhelm-Binder-Str. 19<br>
-	78048 Villingen</p><br>
-	<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=8.444859981536865%2C48.058032974075395%2C8.46794843673706%2C48.070795617373705&amp;layer=mapnik&amp;marker=48.06441469128533%2C8.456404209136963" style="border: 1px solid black"></iframe><br/><small><a href="http://www.openstreetmap.org/?mlat=48.0644&amp;mlon=8.4564#map=16/48.0644/8.4564">Größere Karte anzeigen</a></small>
-    <!--<span class="glyphicon glyphicon-search"></span> Search -->
-  </a>
-</div>
+			<div class="container-fluid bg-2 text-center">
+				<h3 class="margin" id=Wo>Wo findest du uns?</h3>
+				<p>Wir sind in der Doppelstadt Villingen-Schwenningen.
+				<p>Unsere Andresse lautet:<br>
+				Wilhelm-Binder-Str. 19<br>
+				78048 Villingen</p><br>
+				<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=8.444859981536865%2C48.058032974075395%2C8.46794843673706%2C48.070795617373705&amp;layer=mapnik&amp;marker=48.06441469128533%2C8.456404209136963" style="border: 1px solid black"></iframe><br/><small><a href="http://www.openstreetmap.org/?mlat=48.0644&amp;mlon=8.4564#map=16/48.0644/8.4564">Größere Karte anzeigen</a></small>
+				<!--<span class="glyphicon glyphicon-search"></span> Search -->
+				</a>
+			</div>
 
 
-<!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
-</footer>
+			<!-- Footer -->
+			<footer class="container-fluid bg-4 text-center">
+			</footer>
 
-</body>
+
+			<script>
+function updateDoorstate(){
+
+	console.log("Updating doorstate!");
+	$.get("http://vspace.one/spaceapi.json", function(data, textStatus){
+		console.log(data);
+
+	});
+}
+$( document ).ready(function() {
+	window.setInterval( updateDoorstate, 1000);
+	updateDoorstate();
+});
+			</script>
+
+		</body>
 </html>
 
