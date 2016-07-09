@@ -134,18 +134,9 @@ body {
 			<footer class="container-fluid bg-4 text-center">
 			</footer>
 
-
 			<script>
-function updateDoorstate(){
-
-	console.log("Updating doorstate!");
-	$.get("http://vspace.one/spaceapi.json", function(data, textStatus){
-		console.log(data);
-
-	});
-}
 $( document ).ready(function() {
-	window.setInterval( updateDoorstate, 1000);
+	window.setInterval( updateDoorstate, 10000);
 	updateDoorstate();
 });
 			</script>
