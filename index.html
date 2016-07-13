@@ -34,10 +34,11 @@
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#Was">WAS</a></li>
-						<li><a href="#Wo">WO</a></li>
-						<li><a href="https://wiki.vspace.one">WIKI</a></li>
-                        <li><div id="doorstate" class="label label-success">loading</label></li>
+						<li><a href="#Mitmachen">Mitmachen</a></li>
+						<li><a href="#Ausstattung">Ausstattung</a></li>
+						<li><a href="#Ort">Ort</a></li>
+						<li><a href="https://wiki.vspace.one">Wiki</a></li>
+                        <li><div id="doorstate" class="label label-success"><a href="#state" id="doorstateString">loading</a></label></li>
 					</ul>
 				</div>
 			</div>
@@ -51,7 +52,7 @@
 		</div>
 
 		<!-- Second Container -->
-		<div class="container-fluid bg-2 text-center">
+		<div class="container-fluid bg-2 text-center" id="Mitmachen">
 			<h3 class="margin">Für wen sind wir?</h3>
 			<p>Bei uns kann jeder und jede mitmachen. Interessierte Schüler, Studenten und Erwachsene, die sich für kreativen Umgang mit Technik interessieren.
 			<!--<span class="glyphicon glyphicon-search"></span> Search -->
@@ -59,8 +60,8 @@
 		</div>
 
 		<!-- Third Container (Grid) -->
-		<div class="container-fluid bg-3 text-center">
-			<h3 class="margin" id=Was>Was haben wir?</h3><br>
+		<div class="container-fluid bg-3 text-center" id="Ausstattung">
+			<h3 class="margin">Was haben wir?</h3><br>
 			<div class="row">
 				<div class="col-sm-4">
 					<p>Für unsere Verbindung und Vernetzung in aller Welt sorgt ein Router mit Internetzugang. Für Gäste betreiben wir einen <a href=https://freifunk.net/>Freifunk Zugangspunkt</a>.</p>
@@ -84,9 +85,30 @@
 				</div>
 			</div>
 		</div>
+		
+		<div class="container-fluid text-center label-warning" id="state">
+			<h3 style="margin-bottom: 2px">Status</h3>
+			<h4 class="margin" style="margin-top:2px" id="stateText">Loading</h4>
+			<div class="row">
+				<div class="col-sm-6">
+					<h4>Brücke</h4>
+				</div>
+				<div class="col-sm-6">
+					<h4>Maschinenraum</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6" id="Bruecke">
+					
+				</div>
+				<div class="col-sm-6" id="Maschinenraum">
+					
+				</div>
+			</div>			
+		</div>
 
 		<div class="container-fluid bg-2 text-center">
-			<h3 class="margin" id=Wo>Wo findest du uns?</h3>
+			<h3 class="margin" id="Ort">Wo findest du uns?</h3>
 			<p>Du findest uns in der Doppelstadt Villingen-Schwenningen.</p>
                		<p>Ob unser Raum im Moment geöffnet ist siehst du oben rechts auf dieser Seite.</p>
 			<p>Unsere Andresse lautet:<br>
@@ -107,6 +129,10 @@
 $( document ).ready(function() {
 	window.setInterval( updateDoorstate, 10000);
 	updateDoorstate();
+	updateState();
+	updateTemperature();
+	
+	
 });
 		</script>
 
