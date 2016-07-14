@@ -57,13 +57,13 @@ function updateTemperature(){
       var humi = data.sensors.humidity[0].value;
       var hunit = data.sensors.humidity[0].unit;
       
-      $("#Maschinenraum").html(temp + tunit + "<br>" + humi + hunit);
+      $("#Maschinenraum").html("<em>" + temp + tunit + "<br>" + humi + hunit + "</em>");
       
-      $("#Bruecke").html("N/A <br> N/A");
+      $("#Bruecke").html("<em>N/A <br> N/A</em>");
     })
   .fail(function(data, textStatus){
-    $("#Maschinenraum").html("N/A <br> N/A");
+    $("#Maschinenraum").html("<em>N/A <br> N/A</em>");
       
-    $("#Bruecke").html("N/A <br> N/A");
+    $("#Bruecke").html("<em>N/A <br> N/A</em>");
   });
 }
