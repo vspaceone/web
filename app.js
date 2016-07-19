@@ -51,15 +51,16 @@ function updateTemperature(){
   console.log("Updating temperature!");
   $.getJSON("/spaceapi.json")
     .done( function(data, textStatus){
-      var temp = data.sensors.temperature[0].value;
-      var tunit = "°C";
-      
-      var humi = data.sensors.humidity[0].value;
-      var hunit = data.sensors.humidity[0].unit;
-      
-      $("#Maschinenraum").html("<em>" + temp + tunit + "<br>" + humi + hunit + "</em>");
-      
-      $("#Bruecke").html("<em>N/A <br> N/A</em>");
+        for (var i = 0, len = 1; i <= len; i++) {
+            console.log(data.sensors.humidity[i].location);
+            if (data.sensors.humidity[i].location === "Maschinenraum"){
+                $("#Maschinenraum").html("<em>" + data.sensors.temperature[i].value + data.sensors.temperature[i].unit + "<br>" 
+                                         + data.sensors.humidity[i].value + data.sensors.humidity[i].unit + "</em>");
+            }else if (data.sensors.humidity[i].location === "Brücke") {
+                $("#Bruecke").html("<em>" + data.sensors.temperature[i].value + data.sensors.temperature[i].unit + "<br>" 
+                                         + data.sensors.humidity[i].value + data.sensors.humidity[i].unit + "</em>");
+            }
+        }
     })
   .fail(function(data, textStatus){
     $("#Maschinenraum").html("<em>N/A <br> N/A</em>");
