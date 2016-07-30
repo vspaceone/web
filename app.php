@@ -39,6 +39,10 @@ if (isset($_GET['combined'])){
     $combined = $_GET['combined'];   
 }
 
+if (!isset($_GET['room']) && !isset($_GET['sensor'])){
+    echo "Lauft gut :D";
+}
+
 if ($sensor == 'temperature'|| $sensor == 'th'){
     
     $statement = $mysqli->prepare($getTemp);
