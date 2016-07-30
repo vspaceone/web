@@ -1,5 +1,7 @@
 var tmpChartMaschinenraum;
 var tmpChartBruecke;
+var humChartMaschinenraum;
+var humChartBruecke;
 
 function updateDoorstate() {
 
@@ -80,15 +82,18 @@ function updateTemperature() {
         handleCharts($.parseJSON(xhttp2.responseText), 'bruecke');
       }
     };
-    xhttp2.open("GET", "app.php?room=bruecke&sensor=th&valuec=23000&skip=1000", true);
+    xhttp2.open("GET", "app.php?room=bruecke&sensor=th&valuec=20000&skip=120", true);
     xhttp2.send();
 
   };
-  xhttp.open("GET", "app.php?room=maschinenraum&sensor=th&valuec=23000&skip=1000", true);
+  xhttp.open("GET", "app.php?room=maschinenraum&sensor=th&valuec=20000&skip=120", true);
   xhttp.send();
 }
 
 function handleCharts(resp, room) {
+  Chart.defaults.global.elements.point.radius = 0;
+  Chart.defaults.global.elements.point.hitRadius = 4;
+  
   var tdata = new Array();
   var hdata = new Array();
   for (var i = 0; i < resp.temperature.length; i++) {
@@ -107,6 +112,7 @@ function handleCharts(resp, room) {
   if (tmpChartMaschinenraum == null || tmpChartBruecke == null) {
     //console.log("New Chart!");
     var ctx;
+    var humctx;
     if (room == "maschinenraum") {
       ctx = document.getElementById("tmpChartMaschinenraum")
       tmpChartMaschinenraum = new Chart(ctx, {
@@ -114,13 +120,36 @@ function handleCharts(resp, room) {
         data: {
           datasets: [{
             label: 'Temperatur (°C)',
-            backgroundColor: 'rgba(255,0,0,0.5)',
+            backgroundColor: 'rgba(71,78,92,0.3)',
             tension: 0.3,
             data: tdata
-          },
+          }]
+        },
+        options: {
+          scales: {
+            xAxes: [{
+              type: 'time',
+              position: 'bottom'
+            }],
+            yAxes: [{
+              type: 'linear',
+              ticks: {
+                stepSize: 5,
+                suggestedMin: 10,
+                suggestMax: 35
+              }
+            }]
+          }
+        }
+      });
+      humctx = document.getElementById("humChartMaschinenraum")
+      humChartMaschinenraum = new Chart(humctx, {
+        type: 'line',
+        data: {
+          datasets: [
             {
               label: 'Luftfeuchtigkeit (%)',
-              backgroundColor: 'rgba(0,255,0,0.1)',
+              backgroundColor: 'rgba(71,78,92,0.3)',
               tension: 0.3,
               data: hdata
             }]
@@ -134,7 +163,9 @@ function handleCharts(resp, room) {
             yAxes: [{
               type: 'linear',
               ticks: {
-                stepSize: 5
+                stepSize: 10,
+                min: 0,
+                max: 100
               }
             }]
           }
@@ -147,13 +178,36 @@ function handleCharts(resp, room) {
         data: {
           datasets: [{
             label: 'Temperatur (°C)',
-            backgroundColor: 'rgba(255,0,0,0.5)',
+            backgroundColor: 'rgba(71,78,92,0.3)',
             tension: 0.3,
             data: tdata
-          },
+          }]
+        },
+        options: {
+          scales: {
+            xAxes: [{
+              type: 'time',
+              position: 'bottom'
+            }],
+            yAxes: [{
+              type: 'linear',
+              ticks: {
+                stepSize: 5,
+                suggestedMin: 10,
+                suggestMax: 35
+              }
+            }]
+          }
+        }
+      });
+      humctx = document.getElementById("humChartBruecke")
+      humChartBruecke = new Chart(humctx, {
+        type: 'line',
+        data: {
+          datasets: [
             {
               label: 'Luftfeuchtigkeit (%)',
-              backgroundColor: 'rgba(0,255,0,0.1)',
+              backgroundColor: 'rgba(71,78,92,0.3)',
               tension: 0.3,
               data: hdata
             }]
@@ -167,7 +221,9 @@ function handleCharts(resp, room) {
             yAxes: [{
               type: 'linear',
               ticks: {
-                stepSize: 5
+                stepSize: 10,
+                min: 0,
+                max: 100
               }
             }]
           }
@@ -179,8 +235,10 @@ function handleCharts(resp, room) {
     //console.log("Update Chart!");
     if (room == "maschinenraum") {
       tmpChartMaschinenraum.data.datasets[0].data = tdata;
+      humChartMaschinenraum.data.datasets[0].data = hdata;
     } else if (room == "bruecke") {
       tmpChartBruecke.data.datasets[0].data = tdata;
+      humChartBruecke.data.datasets[0].data = hdata;
     }
   }
 }
