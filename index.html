@@ -17,6 +17,7 @@
 		<link rel="stylesheet" href="style.css">
 		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 		<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js"></script>
 		<script src="app.js"></script>
 	</head>
 	<body>
@@ -94,21 +95,19 @@
 					<h4>Brücke</h4>
 					<div style="width:100%" class="col-sm-6" id="Bruecke">					
 					</div>
+					<div width="300px" height="300px">
+					<canvas id="tmpChartBruecke" ></canvas>
+					</div>
 				</div>
 				<div class="col-sm-6">
 					<h4>Maschinenraum</h4>
 					<div style="width:100%" class="col-sm-6" id="Maschinenraum">					
 					</div>
+					<div width="300px" height="300px">
+					<canvas id="tmpChartMaschinenraum" ></canvas>
+					</div>
 				</div>
-			</div>
-			<!--<div class="row">
-				<div class="col-sm-6" id="Bruecke">
-					
-				</div>
-				<div class="col-sm-6" id="Maschinenraum">
-					
-				</div>
-			</div>-->			
+			</div>		
 		</div>
 
 		<div class="container-fluid bg-2 text-center">
@@ -118,7 +117,7 @@
 			Wilhelm-Binder-Str. 19<br>
 			78048 Villingen</p><br>
             <p></p>
-            <p>Wenn der vspace.one offen ist kannst du uns auch anurufen.</p>
+            <p>Wenn der vspace.one offen ist kannst du uns auch anrufen.</p>
             <p>Telefon Rundruf: 0221 596196638</p>
             <p><i>Telefon Brücke: 0221 596196639</i></p>
             <p><i>Telefon Maschinenraum: 0221 596196640</i></p>
@@ -147,8 +146,9 @@ $( document ).ready(function() {
 	window.setInterval( updateTemperature, 10000);
 	updateDoorstate();
 	updateState();
-	updateTemperature();	
+	updateTemperature();
 });
+
 		</script>
 
 	</body>
