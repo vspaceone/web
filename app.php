@@ -4,6 +4,7 @@ include('credentials.php');
 
 $mysqli = new mysqli($db_host, $db_username, $db_password, $db_table);
 if ($mysqli->connect_errno) {
+    echo "Verbindung fehlgeschlagen: " . $mysqli->connect_error;
     die("Verbindung fehlgeschlagen: " . $mysqli->connect_error);
 }
 
