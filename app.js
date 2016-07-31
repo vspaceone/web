@@ -129,7 +129,12 @@ function handleCharts(resp, room) {
           scales: {
             xAxes: [{
               type: 'time',
-              position: 'bottom'
+              position: 'bottom',
+              time: {
+              	displayFormats: {
+                	day: 'D.M.YY'
+                }
+              }
             }],
             yAxes: [{
               type: 'linear',
@@ -158,7 +163,12 @@ function handleCharts(resp, room) {
           scales: {
             xAxes: [{
               type: 'time',
-              position: 'bottom'
+              position: 'bottom',
+              time: {
+              	displayFormats: {
+                	day: 'D.M.YY'
+                }
+              }
             }],
             yAxes: [{
               type: 'linear',
@@ -187,7 +197,12 @@ function handleCharts(resp, room) {
           scales: {
             xAxes: [{
               type: 'time',
-              position: 'bottom'
+              position: 'bottom',
+              time: {
+              	displayFormats: {
+                	day: 'D.M.YY'
+                }
+              }
             }],
             yAxes: [{
               type: 'linear',
@@ -216,7 +231,12 @@ function handleCharts(resp, room) {
           scales: {
             xAxes: [{
               type: 'time',
-              position: 'bottom'
+              position: 'bottom',
+              time: {
+              	displayFormats: {
+                	day: 'D.M.YY'
+                }
+              }
             }],
             yAxes: [{
               type: 'linear',
