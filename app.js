@@ -82,17 +82,18 @@ function updateTemperature() {
         handleCharts($.parseJSON(xhttp2.responseText), 'bruecke');
       }
     };
-    xhttp2.open("GET", "app.php?room=bruecke&sensor=th&valuec=20000&skip=120", true);
+    xhttp2.open("GET", "app.php?room=bruecke&sensor=th&valuec=200&days=7", true);
     xhttp2.send();
 
   };
-  xhttp.open("GET", "app.php?room=maschinenraum&sensor=th&valuec=20000&skip=120", true);
+  xhttp.open("GET", "app.php?room=maschinenraum&sensor=th&valuec=200&days=7", true);
   xhttp.send();
 }
 
 function handleCharts(resp, room) {
   Chart.defaults.global.elements.point.radius = 0;
   Chart.defaults.global.elements.point.hitRadius = 4;
+  Chart.defaults.global.legend.onClick = null;
   
   var tdata = new Array();
   var hdata = new Array();
@@ -132,8 +133,13 @@ function handleCharts(resp, room) {
               position: 'bottom',
               time: {
               	displayFormats: {
-                	day: 'D.M.YY'
-                }
+                	day: 'D.M.',
+                	hour: 'D.M. H:mm'
+                },
+                tooltipFormat: 'D.M.YY H:mm [Uhr]'
+              },
+              ticks: {
+              	maxRotation: 45
               }
             }],
             yAxes: [{
@@ -166,8 +172,13 @@ function handleCharts(resp, room) {
               position: 'bottom',
               time: {
               	displayFormats: {
-                	day: 'D.M.YY'
-                }
+                	day: 'D.M.',
+                	hour: 'D.M. H:mm'
+                },
+                tooltipFormat: 'D.M.YY H:mm [Uhr]'
+              },
+              ticks: {
+              	maxRotation: 45
               }
             }],
             yAxes: [{
@@ -200,8 +211,13 @@ function handleCharts(resp, room) {
               position: 'bottom',
               time: {
               	displayFormats: {
-                	day: 'D.M.YY'
-                }
+                	day: 'D.M.',
+                	hour: 'D.M. H:mm'
+                },
+                tooltipFormat: 'D.M.YY H:mm [Uhr]'
+              },
+              ticks: {
+              	maxRotation: 45
               }
             }],
             yAxes: [{
@@ -234,8 +250,13 @@ function handleCharts(resp, room) {
               position: 'bottom',
               time: {
               	displayFormats: {
-                	day: 'D.M.YY'
-                }
+                	day: 'D.M.',
+                	hour: 'D.M. H:mm'
+                },
+                tooltipFormat: 'D.M.YY H:mm [Uhr]'
+              },
+              ticks: {
+              	maxRotation: 45
               }
             }],
             yAxes: [{
