@@ -74,7 +74,7 @@ if ($sensor == 'humidity' || $sensor == 'th'){
     $rid = $room;
     $range = $days;
     
-    $statement = $mysqli->prepare($getTemp);
+    $statement = $mysqli->prepare($getHumi);
     $statement->bind_param('si', $rid, $range);
     
     $statement->execute();
