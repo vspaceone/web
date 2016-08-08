@@ -1,6 +1,8 @@
 *.swp
 *.bak
+
 .settings
 .project
 .cproject
+.idea
 

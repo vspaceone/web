@@ -18,11 +18,11 @@ function updateDoorstate() {
         $("#doorstateString").text("closed");
       }
     })
-    .fail(function (data, textStatus) {
-      $("#doorstate").addClass("label-danger");
-      $("#doorstate").removeClass("label-success");
-      $("#doorstate").text("error");
-    });
+  .fail(function (data, textStatus) {
+    $("#doorstate").addClass("label-danger");
+    $("#doorstate").removeClass("label-success");
+    $("#doorstate").text("error");
+  });
 }
 
 function updateState() {
@@ -43,32 +43,43 @@ function updateState() {
         $("#stateText").html("<em>Closed</em>")
       }
     })
-    .fail(function (data, textStatus) {
+  .fail(function (data, textStatus) {
 
-    });
+  });
 }
 
 function updateTemperature() {
   console.log("Updating temperature!");
   $.getJSON("/spaceapi.json")
     .done(function (data, textStatus) {
+      var receivedMaschinenraum = 0;
+      var receivedBruecke = 0;
       for (var i = 0, len = 1; i <= len; i++) {
 
         if (data.sensors.humidity[i].location === "Maschinenraum") {
           console.log("M");
           $("#Maschinenraum").html("<em>" + data.sensors.temperature[i].value + data.sensors.temperature[i].unit + "<br>"
-            + data.sensors.humidity[i].value + data.sensors.humidity[i].unit + "</em>");
+              + data.sensors.humidity[i].value + data.sensors.humidity[i].unit + "</em>");
+          receivedMaschinenraum = 1;
         } else if (data.sensors.humidity[i].location === "Brücke") {
           console.log("B");
           $("#Bruecke").html("<em>" + data.sensors.temperature[i].value + data.sensors.temperature[i].unit + "<br>"
-            + data.sensors.humidity[i].value + data.sensors.humidity[i].unit + "</em>");
+              + data.sensors.humidity[i].value + data.sensors.humidity[i].unit + "</em>");
+          receivedBruecke = 1;
         }
       }
+      if(receivedMaschinenraum == 0){
+        $("#Maschinenraum").html("<em>N/A <br> N/A</em>");
+      }
+
+      if(receivedBruecke == 0){
+        $("#Bruecke").html("<em>N/A <br> N/A</em>");
+      }
     })
-    .fail(function (data, textStatus) {
-      $("#Maschinenraum").html("<em>N/A <br> N/A</em>");
-      $("#Bruecke").html("<em>N/A <br> N/A</em>");
-    });
+  .fail(function (data, textStatus) {
+    $("#Maschinenraum").html("<em>N/A <br> N/A</em>");
+    $("#Bruecke").html("<em>N/A <br> N/A</em>");
+  });
 
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
@@ -94,7 +105,7 @@ function handleCharts(resp, room) {
   Chart.defaults.global.elements.point.radius = 0;
   Chart.defaults.global.elements.point.hitRadius = 4;
   Chart.defaults.global.legend.onClick = null;
-  
+
   var tdata = new Array();
   var hdata = new Array();
   for (var i = 0; i < resp.temperature.length; i++) {
@@ -116,160 +127,160 @@ function handleCharts(resp, room) {
     var humctx;
     if (room == "maschinenraum") {
       ctx = document.getElementById("tmpChartMaschinenraum")
-      tmpChartMaschinenraum = new Chart(ctx, {
-        type: 'line',
-        data: {
-          datasets: [{
-            label: 'Temperatur (°C)',
-            backgroundColor: 'rgba(71,78,92,0.3)',
-            tension: 0.3,
-            data: tdata
-          }]
-        },
-        options: {
-          scales: {
-            xAxes: [{
-              type: 'time',
-              position: 'bottom',
-              time: {
-              	displayFormats: {
-                	day: 'D.M.',
-                	hour: 'D.M. H:mm'
-                },
-                tooltipFormat: 'D.M.YY H:mm [Uhr]'
-              },
-              ticks: {
-              	maxRotation: 45
-              }
-            }],
-            yAxes: [{
-              type: 'linear',
-              ticks: {
-                stepSize: 5,
-                suggestedMin: 10,
-                suggestMax: 35
-              }
+        tmpChartMaschinenraum = new Chart(ctx, {
+          type: 'line',
+          data: {
+            datasets: [{
+              label: 'Temperatur (°C)',
+              backgroundColor: 'rgba(71,78,92,0.3)',
+              tension: 0.3,
+              data: tdata
             }]
+          },
+          options: {
+            scales: {
+              xAxes: [{
+                type: 'time',
+                position: 'bottom',
+                time: {
+                  displayFormats: {
+                    day: 'D.M.',
+                    hour: 'D.M. H:mm'
+                  },
+                  tooltipFormat: 'D.M.YY H:mm [Uhr]'
+                },
+                ticks: {
+                  maxRotation: 45
+                }
+              }],
+              yAxes: [{
+                type: 'linear',
+                ticks: {
+                  stepSize: 5,
+                  suggestedMin: 10,
+                  suggestMax: 35
+                }
+              }]
+            }
           }
-        }
-      });
+        });
       humctx = document.getElementById("humChartMaschinenraum")
-      humChartMaschinenraum = new Chart(humctx, {
-        type: 'line',
-        data: {
-          datasets: [
+        humChartMaschinenraum = new Chart(humctx, {
+          type: 'line',
+          data: {
+            datasets: [
             {
               label: 'Luftfeuchtigkeit (%)',
               backgroundColor: 'rgba(71,78,92,0.3)',
               tension: 0.3,
               data: hdata
             }]
-        },
-        options: {
-          scales: {
-            xAxes: [{
-              type: 'time',
-              position: 'bottom',
-              time: {
-              	displayFormats: {
-                	day: 'D.M.',
-                	hour: 'D.M. H:mm'
+          },
+          options: {
+            scales: {
+              xAxes: [{
+                type: 'time',
+                position: 'bottom',
+                time: {
+                  displayFormats: {
+                    day: 'D.M.',
+                    hour: 'D.M. H:mm'
+                  },
+                  tooltipFormat: 'D.M.YY H:mm [Uhr]'
                 },
-                tooltipFormat: 'D.M.YY H:mm [Uhr]'
-              },
-              ticks: {
-              	maxRotation: 45
-              }
-            }],
-            yAxes: [{
-              type: 'linear',
-              ticks: {
-                stepSize: 10,
-                min: 0,
-                max: 100
-              }
-            }]
+                ticks: {
+                  maxRotation: 45
+                }
+              }],
+              yAxes: [{
+                type: 'linear',
+                ticks: {
+                  stepSize: 10,
+                  min: 0,
+                  max: 100
+                }
+              }]
+            }
           }
-        }
-      });
+        });
     } else if (room == "bruecke") {
       ctx = document.getElementById("tmpChartBruecke")
-      tmpChartBruecke = new Chart(ctx, {
-        type: 'line',
-        data: {
-          datasets: [{
-            label: 'Temperatur (°C)',
-            backgroundColor: 'rgba(71,78,92,0.3)',
-            tension: 0.3,
-            data: tdata
-          }]
-        },
-        options: {
-          scales: {
-            xAxes: [{
-              type: 'time',
-              position: 'bottom',
-              time: {
-              	displayFormats: {
-                	day: 'D.M.',
-                	hour: 'D.M. H:mm'
-                },
-                tooltipFormat: 'D.M.YY H:mm [Uhr]'
-              },
-              ticks: {
-              	maxRotation: 45
-              }
-            }],
-            yAxes: [{
-              type: 'linear',
-              ticks: {
-                stepSize: 5,
-                suggestedMin: 10,
-                suggestMax: 35
-              }
+        tmpChartBruecke = new Chart(ctx, {
+          type: 'line',
+          data: {
+            datasets: [{
+              label: 'Temperatur (°C)',
+              backgroundColor: 'rgba(71,78,92,0.3)',
+              tension: 0.3,
+              data: tdata
             }]
+          },
+          options: {
+            scales: {
+              xAxes: [{
+                type: 'time',
+                position: 'bottom',
+                time: {
+                  displayFormats: {
+                    day: 'D.M.',
+                    hour: 'D.M. H:mm'
+                  },
+                  tooltipFormat: 'D.M.YY H:mm [Uhr]'
+                },
+                ticks: {
+                  maxRotation: 45
+                }
+              }],
+              yAxes: [{
+                type: 'linear',
+                ticks: {
+                  stepSize: 5,
+                  suggestedMin: 10,
+                  suggestMax: 35
+                }
+              }]
+            }
           }
-        }
-      });
+        });
       humctx = document.getElementById("humChartBruecke")
-      humChartBruecke = new Chart(humctx, {
-        type: 'line',
-        data: {
-          datasets: [
+        humChartBruecke = new Chart(humctx, {
+          type: 'line',
+          data: {
+            datasets: [
             {
               label: 'Luftfeuchtigkeit (%)',
               backgroundColor: 'rgba(71,78,92,0.3)',
               tension: 0.3,
               data: hdata
             }]
-        },
-        options: {
-          scales: {
-            xAxes: [{
-              type: 'time',
-              position: 'bottom',
-              time: {
-              	displayFormats: {
-                	day: 'D.M.',
-                	hour: 'D.M. H:mm'
+          },
+          options: {
+            scales: {
+              xAxes: [{
+                type: 'time',
+                position: 'bottom',
+                time: {
+                  displayFormats: {
+                    day: 'D.M.',
+                    hour: 'D.M. H:mm'
+                  },
+                  tooltipFormat: 'D.M.YY H:mm [Uhr]'
                 },
-                tooltipFormat: 'D.M.YY H:mm [Uhr]'
-              },
-              ticks: {
-              	maxRotation: 45
-              }
-            }],
-            yAxes: [{
-              type: 'linear',
-              ticks: {
-                stepSize: 10,
-                min: 0,
-                max: 100
-              }
-            }]
+                ticks: {
+                  maxRotation: 45
+                }
+              }],
+              yAxes: [{
+                type: 'linear',
+                ticks: {
+                  stepSize: 10,
+                  min: 0,
+                  max: 100
+                }
+              }]
+            }
           }
-        }
-      });
+        });
     }
 
   } else {
