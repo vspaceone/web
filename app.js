@@ -44,11 +44,11 @@ function updateState() {
       }
     })
   .fail(function (data, textStatus) {
-        $("#state").removeClass("label-warning");
-        $("#state").removeClass("label-success");
-        $("#state").addClass("label-danger");
+    $("#state").removeClass("label-warning");
+    $("#state").removeClass("label-success");
+    $("#state").addClass("label-danger");
 
-        $("#stateText").html("<em>Error</em>")
+    $("#stateText").html("<em>Error</em>")
   });
 }
 
@@ -60,6 +60,9 @@ function updateTemperature() {
       var receivedBruecke = 0;
       for (var i = 0, len = 1; i <= len; i++) {
 
+        if( typeof data.sensors.humidity[i] === 'undefined' ){
+          break;
+        }
         if (data.sensors.humidity[i].location === "Maschinenraum") {
           console.log("M");
           $("#Maschinenraum").html("<em>" + data.sensors.temperature[i].value + data.sensors.temperature[i].unit + "<br>"
