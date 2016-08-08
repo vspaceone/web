@@ -44,7 +44,11 @@ function updateState() {
       }
     })
   .fail(function (data, textStatus) {
+        $("#state").removeClass("label-warning");
+        $("#state").removeClass("label-success");
+        $("#state").addClass("label-danger");
 
+        $("#stateText").html("<em>Error</em>")
   });
 }
 
