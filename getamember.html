@@ -1,7 +1,10 @@
-<!--
-  TODO
-  - Registernummer nachtragen
-  - Telefonnummer zum Kontakt hinzufügen / ggf. Kontakt ändern
+<!--TODO
+  Bilder verkleinern
+  einlesen
+  Resourcen ans Ende ?
+  icon ändern
+  Räume auf wiki seiten verlinken + Bilder
+  coole Netzinteraktion einfügen siehe http://www.crit-research.it/
 -->
 
 <!DOCTYPE html>
@@ -13,8 +16,8 @@
     <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js"></script>
     <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js"></script>
     <script src="app.js"></script>
   </head>
   <body>
@@ -28,7 +31,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html#">vspace.one</a>
+          <a class="navbar-brand" href="#">vspace.one</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
@@ -36,49 +39,43 @@
             <li><a href="index.html#Ausstattung">Ausstattung</a></li>
             <li><a href="index.html#Ort">Ort</a></li>
             <li><a href="https://wiki.vspace.one">Wiki</a></li>
-            <li><div id="doorstate" class="label label-success"><a href="index.html#state" id="doorstateString">loading</a></label></li>
+            <li><div id="doorstate" class="label label-success"><a href="#state" id="doorstateString">loading</a></label></li>
           </ul>
               </div>
         </div>
     </nav>
 
-    <div class="container-fluid bg-1 text-center">
-      <h1>Impressum</h1>
-      <h2>Angaben gemäß § 5 TMG:</h2>
-      <p>vspace.one e.V.<br />
-      Ludwig-Weißer-Str. 3<br />
-      78112 St. Georgen
-      </p>
-      <h2>Vertreten durch:</h2>
-      <p>Alexander Votteler<br />
-      Nils Krause<br />
-      Max Noppel<br />
-      Michael Castano</p>
-      <h2>Kontakt:</h2>
-      <p>
-      <!--Telefon:</br>-->
-      E-Mail: ud@nilskrause.de
-      </p>
+    <div class="container-fluid bg-3 text-center label-warning" id="getamember">
+      <h3 style="margin-bottom: 10px">Mitglied werden</h3>
+      <div class="row">
+        <div style="text-align:left;" class="col-sm-3"></div>
+        <div style="text-align:left;" class="col-sm-6">
+          Lade dir unter <a href="downloads.html">Downloads</a> die Beitrittserklaerung herunter, bring sie mit in den Space und drücke sie einem der Vorstände in die Hände. Dafür eignet sich beispielsweise das zweiwöchig stattfindende Plenum am Dienstagabend. Alternativ schicke sie an folgende Adresse:<br><br>
+          vspace.one e.V <br>
+          Ludwig-Weißer-Str. 3 <br>
+          78112 St. Georgen
+        </div>
+        <div style="text-align:left;" class="col-sm-3"></div>
+      </div>
 
-
-      <h2>Registereintrag:</h2>
-      <p>Eintragung im Vereinsregister. <br />Registergericht: Amtsgericht Villingen-Schwenningen <br />Registernummer: Vorläufige Eintragung</p>
-      <p> </p>
-      <p>Quelle: <em><a href="https://www.e-recht24.de" style="color: #ffffff">eRecht24</a></em></p>
     </div>
-
     <!-- Footer -->
     <footer class="container-fluid bg-4 text-center">
       <p><a href="impressum.html" style="color: #ffffff">Impressum</a> | <a href="dashboard.html" style="color: #ffffff">Dashboard</a> | <a href="downloads.html" style="color: #ffffff">Downloads</a> | <a href="getamember.html" style="color: #ffffff">Get A Member</a> </p>
     </footer>
 
-
     <script>
 $( document ).ready(function() {
   window.setInterval( updateDoorstate, 10000);
+  window.setInterval( updateState, 10000);
+  window.setInterval( updateTemperature, 10000);
   updateDoorstate();
+  updateState();
+  updateTemperature();
 });
+
     </script>
 
   </body>
 </html>
+
