@@ -22,6 +22,7 @@ foreach ($caching_rooms as $room) {
 function temperature($rid)
 {
   $array = array();
+  global $mysqli;
 
   $statement = $mysqli->prepare($getTemp);
   $statement->bind_param('s', $rid);
@@ -52,7 +53,7 @@ function temperature($rid)
 function humidity($rid)
 {
   $array = array();
-  $rid = $room;
+  global $mysqli;
 
   $statement = $mysqli->prepare($getHumi);
   $statement->bind_param('s', $rid);
