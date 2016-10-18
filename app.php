@@ -1,48 +1,53 @@
 <?php
 
-include('credentials.php');
+include('configuration.php');
 
-$mysqli = new mysqli($db_host, $db_username, $db_password, $db_table);
-if ($mysqli->connect_errno) {
+$cachefile = $room . "_" . $sensor . ".json";
+
+if ($enable_caching && file_exists($cachefile)) {
+
+  echo file_get_contents($cachfile);
+
+} else {
+
+  $mysqli = new mysqli($db_host, $db_username, $db_password, $db_table);
+  if ($mysqli->connect_errno) {
     echo "Verbindung fehlgeschlagen: " . $mysqli->connect_error;
     die("Verbindung fehlgeschlagen: " . $mysqli->connect_error);
-}
+  }
 
-#$getTemp = "SELECT s.value, s.time FROM Rooms r, SensorData s WHERE r.altname = ? AND s.type = 'temperature' AND r.room_id = s.room_id AND s.time > NOW() - INTERVAL ? DAY ORDER BY s.time DESC";
-#$getHumi = "SELECT s.value, s.time FROM Rooms r, SensorData s WHERE r.altname = ? AND s.type = 'humidity' AND r.room_id = s.room_id AND s.time > NOW() - INTERVAL ? DAY ORDER BY s.time DESC";
+  $getTemp = "SELECT s.value, s.time FROM SensorData s WHERE s.room_id = (SELECT Room_ID FROM Rooms r WHERE r.altname = ?) AND s.type = 'temperature' AND s.time > NOW() - INTERVAL ? DAY ORDER BY s.time DESC";
+  $getHumi = "SELECT s.value, s.time FROM SensorData s WHERE s.room_id = (SELECT Room_ID FROM Rooms r WHERE r.altname = ?) AND s.type = 'humidity' AND s.time > NOW() - INTERVAL ? DAY ORDER BY s.time DESC";
 
-$getTemp = "SELECT s.value, s.time FROM SensorData s WHERE s.room_id = (SELECT Room_ID FROM Rooms r WHERE r.altname = ?) AND s.type = 'temperature' AND s.time > NOW() - INTERVAL ? DAY ORDER BY s.time DESC";
-$getHumi = "SELECT s.value, s.time FROM SensorData s WHERE s.room_id = (SELECT Room_ID FROM Rooms r WHERE r.altname = ?) AND s.type = 'humidity' AND s.time > NOW() - INTERVAL ? DAY ORDER BY s.time DESC";
+  $room;
+  $sensor;
+  $valuec;
+  $days = 7;
+  $array = array();
 
-$room;
-$sensor;
-$valuec;
-$days = 7;
-$array = array();
-
-if (isset($_GET['room'])){
+  if (isset($_GET['room'])){
     $room = $_GET['room'];
-}
+  }
 
-if (isset($_GET['sensor'])){
+  if (isset($_GET['sensor'])){
     $sensor = $_GET['sensor'];
-}
+  }
 
-if (isset($_GET['valuec'])){
+  if (isset($_GET['valuec'])){
     $valuec = $_GET['valuec'];
-}
+  }
 
-if (isset($_GET['days'])){
+  if (isset($_GET['days'])){
     $days = $_GET['days'];
-}
+  }
 
-if (!isset($_GET['room']) && !isset($_GET['sensor'])){
+  if (!isset($_GET['room']) && !isset($_GET['sensor'])){
     echo "Läuft";
-}
+  }
 
 
 
-if ($sensor == 'temperature'|| $sensor == 'th'){
+  if ($sensor == 'temperature'|| $sensor == 'th'){
     $rid = $room;
     $range = $days;
 
@@ -60,19 +65,19 @@ if ($sensor == 'temperature'|| $sensor == 'th'){
     $s = 0;
     $array['temperature'] = array();
     while($row = $result->fetch_object()) {
-        //$valuec--;
-        $s--;
+      //$valuec--;
+      $s--;
 
-        if ($s <= 0){
-            $s = $skip;
-            $array['temperature'][] = array('time' => $row->time, 'value' => $row->value );
-        }
+      if ($s <= 0){
+        $s = $skip;
+        $array['temperature'][] = array('time' => $row->time, 'value' => $row->value );
+      }
 
     }
 
-}
+  }
 
-if ($sensor == 'humidity' || $sensor == 'th'){
+  if ($sensor == 'humidity' || $sensor == 'th'){
 
     $rid = $room;
     $range = $days;
@@ -91,18 +96,19 @@ if ($sensor == 'humidity' || $sensor == 'th'){
     $s = 0;
     $array['humidity'] = array();
     while($row = $result->fetch_object()) {
-        //$valuec--;
-        $s--;
+      //$valuec--;
+      $s--;
 
-        if ($s <= 0){
-            $s = $skip;
-            $array['humidity'][] = array('time' => $row->time, 'value' => $row->value );
-        }
+      if ($s <= 0){
+        $s = $skip;
+        $array['humidity'][] = array('time' => $row->time, 'value' => $row->value );
+      }
 
     }
 
-}
+  }
 
-echo json_encode($array);
+  echo json_encode($array);
+}
 
 ?>
