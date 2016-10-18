@@ -2,6 +2,31 @@
 
 include('configuration.php');
 
+$room;
+$sensor;
+$valuec;
+$days = 7;
+
+if (isset($_GET['room'])){
+  $room = $_GET['room'];
+}
+
+if (isset($_GET['sensor'])){
+  $sensor = $_GET['sensor'];
+}
+
+if (isset($_GET['valuec'])){
+  $valuec = $_GET['valuec'];
+}
+
+if (isset($_GET['days'])){
+  $days = $_GET['days'];
+}
+
+if (!isset($_GET['room']) && !isset($_GET['sensor'])){
+  echo "Läuft";
+}
+
 $cachefile = $room . "_" . $sensor . ".json";
 
 if ($enable_caching && file_exists($cachefile)) {
@@ -19,33 +44,7 @@ if ($enable_caching && file_exists($cachefile)) {
   $getTemp = "SELECT s.value, s.time FROM SensorData s WHERE s.room_id = (SELECT Room_ID FROM Rooms r WHERE r.altname = ?) AND s.type = 'temperature' AND s.time > NOW() - INTERVAL ? DAY ORDER BY s.time DESC";
   $getHumi = "SELECT s.value, s.time FROM SensorData s WHERE s.room_id = (SELECT Room_ID FROM Rooms r WHERE r.altname = ?) AND s.type = 'humidity' AND s.time > NOW() - INTERVAL ? DAY ORDER BY s.time DESC";
 
-  $room;
-  $sensor;
-  $valuec;
-  $days = 7;
   $array = array();
-
-  if (isset($_GET['room'])){
-    $room = $_GET['room'];
-  }
-
-  if (isset($_GET['sensor'])){
-    $sensor = $_GET['sensor'];
-  }
-
-  if (isset($_GET['valuec'])){
-    $valuec = $_GET['valuec'];
-  }
-
-  if (isset($_GET['days'])){
-    $days = $_GET['days'];
-  }
-
-  if (!isset($_GET['room']) && !isset($_GET['sensor'])){
-    echo "Läuft";
-  }
-
-
 
   if ($sensor == 'temperature'|| $sensor == 'th'){
     $rid = $room;
