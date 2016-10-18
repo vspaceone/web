@@ -23,6 +23,8 @@ function temperature($rid)
 {
   $array = array();
   global $mysqli;
+  global $getTemp;
+  global $valuec;
 
   $statement = $mysqli->prepare($getTemp);
   $statement->bind_param('s', $rid);
@@ -54,6 +56,8 @@ function humidity($rid)
 {
   $array = array();
   global $mysqli;
+  global $getHumi;
+  global $valuec;
 
   $statement = $mysqli->prepare($getHumi);
   $statement->bind_param('s', $rid);
