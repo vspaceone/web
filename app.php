@@ -31,7 +31,7 @@ $cachefile = $room . "_" . $sensor . ".json";
 
 if ($enable_caching && file_exists($cachefile)) {
 
-  echo file_get_contents($cachfile);
+  echo file_get_contents($cachefile);
 
 } else {
 
