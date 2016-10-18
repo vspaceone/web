@@ -8,8 +8,8 @@ if ($mysqli->connect_errno) {
   die("Verbindung fehlgeschlagen: " . $mysqli->connect_error);
 }
 
-$getTemp = "SELECT s.value, s.time FROM Rooms r, SensorData s WHERE r.altname = ? AND s.type = 'temperature' AND r.room_id = s.room_id AND s.time > NOW() - INTERVAL 7 DAY ORDER BY s.time DESC";
-$getHumi = "SELECT s.value, s.time FROM Rooms r, SensorData s WHERE r.altname = ? AND s.type = 'humidity' AND r.room_id = s.room_id AND s.time > NOW() - INTERVAL 7 DAY ORDER BY s.time DESC";
+$getTemp = "SELECT s.value, s.time FROM SensorData s WHERE s.room_id = (SELECT Room_ID FROM Rooms r WHERE r.altname = ?) AND s.type = 'temperature' AND s.time > NOW() - INTERVAL ? DAY ORDER BY s.time DESC";
+$getHumi = "SELECT s.value, s.time FROM SensorData s WHERE s.room_id = (SELECT Room_ID FROM Rooms r WHERE r.altname = ?) AND s.type = 'humidity' AND s.time > NOW() - INTERVAL ? DAY ORDER BY s.time DESC";
 
 $valuec = 200;
 
