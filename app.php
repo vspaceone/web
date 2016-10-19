@@ -27,7 +27,7 @@ if (!isset($_GET['room']) && !isset($_GET['sensor'])){
   echo "Läuft";
 }
 
-$cachefile = $room . "_" . $sensor . ".json";
+$cachefile = $caching_path . $room . "_" . $sensor . ".json";
 
 if ($enable_caching && file_exists($cachefile)) {
 

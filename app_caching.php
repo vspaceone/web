@@ -14,9 +14,9 @@ $getHumi = "SELECT s.value, s.time FROM SensorData s WHERE s.room_id = (SELECT R
 $valuec = 200;
 
 foreach ($caching_rooms as $room) {
-  fwrite(fopen($room . "_temperature.json", "w"), json_encode(temperature($room)));
-  fwrite(fopen($room . "_humidity.json", "w"), json_encode(humidity($room)));
-  fwrite(fopen($room . "_th.json", "w"), json_encode(array_merge(temperature($room), humidity($room))));
+  fwrite(fopen($caching_path . $room . "_temperature.json", "w"), json_encode(temperature($room)));
+  fwrite(fopen($caching_path . $room . "_humidity.json", "w"), json_encode(humidity($room)));
+  fwrite(fopen($caching_path . $room . "_th.json", "w"), json_encode(array_merge(temperature($room), humidity($room))));
 }
 
 function temperature($rid)
