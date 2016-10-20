@@ -1,3 +1,1 @@
 # vspace.one landing page
-
-
