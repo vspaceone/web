@@ -7,17 +7,17 @@ function updateDoorstate() {
 
   //console.log("Updating doorstate!");
   $.getJSON("/spaceapi.json")
-    .done(function (data, textStatus) {
-      if (data.state.open == true) {
-        $("#doorstate").addClass("label-success");
-        $("#doorstate").removeClass("label-danger");
-        $("#doorstateString").text("open");
-      } else {
-        $("#doorstate").addClass("label-danger");
-        $("#doorstate").removeClass("label-success");
-        $("#doorstateString").text("closed");
-      }
-    })
+  .done(function (data, textStatus) {
+    if (data.state.open == true) {
+      $("#doorstate").addClass("label-success");
+      $("#doorstate").removeClass("label-danger");
+      $("#doorstateString").text("open");
+    } else {
+      $("#doorstate").addClass("label-danger");
+      $("#doorstate").removeClass("label-success");
+      $("#doorstateString").text("closed");
+    }
+  })
   .fail(function (data, textStatus) {
     $("#doorstate").addClass("label-danger");
     $("#doorstate").removeClass("label-success");
@@ -28,21 +28,21 @@ function updateDoorstate() {
 function updateState() {
   //console.log("Updating state!");
   $.getJSON("/spaceapi.json")
-    .done(function (data, textStatus) {
-      if (data.state.open == true) {
-        $("#state").removeClass("label-warning");
-        $("#state").removeClass("label-danger");
-        $("#state").addClass("label-success");
+  .done(function (data, textStatus) {
+    if (data.state.open == true) {
+      $("#state").removeClass("label-warning");
+      $("#state").removeClass("label-danger");
+      $("#state").addClass("label-success");
 
-        $("#stateText").html("<em>Open</em>")
-      } else {
-        $("#state").removeClass("label-warning");
-        $("#state").removeClass("label-success");
-        $("#state").addClass("label-danger");
+      $("#stateText").html("<em>Open</em>")
+    } else {
+      $("#state").removeClass("label-warning");
+      $("#state").removeClass("label-success");
+      $("#state").addClass("label-danger");
 
-        $("#stateText").html("<em>Closed</em>")
-      }
-    })
+      $("#stateText").html("<em>Closed</em>")
+    }
+  })
   .fail(function (data, textStatus) {
     $("#state").removeClass("label-warning");
     $("#state").removeClass("label-success");
@@ -53,41 +53,43 @@ function updateState() {
 }
 
 function updateTemperature() {
-  console.log("Updating temperature!");
+  console.log("Updating charts!");
   $.getJSON("/spaceapi.json")
-    .done(function (data, textStatus) {
-      var receivedMaschinenraum = 0;
-      var receivedBruecke = 0;
-      for (var i = 0, len = 1; i <= len; i++) {
+  .done(function (data, textStatus) {
+    var receivedMaschinenraum = 0;
+    var receivedBruecke = 0;
+    for (var i = 0, len = 1; i <= len; i++) {
 
-        if( typeof data.sensors.humidity[i] === 'undefined' ){
-          break;
-        }
-        if (data.sensors.humidity[i].location === "Maschinenraum") {
-          console.log("M");
-          $("#Maschinenraum").html("<em>" + data.sensors.temperature[i].value + data.sensors.temperature[i].unit + "<br>"
-              + data.sensors.humidity[i].value + data.sensors.humidity[i].unit + "</em>");
-          receivedMaschinenraum = 1;
-        } else if (data.sensors.humidity[i].location === "Brücke") {
-          console.log("B");
-          $("#Bruecke").html("<em>" + data.sensors.temperature[i].value + data.sensors.temperature[i].unit + "<br>"
-              + data.sensors.humidity[i].value + data.sensors.humidity[i].unit + "</em>");
-          receivedBruecke = 1;
-        }
+      if( typeof data.sensors.humidity[i] === 'undefined' ){
+        break;
       }
-      if(receivedMaschinenraum == 0){
-        $("#Maschinenraum").html("<em>N/A <br> N/A</em>");
+      if (data.sensors.humidity[i].location === "Maschinenraum") {
+        console.log("M");
+        $("#Maschinenraum").html("<em>" + data.sensors.temperature[i].value + data.sensors.temperature[i].unit + "<br>"
+        + data.sensors.humidity[i].value + data.sensors.humidity[i].unit + "</em>");
+        receivedMaschinenraum = 1;
+      } else if (data.sensors.humidity[i].location === "Brücke") {
+        console.log("B");
+        $("#Bruecke").html("<em>" + data.sensors.temperature[i].value + data.sensors.temperature[i].unit + "<br>"
+        + data.sensors.humidity[i].value + data.sensors.humidity[i].unit + "</em>");
+        receivedBruecke = 1;
       }
+    }
+    if(receivedMaschinenraum == 0){
+      $("#Maschinenraum").html("<em>N/A <br> N/A</em>");
+    }
 
-      if(receivedBruecke == 0){
-        $("#Bruecke").html("<em>N/A <br> N/A</em>");
-      }
-    })
+    if(receivedBruecke == 0){
+      $("#Bruecke").html("<em>N/A <br> N/A</em>");
+    }
+  })
   .fail(function (data, textStatus) {
     $("#Maschinenraum").html("<em>N/A <br> N/A</em>");
     $("#Bruecke").html("<em>N/A <br> N/A</em>");
   });
+}
 
+function updateCharts() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
@@ -134,48 +136,48 @@ function handleCharts(resp, room) {
     var humctx;
     if (room == "maschinenraum") {
       ctx = document.getElementById("tmpChartMaschinenraum")
-        tmpChartMaschinenraum = new Chart(ctx, {
-          type: 'line',
-          data: {
-            datasets: [{
-              label: 'Temperatur (°C)',
-              backgroundColor: 'rgba(71,78,92,0.3)',
-              tension: 0.3,
-              data: tdata
-            }]
-          },
-          options: {
-            scales: {
-              xAxes: [{
-                type: 'time',
-                position: 'bottom',
-                time: {
-                  displayFormats: {
-                    day: 'D.M.',
-                    hour: 'D.M. H:mm'
-                  },
-                  tooltipFormat: 'D.M.YY H:mm [Uhr]'
+      tmpChartMaschinenraum = new Chart(ctx, {
+        type: 'line',
+        data: {
+          datasets: [{
+            label: 'Temperatur (°C)',
+            backgroundColor: 'rgba(71,78,92,0.3)',
+            tension: 0.3,
+            data: tdata
+          }]
+        },
+        options: {
+          scales: {
+            xAxes: [{
+              type: 'time',
+              position: 'bottom',
+              time: {
+                displayFormats: {
+                  day: 'D.M.',
+                  hour: 'D.M. H:mm'
                 },
-                ticks: {
-                  maxRotation: 45
-                }
-              }],
-              yAxes: [{
-                type: 'linear',
-                ticks: {
-                  stepSize: 5,
-                  suggestedMin: 10,
-                  suggestMax: 35
-                }
-              }]
-            }
+                tooltipFormat: 'D.M.YY H:mm [Uhr]'
+              },
+              ticks: {
+                maxRotation: 45
+              }
+            }],
+            yAxes: [{
+              type: 'linear',
+              ticks: {
+                stepSize: 5,
+                suggestedMin: 10,
+                suggestMax: 35
+              }
+            }]
           }
-        });
+        }
+      });
       humctx = document.getElementById("humChartMaschinenraum")
-        humChartMaschinenraum = new Chart(humctx, {
-          type: 'line',
-          data: {
-            datasets: [
+      humChartMaschinenraum = new Chart(humctx, {
+        type: 'line',
+        data: {
+          datasets: [
             {
               label: 'Luftfeuchtigkeit (%)',
               backgroundColor: 'rgba(71,78,92,0.3)',
@@ -210,8 +212,8 @@ function handleCharts(resp, room) {
             }
           }
         });
-    } else if (room == "bruecke") {
-      ctx = document.getElementById("tmpChartBruecke")
+      } else if (room == "bruecke") {
+        ctx = document.getElementById("tmpChartBruecke")
         tmpChartBruecke = new Chart(ctx, {
           type: 'line',
           data: {
@@ -249,55 +251,55 @@ function handleCharts(resp, room) {
             }
           }
         });
-      humctx = document.getElementById("humChartBruecke")
+        humctx = document.getElementById("humChartBruecke")
         humChartBruecke = new Chart(humctx, {
           type: 'line',
           data: {
             datasets: [
-            {
-              label: 'Luftfeuchtigkeit (%)',
-              backgroundColor: 'rgba(71,78,92,0.3)',
-              tension: 0.3,
-              data: hdata
-            }]
-          },
-          options: {
-            scales: {
-              xAxes: [{
-                type: 'time',
-                position: 'bottom',
-                time: {
-                  displayFormats: {
-                    day: 'D.M.',
-                    hour: 'D.M. H:mm'
-                  },
-                  tooltipFormat: 'D.M.YY H:mm [Uhr]'
-                },
-                ticks: {
-                  maxRotation: 45
-                }
-              }],
-              yAxes: [{
-                type: 'linear',
-                ticks: {
-                  stepSize: 10,
-                  min: 0,
-                  max: 100
-                }
+              {
+                label: 'Luftfeuchtigkeit (%)',
+                backgroundColor: 'rgba(71,78,92,0.3)',
+                tension: 0.3,
+                data: hdata
               }]
+            },
+            options: {
+              scales: {
+                xAxes: [{
+                  type: 'time',
+                  position: 'bottom',
+                  time: {
+                    displayFormats: {
+                      day: 'D.M.',
+                      hour: 'D.M. H:mm'
+                    },
+                    tooltipFormat: 'D.M.YY H:mm [Uhr]'
+                  },
+                  ticks: {
+                    maxRotation: 45
+                  }
+                }],
+                yAxes: [{
+                  type: 'linear',
+                  ticks: {
+                    stepSize: 10,
+                    min: 0,
+                    max: 100
+                  }
+                }]
+              }
             }
-          }
-        });
-    }
+          });
+        }
 
-  } else {
-    //console.log("Update Chart!");
-    if (room == "maschinenraum") {
-      tmpChartMaschinenraum.data.datasets[0].data = tdata;
-      humChartMaschinenraum.data.datasets[0].data = hdata;
-    } else if (room == "bruecke") {
-      tmpChartBruecke.data.datasets[0].data = tdata;
-      humChartBruecke.data.datasets[0].data = hdata;
+      } else {
+        //console.log("Update Chart!");
+        if (room == "maschinenraum") {
+          tmpChartMaschinenraum.data.datasets[0].data = tdata;
+          humChartMaschinenraum.data.datasets[0].data = hdata;
+        } else if (room == "bruecke") {
+          tmpChartBruecke.data.datasets[0].data = tdata;
+          humChartBruecke.data.datasets[0].data = hdata;
+        }
+      }
     }
-  }
-}

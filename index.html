@@ -1,6 +1,4 @@
 <!--TODO
-	Bilder verkleinern
-	einlesen
 	Resourcen ans Ende ?
 	icon ändern
 	Räume auf wiki seiten verlinken + Bilder
@@ -17,7 +15,6 @@
 		<link rel="stylesheet" href="style.css">
 		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 		<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js"></script>
 		<script src="app.js"></script>
 	</head>
 	<body>
@@ -86,23 +83,24 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="container-fluid text-center label-warning" id="state">
 			<h3 style="margin-bottom: 2px">Raumstatus</h3>
 			<h4 style="margin-top:2px" id="stateText">Loading</h4>
+						<h5 class="margin"><a href="dashboard.html">Dashboard</a></h5>
             <h5 class="margin"><a href="http://spaceapi-stats.n39.eu/#vspaceone">Statistiken</a></h5>
 			<div class="row">
 				<div class="col-sm-6">
 					<h4>Brücke</h4>
-					<div style="width:100%; margin-bottom:50px;" class="col-sm-6" id="Bruecke">					
+					<div style="width:100%; margin-bottom:50px;" class="col-sm-6" id="Bruecke">
 					</div>
 				</div>
 				<div class="col-sm-6">
 					<h4>Maschinenraum</h4>
-					<div style="width:100%; margin-bottom:50px;" class="col-sm-6" id="Maschinenraum">					
+					<div style="width:100%; margin-bottom:50px;" class="col-sm-6" id="Maschinenraum">
 					</div>
 				</div>
-			</div>		
+			</div>
 		</div>
 
 		<div class="container-fluid bg-2 text-center">
@@ -117,15 +115,15 @@
             <p><i>Telefon Brücke: 0221 596196639</i></p>
             <p><i>Telefon Maschinenraum: 0221 596196640</i></p>
 			<iframe id="map-big" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=8.453952670097351%2C48.06383033098609%2C8.458941578865051%2C48.066199996379204&amp;layer=mapnik&amp;marker=48.06501338483433%2C8.456447124481201" style="border: 1px solid black"></iframe>
-			
+
 			<iframe id="map-medium" width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=8.453952670097351%2C48.06383033098609%2C8.458941578865051%2C48.066199996379204&amp;layer=mapnik&amp;marker=48.06501338483433%2C8.456447124481201" style="border: 1px solid black"></iframe>
-			
+
 			<br/>
 			<small>
 				<a href="http://www.openstreetmap.org/?mlat=48.06501&amp;mlon=8.45645#map=18/48.06502/8.45645" style="color: #ffffff"><i>Große Karte anzeigen</i></a>
 			</small>
 			<!--<span class="glyphicon glyphicon-search"></span> Search -->
-			
+
 		</div>
 
 
@@ -148,4 +146,3 @@ $( document ).ready(function() {
 
 	</body>
 </html>
-
