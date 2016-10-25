@@ -9,87 +9,91 @@
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>vspace.one</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="style.css">
-		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-		<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js"></script>
-		<script src="app.js"></script>
-	</head>
-	<body>
 
-		<!-- Navbar -->
-		<nav class="navbar navbar-default">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+<head>
+    <title>vspace.one</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="scripts/external/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/external/jquery/jquery-3.1.1.min.js"></script>
+    <script src="scripts/external/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="scripts/external/chart.js/Chart.bundle.min.js"></script>
+    <script src="scripts/internal/app.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html">vspace.one</a>
-				</div>
-				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="index.html#Mitmachen">Mitmachen</a></li>
-						<li><a href="index.html#Ausstattung">Ausstattung</a></li>
-						<li><a href="index.html#Ort">Ort</a></li>
-						<li><a href="https://wiki.vspace.one">Wiki</a></li>
-                        <li><div id="doorstate" class="label label-success"><a href="#state" id="doorstateString">loading</a></label></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+                <a class="navbar-brand" href="index.html">vspace.one</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html#Mitmachen">Mitmachen</a></li>
+                    <li><a href="index.html#Ausstattung">Ausstattung</a></li>
+                    <li><a href="index.html#Ort">Ort</a></li>
+                    <li><a href="https://wiki.vspace.one">Wiki</a></li>
+                    <li>
+                        <div id="doorstate" class="label label-success"><a href="#state" id="doorstateString">loading</a></label>
+                    </li>
+                </ul>
+                </div>
+            </div>
+    </nav>
 
 
-		<div class="container-fluid text-center label-warning" id="state">
-			<h3 style="margin-bottom: 2px">Raumstatus</h3>
-			<h4 style="margin-top:2px" id="stateText">Loading</h4>
-            <h5 class="margin"><a href="http://spaceapi-stats.n39.eu/#vspaceone">Statistiken</a></h5>
-			<div class="row">
-				<div class="col-sm-6">
-					<h4>Brücke</h4>
-					<div style="width:100%; margin-bottom:50px;" class="col-sm-6" id="Bruecke">
-					</div>
-					<div>
-					<canvas id="tmpChartBruecke" ></canvas>
-					<canvas id="humChartBruecke" ></canvas>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<h4>Maschinenraum</h4>
-					<div style="width:100%; margin-bottom:50px;" class="col-sm-6" id="Maschinenraum">
-					</div>
-					<div>
-					<canvas id="tmpChartMaschinenraum" ></canvas>
-					<canvas id="humChartMaschinenraum" ></canvas>
-					</div>
-				</div>
-			</div>
-		</div>
+    <div class="container-fluid text-center label-warning" id="state">
+        <h3 style="margin-bottom: 2px">Raumstatus</h3>
+        <h4 style="margin-top:2px" id="stateText">Loading</h4>
+        <h5 class="margin"><a href="http://spaceapi-stats.n39.eu/#vspaceone">Statistiken</a></h5>
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>Brücke</h4>
+                <div style="width:100%; margin-bottom:50px;" class="col-sm-6" id="Bruecke">
+                </div>
+                <div>
+                    <canvas id="tmpChartBruecke"></canvas>
+                    <canvas id="humChartBruecke"></canvas>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h4>Maschinenraum</h4>
+                <div style="width:100%; margin-bottom:50px;" class="col-sm-6" id="Maschinenraum">
+                </div>
+                <div>
+                    <canvas id="tmpChartMaschinenraum"></canvas>
+                    <canvas id="humChartMaschinenraum"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-		<!-- Footer -->
-		<footer class="container-fluid bg-4 text-center">
-        <p><a href="impressum.html" style="color: #ffffff">Impressum</a> | <a href="dashboard.html" style="color: #ffffff">Dashboard</a> | <a href="downloads.html" style="color: #ffffff">Downloads</a> | <a href="mitgliedwerden.html" style="color: #ffffff">Werde Mitglied!</a> </p>
-		</footer>
+    <!-- Footer -->
+    <footer class="container-fluid bg-4 text-center">
+        <p><a href="impressum.html" style="color: #ffffff">Impressum</a> | <a href="dashboard.html" style="color: #ffffff">Dashboard</a> | <a href="downloads.html" style="color: #ffffff">Downloads</a> | <a href="mitgliedwerden.html" style="color: #ffffff">Werde Mitglied!</a>            </p>
+    </footer>
 
-		<script>
-$( document ).ready(function() {
-	window.setInterval( updateDoorstate, 10000);
-	window.setInterval( updateState, 10000);
-	window.setInterval( updateTemperature, 10000);
-	updateDoorstate();
-	updateState();
-	updateTemperature();
-	updateCharts();
-});
+    <script>
+        $(document).ready(function() {
+            window.setInterval(updateDoorstate, 10000);
+            window.setInterval(updateState, 10000);
+            window.setInterval(updateTemperature, 10000);
+            updateDoorstate();
+            updateState();
+            updateTemperature();
+            updateCharts();
+        });
+    </script>
 
-		</script>
+</body>
 
-	</body>
 </html>
