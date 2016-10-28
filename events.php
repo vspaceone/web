@@ -2,6 +2,29 @@
 
 include('configuration.php');
 
+if (isset($_GET['name'])){
+  $name = $_GET['name'];
+}
+
+if (isset($_GET['email'])){
+  $email = $_GET['email'];
+}
+
+if (isset($_GET['age'])){
+  $age = $_GET['age'];
+}
+
+if( $name == null ){
+  die("Please define name!");
+}
+if( $email == null ){
+  die("Please define email!");
+}
+if( $age == null ){
+  die("Please define age!");
+}
+
+
 $mysqli = new mysqli($db_host, $db_username, $db_password, $db_table);
 if ($mysqli->connect_errno) {
   echo "Verbindung fehlgeschlagen: " . $mysqli->connect_error;
