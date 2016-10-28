@@ -31,7 +31,7 @@ if ($mysqli->connect_errno) {
   die("Verbindung fehlgeschlagen: " . $mysqli->connect_error);
 }
 
-$assignment = "INSERT INTO Events(Name,Email,Age,Timestamp) VALUE(?,?,?,NOW())";
+$assignment = "INSERT INTO eventassignment(Name,Email,Age,Timestamp) VALUE(?,?,?,NOW())";
 
 
 if ($insertMode){
