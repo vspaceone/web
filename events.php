@@ -8,13 +8,12 @@ if ($mysqli->connect_errno) {
   die("Verbindung fehlgeschlagen: " . $mysqli->connect_error);
 }
 
-$events = "SELECT * FROM Events";
-$assignment = "INSERT INTO Events(Name,Email,Age,EventId,Timestamp) VALUE(?,?,?,?,NOW())";
+$assignment = "INSERT INTO Events(Name,Email,Age,Timestamp) VALUE(?,?,?,NOW())";
 
 
 if ($insertMode){
   $statement = $mysqli->prepare($assignment);
-  $statement->bind_param('sssi', $name, $email, $age, $eventId);
+  $statement->bind_param('sss', $name, $email, $age);
 
   $statement->execute();
 
@@ -22,21 +21,6 @@ if ($insertMode){
 
 
 
-}else{
-  $statement = $mysqli->prepare($events);
-
-  $statement->execute();
-
-  $result = $statement->get_result();
-
-  $numrows = mysqli_num_rows($result);
-
-  $array = array();
-  while($row = $result->fetch_object()) {
-    $array[] = array('Name' => $row->Name, 'Id' => $row->Id, 'Description' => $row->Description, 'Date' => $row->Date, 'Time' => $row->Time );
-  }
-
-  echo json_encode($array);
 }
 
 
