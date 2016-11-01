@@ -1,14 +1,14 @@
 <!--TODO
-    Resourcen ans Ende ?
-    icon ändern
-    Räume auf wiki seiten verlinken + Bilder
-    coole Netzinteraktion einfügen siehe http://www.crit-research.it/
+  Resourcen ans Ende ?
+  icon ändern
+  Räume auf wiki seiten verlinken + Bilder
+  coole Netzinteraktion einfügen siehe http://www.crit-research.it/
 -->
 
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <title>vspace.one</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,136 +17,152 @@
     <script src="scripts/external/jquery/jquery-3.1.1.min.js"></script>
     <script src="scripts/external/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
     <script src="scripts/internal/app.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
 
     <!-- Navbar -->
     <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                <a class="navbar-brand" href="#">vspace.one</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#Mitmachen">Mitmachen</a></li>
-                    <li><a href="#Ausstattung">Ausstattung</a></li>
-                    <li><a href="#Ort">Ort</a></li>
-                    <li><a href="https://wiki.vspace.one">Wiki</a></li>
-                    <li>
-                        <div id="doorstate" class="label label-success"><a href="#state" id="doorstateString">loading</a></label>
-                    </li>
-                </ul>
-                </div>
-            </div>
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">vspace.one</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#Mitmachen">Mitmachen</a></li>
+            <li><a href="#Ausstattung">Ausstattung</a></li>
+            <li><a href="#Ort">Ort</a></li>
+            <li><a href="#Events">Events</a></li>
+            <li><a href="https://wiki.vspace.one">Wiki</a></li>
+            <li>
+              <div id="doorstate" class="label label-success"><a href="#state" id="doorstateString">loading</a></label>
+            </li>
+          </ul>
+              </div>
+        </div>
     </nav>
 
     <!-- First Container -->
     <div class="container-fluid bg-1 text-center">
-        <h3 class="margin">Was ist der vspace.one?</h3>
-        <img src="pic/logo_vspaceone.svg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-        <h3>Wir sind ein <i><a href="https://de.wikipedia.org/wiki/FabLab" style="color: #ffffff">Maker-</a></i> und <i><a href="https://de.wikipedia.org/wiki/Hackerspace" style="color: #ffffff">Hackerspace</a></i>.</h3>
+      <h3 class="margin">Was ist der vspace.one?</h3>
+      <img src="pic/logo_vspaceone.svg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+      <h3>Wir sind ein <i><a href="https://de.wikipedia.org/wiki/FabLab" style="color: #ffffff">Maker-</a></i> und <i><a href="https://de.wikipedia.org/wiki/Hackerspace" style="color: #ffffff">Hackerspace</a></i>.</h3>
     </div>
 
     <!-- Second Container -->
     <div class="container-fluid bg-2 text-center" id="Mitmachen">
-        <h3 class="margin">Für wen sind wir?</h3>
-        <p>Bei uns kann jeder und jede mitmachen. Interessierte Schüler, Studenten und Erwachsene, die sich für kreativen Umgang mit Technik interessieren.
-            <!--<span class="glyphicon glyphicon-search"></span> Search -->
-            </a>
+      <h3 class="margin">Für wen sind wir?</h3>
+      <p>Bei uns kann jeder und jede mitmachen. Interessierte Schüler, Studenten und Erwachsene, die sich für kreativen Umgang mit Technik interessieren.
+      <!--<span class="glyphicon glyphicon-search"></span> Search -->
+      </a>
     </div>
 
     <!-- Third Container (Grid) -->
     <div class="container-fluid bg-3 text-center" id="Ausstattung">
-        <h3 class="margin">Was haben wir?</h3><br>
-        <div class="row">
-            <div class="col-sm-4">
-                <p>Für unsere Verbindung und Vernetzung in aller Welt sorgt ein Router mit Internetzugang. Für Gäste betreiben wir einen <a href=https://freifunk.net/>Freifunk Zugangspunkt</a>.</p>
-            </div>
-            <div class="col-sm-4">
-                <p>Für die Umsetzung cooler Projekte haben wir eine Vielzahl an Werkzeugen und Maschinen (z.B. einen 3D-Drucker). Eine aktuelle Liste gibt es im <a href="https://wiki.vspace.one">Wiki</a>.</p>
-            </div>
-            <div class="col-sm-4">
-                <p>Wir haben zwei moderne Räume. In der Brücke stehen bequeme Sofas, ein Beamer und eine Kühlschrank. Im Maschinenraum, kann an Projekten gearbeitet werden.</p>
-            </div>
+      <h3 class="margin">Was haben wir?</h3><br>
+      <div class="row">
+        <div class="col-sm-4">
+          <p>Für unsere Verbindung und Vernetzung in aller Welt sorgt ein Router mit Internetzugang. Für Gäste betreiben wir einen <a href=https://freifunk.net/>Freifunk Zugangspunkt</a>.</p>
         </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <img src="pic/ethernetcable.jpg" class="img-responsive margin" style="width:100%" alt="Ethernetcable">
-            </div>
-            <div class="col-sm-4">
-                <img src="pic/schraubenschluessel.jpg" class="img-responsive margin" style="width:100%" alt="Schraubenschlüssel">
-            </div>
-            <div class="col-sm-4">
-                <img src="pic/mainboard.jpg" class="img-responsive margin" style="width:100%" alt="Mainboard">
-            </div>
+        <div class="col-sm-4">
+          <p>Für die Umsetzung cooler Projekte haben wir eine Vielzahl an Werkzeugen und Maschinen (z.B. einen 3D-Drucker). Eine aktuelle Liste gibt es im <a href="https://wiki.vspace.one">Wiki</a>.</p>
         </div>
-    </div>
-
-    <div class="container-fluid text-center label-warning" id="state">
-        <h3 style="margin-bottom: 2px">Raumstatus</h3>
-        <h4 style="margin-top:2px" id="stateText">Loading</h4>
-        <h5 class="margin"><a href="dashboard.html">Dashboard</a></h5>
-        <h5 class="margin"><a href="http://spaceapi-stats.n39.eu/#vspaceone">Statistiken</a></h5>
-        <div class="row">
-            <div class="col-sm-6">
-                <h4>Brücke</h4>
-                <div style="width:100%; margin-bottom:50px;" class="col-sm-6" id="Bruecke">
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <h4>Maschinenraum</h4>
-                <div style="width:100%; margin-bottom:50px;" class="col-sm-6" id="Maschinenraum">
-                </div>
-            </div>
+        <div class="col-sm-4">
+          <p>Wir haben zwei moderne Räume. In der Brücke stehen bequeme Sofas, ein Beamer und eine Kühlschrank. Im Maschinenraum, kann an Projekten gearbeitet werden.</p>
         </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="pic/ethernetcable.jpg" class="img-responsive margin" style="width:100%" alt="Ethernetcable">
+        </div>
+        <div class="col-sm-4">
+          <img src="pic/schraubenschluessel.jpg" class="img-responsive margin" style="width:100%" alt="Schraubenschlüssel">
+        </div>
+        <div class="col-sm-4">
+          <img src="pic/mainboard.jpg" class="img-responsive margin" style="width:100%" alt="Mainboard">
+        </div>
+      </div>
     </div>
 
     <div class="container-fluid bg-2 text-center">
-        <h3 class="margin" id="Ort">Wo findest du uns?</h3>
-        <p>Du findest uns in der Doppelstadt Villingen-Schwenningen.</p>
-        <p>Unsere Andresse lautet:<br> Wilhelm-Binder-Str. 19<br> 78048 Villingen</p><br>
-        <p></p>
-        <p>Wenn der vspace.one offen ist kannst du uns auch anrufen.</p>
-        <p>Telefon Rundruf: 0221 596196638</p>
-        <p><i>Telefon Brücke: 0221 596196639</i></p>
-        <p><i>Telefon Maschinenraum: 0221 596196640</i></p>
-        <iframe id="map-big" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=8.453952670097351%2C48.06383033098609%2C8.458941578865051%2C48.066199996379204&amp;layer=mapnik&amp;marker=48.06501338483433%2C8.456447124481201"
-            style="border: 1px solid black"></iframe>
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+          <h3 class="margin" id="Events">Events</h3>
+          <p><u>10.Dezember 2016 15:00 Uhr: <b>Blinkenrockets</b></u></p<>
+          <p>Lötworkshop für 13 bis 18 Jährige. Gemeinsam lernen wir wie man mit einem Lötkolben umgeht und mit elektronischen Bauteilen hantiert. Das Ergebnis, eine <a href="http://blinkenrocket.de/">Blinkenrocket</a>, kann sich sehen lassen. Coole Animationen lassen sich einfach über ein Webanwendung auf die fertige Rakete spielen und bestauen. Die Teilnahme ist kostenlos, da die Bausätze freundlicherweise von Blinkenrocket.de bereitgestellt wurden.</p>
+          <p></p>
+          <p>Achtung, es gibt nur eine <b>begrenzte Anzahl an Plätzen</b>, wir bitten daher um vorherige Anmeldung per Mail an info@vspace.one. Bitte Name, Alter und Emailadresse mitangeben.</p>
 
-        <iframe id="map-medium" width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=8.453952670097351%2C48.06383033098609%2C8.458941578865051%2C48.066199996379204&amp;layer=mapnik&amp;marker=48.06501338483433%2C8.456447124481201"
-            style="border: 1px solid black"></iframe>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+    </div>
 
-        <br/>
-        <small>
-                <a href="http://www.openstreetmap.org/?mlat=48.06501&amp;mlon=8.45645#map=18/48.06502/8.45645" style="color: #ffffff"><i>Große Karte anzeigen</i></a>
-            </small>
-        <!--<span class="glyphicon glyphicon-search"></span> Search -->
+    <div class="container-fluid text-center label-warning" id="state">
+      <h3 style="margin-bottom: 2px">Raumstatus</h3>
+      <h4 style="margin-top:2px" id="stateText">Loading</h4>
+      <h5 class="margin"><a href="dashboard.html">Dashboard</a></h5>
+      <h5 class="margin"><a href="http://spaceapi-stats.n39.eu/#vspaceone">Statistiken</a></h5>
+      <div class="row">
+        <div class="col-sm-6">
+          <h4>Brücke</h4>
+          <div style="width:100%; margin-bottom:50px;" class="col-sm-6" id="Bruecke">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <h4>Maschinenraum</h4>
+          <div style="width:100%; margin-bottom:50px;" class="col-sm-6" id="Maschinenraum">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-2 text-center">
+      <h3 class="margin" id="Ort">Wo findest du uns?</h3>
+      <p>Du findest uns in der Doppelstadt Villingen-Schwenningen.</p>
+      <p>Unsere Andresse lautet:<br> Wilhelm-Binder-Str. 19<br> 78048 Villingen</p><br>
+      <p></p>
+      <p>Wenn der vspace.one offen ist kannst du uns auch anrufen.</p>
+      <p>Telefon Rundruf: 0221 596196638</p>
+      <p><i>Telefon Brücke: 0221 596196639</i></p>
+      <p><i>Telefon Maschinenraum: 0221 596196640</i></p>
+      <iframe id="map-big" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=8.453952670097351%2C48.06383033098609%2C8.458941578865051%2C48.066199996379204&amp;layer=mapnik&amp;marker=48.06501338483433%2C8.456447124481201"
+              style="border: 1px solid black"></iframe>
+
+      <iframe id="map-medium" width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=8.453952670097351%2C48.06383033098609%2C8.458941578865051%2C48.066199996379204&amp;layer=mapnik&amp;marker=48.06501338483433%2C8.456447124481201"
+              style="border: 1px solid black"></iframe>
+
+      <br/>
+      <small>
+        <a href="http://www.openstreetmap.org/?mlat=48.06501&amp;mlon=8.45645#map=18/48.06502/8.45645" style="color: #ffffff"><i>Große Karte anzeigen</i></a>
+      </small>
+      <!--<span class="glyphicon glyphicon-search"></span> Search -->
 
     </div>
 
 
     <!-- Footer -->
     <footer class="container-fluid bg-4 text-center">
-        <p><a href="impressum.html" style="color: #ffffff">Impressum</a> | <a href="dashboard.html" style="color: #ffffff">Dashboard</a> | <a href="downloads.html" style="color: #ffffff">Downloads</a> | <a href="mitgliedwerden.html" style="color: #ffffff">Werde Mitglied!</a>            </p>
+      <p><a href="impressum.html" style="color: #ffffff">Impressum</a> | <a href="dashboard.html" style="color: #ffffff">Dashboard</a> | <a href="downloads.html" style="color: #ffffff">Downloads</a> | <a href="mitgliedwerden.html" style="color: #ffffff">Werde Mitglied!</a>            </p>
     </footer>
 
     <script>
-        $(document).ready(function() {
-            window.setInterval(updateDoorstate, 10000);
-            window.setInterval(updateState, 10000);
-            window.setInterval(updateTemperature, 10000);
-            updateDoorstate();
-            updateState();
-            updateTemperature();
-        });
+$(document).ready(function() {
+  window.setInterval(updateDoorstate, 10000);
+  window.setInterval(updateState, 10000);
+  window.setInterval(updateTemperature, 10000);
+  updateDoorstate();
+  updateState();
+  updateTemperature();
+});
     </script>
 
-</body>
+  </body>
 
 </html>
