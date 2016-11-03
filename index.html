@@ -107,7 +107,8 @@
                     <br>
                     <p><u>27. - 30.Dezember 2016: <b>33C3 in Hamburg</b></u></p<>
                         <p>Gemeinsam werden wir diesen Winter zum <a href="https://events.ccc.de/tag/33c3/">33rd Chaos Communication Congress im CCH, Hamburg</a> fahren. Wer sich uns aus der Gegend noch anschließen möchte, darf sich gerne an info@vspace.one
-                            wenden.</p>
+                            wenden.
+                        </p>
 
                         <br>
                         <br>
@@ -120,66 +121,66 @@
         </div>
     </div>
 
-        <div class="container-fluid text-center label-warning" id="state">
-            <h3 style="margin-bottom: 2px">Raumstatus</h3>
-            <h4 style="margin-top:2px" id="stateText">Loading</h4>
-        </div>
+    <div class="container-fluid text-center label-warning" id="state">
+        <h3 style="margin-bottom: 2px">Raumstatus</h3>
+        <h4 style="margin-top:2px" id="stateText">Loading</h4>
+    </div>
 
-        <div class="container-fluid bg-2 text-center">
-            <h3 class="margin" id="Ort">Wo findest du uns?</h3>
-            <p>Du findest uns in der Doppelstadt Villingen-Schwenningen.</p>
-            <p>Unsere Andresse lautet:<br> Wilhelm-Binder-Str. 19<br> 78048 Villingen</p><br>
-            <p></p>
-            <p>Wenn der vspace.one offen ist kannst du uns auch anrufen.</p>
-            <p>Telefon Rundruf: 0221 596196638</p>
-            <p><i>Telefon Brücke: 0221 596196639</i></p>
-            <p><i>Telefon Maschinenraum: 0221 596196640</i></p>
-            <iframe id="map-big" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=8.453952670097351%2C48.06383033098609%2C8.458941578865051%2C48.066199996379204&amp;layer=mapnik&amp;marker=48.06501338483433%2C8.456447124481201"
-                style="border: 1px solid black"></iframe>
+    <div class="container-fluid bg-2 text-center">
+        <h3 class="margin" id="Ort">Wo findest du uns?</h3>
+        <p>Du findest uns in der Doppelstadt Villingen-Schwenningen.</p>
+        <p>Unsere Andresse lautet:<br> Wilhelm-Binder-Str. 19<br> 78048 Villingen</p><br>
+        <p></p>
+        <p>Wenn der vspace.one offen ist kannst du uns auch anrufen.</p>
+        <p>Telefon Rundruf: 0221 596196638</p>
+        <p><i>Telefon Brücke: 0221 596196639</i></p>
+        <p><i>Telefon Maschinenraum: 0221 596196640</i></p>
+        <iframe id="map-big" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=8.453952670097351%2C48.06383033098609%2C8.458941578865051%2C48.066199996379204&amp;layer=mapnik&amp;marker=48.06501338483433%2C8.456447124481201"
+            style="border: 1px solid black"></iframe>
 
-            <iframe id="map-medium" width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=8.453952670097351%2C48.06383033098609%2C8.458941578865051%2C48.066199996379204&amp;layer=mapnik&amp;marker=48.06501338483433%2C8.456447124481201"
-                style="border: 1px solid black"></iframe>
+        <iframe id="map-medium" width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=8.453952670097351%2C48.06383033098609%2C8.458941578865051%2C48.066199996379204&amp;layer=mapnik&amp;marker=48.06501338483433%2C8.456447124481201"
+            style="border: 1px solid black"></iframe>
 
-            <br/>
-            <small>
+        <br/>
+        <small>
         <a href="http://www.openstreetmap.org/?mlat=48.06501&amp;mlon=8.45645#map=18/48.06502/8.45645" style="color: #ffffff"><i>Große Karte anzeigen</i></a>
       </small>
-            <!--<span class="glyphicon glyphicon-search"></span> Search -->
+        <!--<span class="glyphicon glyphicon-search"></span> Search -->
 
-        </div>
+    </div>
 
 
-        <!-- Footer -->
-        <footer class="container-fluid bg-4 text-center">
-            <p><a href="impressum.html" style="color: #ffffff">Impressum</a> | <a href="dashboard.html" style="color: #ffffff">Dashboard</a> | <a href="downloads.html" style="color: #ffffff">Downloads</a> | <a href="mitgliedwerden.html" style="color: #ffffff">Werde Mitglied!</a>                </p>
-        </footer>
+    <!-- Footer -->
+    <footer class="container-fluid bg-4 text-center">
+        <p><a href="impressum.html" style="color: #ffffff">Impressum</a> | <a href="dashboard.html" style="color: #ffffff">Dashboard</a> | <a href="downloads.html" style="color: #ffffff">Downloads</a> | <a href="mitgliedwerden.html" style="color: #ffffff">Werde Mitglied!</a>            </p>
+    </footer>
 
-        <!-- Scripts -->
-        <script type="text/javascript" src="scripts/external/jquery/jquery-3.1.1.min.js"></script>
-        <script type="text/javascript" src="scripts/external/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="scripts/external/particle-network.min.js"></script>
-        <script type="text/javascript" src="scripts/internal/app.js"></script>
-        <script>
-            $(document).ready(function() {
-                window.setInterval(updateDoorstate, 10000);
-                window.setInterval(updateState, 10000);
-                window.setInterval(updateTemperature, 10000);
-                updateDoorstate();
-                updateState();
-                updateTemperature();
-            });
-        </script>
-        <script type="text/javascript">
-            var canvasDiv = document.getElementById('particles');
-            var options = {
-                particleColor: '#ffffff',
-                background: '#08A059',
-                interactive: true,
-                speed: 'fast',
-                density: 'high'
-            };
-            var particleCanvas = new ParticleNetwork(canvasDiv, options);
-        </script>
+    <!-- Scripts -->
+    <script type="text/javascript" src="scripts/external/jquery/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="scripts/external/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/external/particle-network.min.js"></script>
+    <script type="text/javascript" src="scripts/internal/app.js"></script>
+    <script>
+        $(document).ready(function() {
+            window.setInterval(updateDoorstate, 10000);
+            window.setInterval(updateState, 10000);
+            window.setInterval(updateTemperature, 10000);
+            updateDoorstate();
+            updateState();
+            updateTemperature();
+        });
+    </script>
+    <script type="text/javascript">
+        var canvasDiv = document.getElementById('particles');
+        var options = {
+            particleColor: '#ffffff',
+            background: '#08A059',
+            interactive: true,
+            speed: 'fast',
+            density: 'high'
+        };
+        var particleCanvas = new ParticleNetwork(canvasDiv, options);
+    </script>
 
 </body>
 
