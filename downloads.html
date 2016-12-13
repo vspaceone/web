@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <title>vspace.one</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,66 +19,66 @@
     <script src="scripts/external/jquery-3.1.1.min.js"></script>
     <script src="scripts/external/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
     <script src="scripts/internal/app.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
 
     <!-- Navbar -->
     <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-                <a class="navbar-brand" href="index.html">vspace.one</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html#Mitmachen">Mitmachen</a></li>
-                    <li><a href="index.html#Ausstattung">Ausstattung</a></li>
-                    <li><a href="index.html#Ort">Ort</a></li>
-                    <li><a href="index.html#Events">Events</a></li>
-                    <li><a href="https://wiki.vspace.one">Wiki</a></li>
-                    <li>
-                        <div id="doorstate" class="label label-success"><a href="#state" id="doorstateString">loading</a></label>
-                    </li>
-                </ul>
-                </div>
-            </div>
+          <a class="navbar-brand" href="index.html">vspace.one</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html#Mitmachen">Mitmachen</a></li>
+            <li><a href="index.html#Ausstattung">Ausstattung</a></li>
+            <li><a href="index.html#Ort">Ort</a></li>
+            <li><a href="index.html#Events">Events</a></li>
+            <li><a href="https://wiki.vspace.one">Wiki</a></li>
+            <li>
+              <div id="doorstate" class="label label-success"><a href="#state" id="doorstateString">loading</a></label>
+            </li>
+          </ul>
+              </div>
+        </div>
     </nav>
 
 
     <div class="container-fluid bg-2 text-center label-warning" id="downloads">
-        <h3 style="margin-bottom: 10px">Downloads</h3>
-        <div class="row">
-            <div style="text-align:left;" class="col-sm-3"></div>
-            <div style="text-align:left;" class="col-sm-6">
-                <ul>
-                    <li><a style="color: #ffffff" href="download/satzung_v1.0.pdf">Satzung</a></li>
-                    <li><a style="color: #ffffff" href="download/beitragsordnung_v1.1.pdf">Beitragsordnung</a></li>
-                    <li><a style="color: #ffffff" href="download/beitrittserklaerung_v1.2.pdf">Beitrittserklaerung</a></li>
-                    <li><a style="color: #ffffff" href="download/beitrittserklaerung_interactive_v1.2.pdf">Beitrittserklaerung (interaktives pdf)</a></li>
-                </ul>
-            </div>
-            <div style="text-align:left;" class="col-sm-3"></div>
+      <h3 style="margin-bottom: 10px">Downloads</h3>
+      <div class="row">
+        <div style="text-align:left;" class="col-sm-3"></div>
+        <div style="text-align:left;" class="col-sm-6">
+          <ul>
+            <li><a style="color: #ffffff" href="download/satzung_v1.0.pdf">Satzung</a></li>
+            <li><a style="color: #ffffff" href="download/beitragsordnung_v1.1.pdf">Beitragsordnung</a></li>
+            <li><a style="color: #ffffff" href="download/beitrittserklaerung_v1.2.pdf">Beitrittserklaerung</a></li>
+            <li><a style="color: #ffffff" href="download/beitrittserklaerung_interactive_v1.2.pdf">Beitrittserklaerung (interaktives pdf)</a></li>
+          </ul>
         </div>
+        <div style="text-align:left;" class="col-sm-3"></div>
+      </div>
     </div>
 
-    </div>
-    <!-- Footer -->
-    <footer class="container-fluid bg-4 text-center">
-        <p><a href="impressum.html" style="color: #ffffff">Impressum</a> | <a href="dashboard.html" style="color: #ffffff">Dashboard</a> | <a href="downloads.html" style="color: #ffffff">Downloads</a> | <a href="mitgliedwerden.html" style="color: #ffffff">Werde Mitglied!</a>            </p>
-    </footer>
+      </div>
+      <!-- Footer -->
+      <footer class="container-fluid bg-4 text-center">
+        <p><a href="impressum.html" style="color: #ffffff">Impressum</a> | <a href="dashboard.html" style="color: #ffffff">Dashboard</a> | <a href="downloads.html" style="color: #ffffff">Downloads</a> | <a style="color: #ffffff" href="friends.html">Friends & Links</a> | <a href="mitgliedwerden.html" style="color: #ffffff">Werde Mitglied!</a>            </p>
+      </footer>
 
-    <script>
-        $(document).ready(function() {
-            window.setInterval(updateDoorstate, 10000);
-            updateDoorstate();
-        });
-    </script>
+      <script>
+$(document).ready(function() {
+  window.setInterval(updateDoorstate, 10000);
+  updateDoorstate();
+});
+      </script>
 
-</body>
+  </body>
 
 </html>
