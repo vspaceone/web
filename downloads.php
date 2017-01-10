@@ -16,9 +16,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="scripts/external/bootstrap-3.3.5-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="scripts/external/jquery-3.1.1.min.js"></script>
-    <script src="scripts/external/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
-    <script src="scripts/internal/app.js"></script>
   </head>
 
   <body>
@@ -49,11 +46,14 @@
     include('includes/foot.php'); 
     ?>
 
+    <script type="text/javascript" src="scripts/external/jquery/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="scripts/external/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/internal/app.js"></script>
     <script>
-      $(document).ready(function() {
-        window.setInterval(updateDoorstate, 10000);
-        updateDoorstate();
-      });
+        $(document).ready(function() {
+            window.setInterval(updateDoorstate, 10000);
+            updateDoorstate();
+        });
     </script>
 
   </body>
