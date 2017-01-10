@@ -1,6 +1,6 @@
 <?php
 
-include('configuration.php');
+include('../../configuration.php');
 
 $room;
 $sensor;

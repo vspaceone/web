@@ -18,31 +18,10 @@
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-                <a class="navbar-brand" href="#">vspace.one</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#Mitmachen">Mitmachen</a></li>
-                    <li><a href="#Ausstattung">Ausstattung</a></li>
-                    <li><a href="#Ort">Ort</a></li>
-                    <li><a href="#Events">Events</a></li>
-                    <li><a href="https://wiki.vspace.one">Wiki</a></li>
-                    <li>
-                        <div id="doorstate" class="label label-success"><a href="#state" id="doorstateString">loading</a></label>
-                    </li>
-                </ul>
-                </div>
-            </div>
-    </nav>
+    <?php
+    //Including navigation 
+    include('includes/nav.php'); 
+    ?>
 
     <!-- First Container -->
     <div class="container-fluid bg-1 text-center" style="position:relative;padding:0;">
@@ -135,11 +114,10 @@
 
     </div>
 
-
-    <!-- Footer -->
-    <footer class="container-fluid bg-4 text-center">
-      <p><a href="impressum.html" style="color: #ffffff">Impressum</a> | <a href="dashboard.html" style="color: #ffffff">Dashboard</a> | <a href="downloads.html" style="color: #ffffff">Downloads</a> | <a style="color: #ffffff" href="friends.html">Friends & Links</a> | <a href="mitgliedwerden.html" style="color: #ffffff">Werde Mitglied!</a>            </p>
-    </footer>
+    <?php
+    //Including footer 
+    include('includes/foot.php'); 
+    ?>
 
     <!-- Scripts -->
     <script type="text/javascript" src="scripts/external/jquery/jquery-3.1.1.min.js"></script>

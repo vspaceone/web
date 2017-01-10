@@ -24,32 +24,10 @@
 
   <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">vspace.one</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html#Mitmachen">Mitmachen</a></li>
-            <li><a href="index.html#Ausstattung">Ausstattung</a></li>
-            <li><a href="index.html#Ort">Ort</a></li>
-            <li><a href="index.html#Events">Events</a></li>
-            <li><a href="https://wiki.vspace.one">Wiki</a></li>
-            <li>
-              <div id="doorstate" class="label label-success"><a href="#state" id="doorstateString">loading</a></label>
-            </li>
-          </ul>
-              </div>
-        </div>
-    </nav>
-
+    <?php
+    //Including navigation 
+    include('includes/nav.php');
+    ?>
 
     <div class="container-fluid text-center label-warning" id="state">
       <h3 style="margin-bottom: 2px">Raumstatus</h3>
@@ -78,21 +56,21 @@
     </div>
 
 
-    <!-- Footer -->
-    <footer class="container-fluid bg-4 text-center">
-      <p><a href="impressum.html" style="color: #ffffff">Impressum</a> | <a href="dashboard.html" style="color: #ffffff">Dashboard</a> | <a href="downloads.html" style="color: #ffffff">Downloads</a> | <a style="color: #ffffff" href="friends.html">Friends & Links</a> | <a href="mitgliedwerden.html" style="color: #ffffff">Werde Mitglied!</a>            </p>
-    </footer>
+    <?php
+    //Including footer 
+    include('includes/foot.php'); 
+    ?>
 
     <script>
-$(document).ready(function() {
-  window.setInterval(updateDoorstate, 10000);
-  window.setInterval(updateState, 10000);
-  window.setInterval(updateTemperature, 10000);
-  updateDoorstate();
-  updateState();
-  updateTemperature();
-  updateCharts();
-});
+      $(document).ready(function() {
+        window.setInterval(updateDoorstate, 10000);
+        window.setInterval(updateState, 10000);
+        window.setInterval(updateTemperature, 10000);
+        updateDoorstate();
+        updateState();
+        updateTemperature();
+        updateCharts();
+      });
     </script>
 
   </body>
