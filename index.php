@@ -76,12 +76,6 @@
                 <p>Grundsätzlich treffen wir uns jeden Dienstag Abend ab ca. 19:00 Uhr in der Wilhelm-Binder-Str 19, Villingen. Jeder ist herzlich eingeladen vorbei zu schauen.</p>
                 <br>
                 <br>
-                <p><u>20. - 22.Januar 2017 16:30 Uhr: <b>Global Game Jam</b></u></p>
-                <p>Wir werden in unseren Räumlichkeiten beim kommenden <a href="http://globalgamejam.org/">GlobalGameJam</a> mitmachen. Wer also Lust darauf hat, darf gerne vorbeischneien. Eingeladen ist jeder! Musiker, Programmierer, Kreative, Maker, Designer,
-                    ...
-                </p>
-                <p>Das Ziel des GlobalGameJams ist es innerhalb von 48 Stunden gemeinsam ein Spiel zu erzeugen. Das kann, muss aber nicht, ein Computerspiel sein. Das Thema wird am Freitagabend bekanntgegeben. Weltweit starten dann Teams damit, zu diesem
-                    Thema kreativ zu werden. Das Event findet in unseren Räumlichkeiten in Villlingen statt.</p>
             </div>
         </div>
     </div>
