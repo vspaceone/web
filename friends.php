@@ -1,16 +1,12 @@
-<!--
-  TODO
--->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
   <head>
-    <title>vspace.one</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="scripts/external/bootstrap-3.3.5-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>vspace.one - Freunde &amp; Links - Hackerspace, Makerspace und Chaostreff für Villignen-Schwenningen und Umgebung</title>
+    <?php
+    //Including Standard Head 
+    include('includes/stdhead.php'); 
+    ?>
   </head>
 
   <body>
@@ -21,7 +17,7 @@
     ?>
 
     <div class="container-fluid bg-3 text-center">
-      <h1>Friends & Links</h1>
+      <h1>Friends &amp; Links</h1>
       <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">

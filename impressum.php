@@ -1,15 +1,13 @@
-<!--
-  TODO
--->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
-    <title>vspace.one</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="scripts/external/bootstrap-3.3.5-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>vspace.one - Impressum - Hackerspace, Makerspace und Chaostreff für Villignen-Schwenningen und Umgebung</title>
+    <meta name="description" content="Das Impressum der vspace.one e.V. Webseite.">
+    <?php
+    //Including Standard Head 
+    include('includes/stdhead.php'); 
+    ?>
 </head>
 
 <body>

@@ -1,0 +1,11 @@
+User-agent: *
+Sitemap: /sitemap.xml
+Disallow: /includes/
+Disallow: /scripts/
+Disallow: /pic/favicon/
+Disallow: /pic/
+Disallow: /app.html
+Disallow: /app_caching.php
+Disallow: /configuration_template.php
+Disallow: /events.php
+Disallow: /README.md
