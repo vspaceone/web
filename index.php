@@ -3,7 +3,7 @@
 
 <head>
     <title>vspace.one - Hackerspace, Makerspace und Chaostreff für Villignen-Schwenningen und Umgebung</title>
-    <meta name="description" content="Der Makerspace und Hackerspace für Villingen-Schwenningen und Umgebung.">
+    <meta name="description" content="Der Makerspace und Hackerspace für Villingen-Schwenningen und Umgebung. Basteln, hacken und Wissen austauschen.">
     <?php
     //Including Standard Head 
     include('includes/stdhead.php'); 
@@ -31,8 +31,7 @@
     <div class="container-fluid bg-2 text-center" id="Mitmachen">
         <h2 class="margin">Mitmachen</h2>
         <p>Bei uns kann jeder und jede mitmachen. Interessierte Schüler, Studenten und Erwachsene, die sich für kreativen Umgang mit Technik interessieren.</p>
-        <p>Trag dich einfach in unsere <a href="https://ml06.ispgateway.de/mailman/listinfo/public_lists.vspace.one">Mailingliste</a> ein und bleib up-to-date.
-            </a>
+        <p>Trag dich einfach in unsere <a href="https://ml06.ispgateway.de/mailman/listinfo/public_lists.vspace.one">Mailingliste</a> ein und bleib up-to-date.</p>
     </div>
 
     <!-- Third Container (Grid) -->
@@ -46,7 +45,7 @@
                 <p>Für die Umsetzung cooler Projekte haben wir eine Vielzahl an Werkzeugen und Maschinen (z.B. einen 3D-Drucker). Eine aktuelle Liste gibt es im <a href="https://wiki.vspace.one">Wiki</a>.</p>
             </div>
             <div class="col-sm-4">
-                <p>Wir haben zwei moderne Räume. In der Brücke stehen bequeme Sofas, ein Beamer und eine Kühlschrank. Im Maschinenraum, kann an Projekten gearbeitet werden.</p>
+                <p>Wir haben zwei moderne Räume. In der Brücke stehen bequeme Sofas, ein Beamer und ein Kühlschrank. Im Maschinenraum, kann an Projekten gearbeitet werden.</p>
             </div>
             <div class="row">
                 <div class="col-sm-4">
