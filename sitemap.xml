@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://vspace.one/</loc>
+    </url>
+    <url>
+        <loc>https://vspace.one/dashboard.php</loc>
+    </url>
+    <url>
+        <loc>https://vspace.one/downloads.php</loc>
+    </url>
+    <url>
+        <loc>https://vspace.one/friends.php</loc>
+    </url>
+    <url>
+        <loc>https://vspace.one/impressum.php</loc>
+    </url>
+    <url>
+        <loc>https://vspace.one/index.php</loc>
+    </url>
+    <url>
+        <loc>https://vspace.one/mitgliedwerden.php</loc>
+    </url>
+</urlset>

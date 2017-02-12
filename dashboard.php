@@ -1,21 +1,13 @@
-<!--TODO
-  Bilder verkleinern
-  einlesen
-  Resourcen ans Ende ?
-  icon ändern
-  Räume auf wiki seiten verlinken + Bilder
-  coole Netzinteraktion einfügen siehe http://www.crit-research.it/
--->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
   <head>
-    <title>vspace.one</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="scripts/external/bootstrap-3.3.5-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>vspace.one - Dashboard - Hackerspace, Makerspace und Chaostreff für Villignen-Schwenningen und Umgebung</title>
+    <meta name="description" content="Das Klima im vspace.one">
+    <?php
+    //Including Standard Head 
+    include('includes/stdhead.php'); 
+    ?>
   </head>
 
   <body>
@@ -26,12 +18,12 @@
     ?>
 
     <div class="container-fluid text-center label-warning" id="state">
-      <h3 style="margin-bottom: 2px">Raumstatus</h3>
-      <h4 style="margin-top:2px" id="stateText">Loading</h4>
-      <h5 class="margin"><a href="http://spaceapi-stats.n39.eu/#vspaceone">Statistiken</a></h5>
+      <h1 style="margin-bottom: 2px">Raumstatus</h1>
+      <h3 style="margin-top:2px" id="stateText">Loading</h3>
+      <h4 class="margin"><a href="http://spaceapi-stats.n39.eu/#vspaceone">Statistiken</a></h3>
       <div class="row">
         <div class="col-sm-6">
-          <h4>Brücke</h4>
+          <h3>Brücke</h3>
           <div style="width:100%; margin-bottom:50px;" class="col-sm-6" id="Bruecke">
           </div>
           <div>
@@ -40,7 +32,7 @@
           </div>
         </div>
         <div class="col-sm-6">
-          <h4>Maschinenraum</h4>
+          <h3>Maschinenraum</h3>
           <div style="width:100%; margin-bottom:50px;" class="col-sm-6" id="Maschinenraum">
           </div>
           <div>

@@ -1,21 +1,12 @@
-<!--TODO
-  Bilder verkleinern
-  einlesen
-  Resourcen ans Ende ?
-  icon ändern
-  Räume auf wiki seiten verlinken + Bilder
-  coole Netzinteraktion einfügen siehe http://www.crit-research.it/
--->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
-    <title>vspace.one</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="scripts/external/bootstrap-3.3.5-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>vspace.one - Mitglied werden - Hackerspace, Makerspace und Chaostreff für Villignen-Schwenningen und Umgebung</title>
+    <?php
+    //Including Standard Head 
+    include('includes/stdhead.php'); 
+    ?>
 </head>
 
 <body>
@@ -26,7 +17,7 @@
     ?>
 
     <div class="container-fluid bg-3 text-center label-warning" id="getamember">
-        <h3 style="margin-bottom: 10px">Mitglied werden</h3>
+        <h1 style="margin-bottom: 10px">Mitglied werden</h1>
         <div class="row">
             <div style="text-align:left;" class="col-sm-3"></div>
             <div style="text-align:left;" class="col-sm-6">

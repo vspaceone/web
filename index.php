@@ -1,19 +1,13 @@
-<!--TODO
-  Resourcen ans Ende ?
-  icon ändern
-  Räume auf wiki seiten verlinken + Bilder
-  coole Netzinteraktion einfügen siehe http://www.crit-research.it/
--->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
-    <title>vspace.one</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="scripts/external/bootstrap-3.3.5-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>vspace.one - Hackerspace, Makerspace und Chaostreff für Villignen-Schwenningen und Umgebung</title>
+    <meta name="description" content="Der Makerspace und Hackerspace für Villingen-Schwenningen und Umgebung. Basteln, hacken und Wissen austauschen.">
+    <?php
+    //Including Standard Head 
+    include('includes/stdhead.php'); 
+    ?>
 </head>
 
 <body>
@@ -27,23 +21,22 @@
     <div class="container-fluid bg-1 text-center" style="position:relative;padding:0;">
         <div id="particles"></div>
         <div id="particles-overlay">
-            <h3 class="margin">Was ist der vspace.one?</h3>
+            <h1 class="margin">Was ist der vspace.one?</h1>
             <img src="pic/logo_vspaceone.svg" class="img-responsive img-circle margin" style="display:inline;" alt="Bird" width="350" height="350">
-            <h3>Wir sind ein <i><a href="https://de.wikipedia.org/wiki/FabLab" style="color: #ffffff">Maker-</a></i> und <i><a href="https://de.wikipedia.org/wiki/Hackerspace" style="color: #ffffff">Hackerspace</a></i>.</h3>
+            <h1>Ein <i><a href="https://de.wikipedia.org/wiki/FabLab" style="color: #ffffff">Makerspace</a></i> und <i><a href="https://de.wikipedia.org/wiki/Hackerspace" style="color: #ffffff">Hackerspace</a></i>.</h1>
         </div>
     </div>
 
     <!-- Second Container -->
     <div class="container-fluid bg-2 text-center" id="Mitmachen">
-        <h3 class="margin">Mitmachen</h3>
+        <h2 class="margin">Mitmachen</h2>
         <p>Bei uns kann jeder und jede mitmachen. Interessierte Schüler, Studenten und Erwachsene, die sich für kreativen Umgang mit Technik interessieren.</p>
-        <p>Trag dich einfach in unsere <a href="https://ml06.ispgateway.de/mailman/listinfo/public_lists.vspace.one">Mailingliste</a> ein und bleib up-to-date.
-            </a>
+        <p>Trag dich einfach in unsere <a href="https://ml06.ispgateway.de/mailman/listinfo/public_lists.vspace.one">Mailingliste</a> ein und bleib up-to-date.</p>
     </div>
 
     <!-- Third Container (Grid) -->
     <div class="container-fluid bg-3 text-center" id="Ausstattung">
-        <h3 class="margin">Ausstattung</h3><br>
+        <h2 class="margin">Ausstattung</h2><br>
         <div class="row">
             <div class="col-sm-4">
                 <p>Für unsere Verbindung und Vernetzung in aller Welt sorgt ein Router mit Internetzugang. Für Gäste betreiben wir einen <a href=https://freifunk.net/>Freifunk Zugangspunkt</a>.</p>
@@ -52,7 +45,7 @@
                 <p>Für die Umsetzung cooler Projekte haben wir eine Vielzahl an Werkzeugen und Maschinen (z.B. einen 3D-Drucker). Eine aktuelle Liste gibt es im <a href="https://wiki.vspace.one">Wiki</a>.</p>
             </div>
             <div class="col-sm-4">
-                <p>Wir haben zwei moderne Räume. In der Brücke stehen bequeme Sofas, ein Beamer und eine Kühlschrank. Im Maschinenraum, kann an Projekten gearbeitet werden.</p>
+                <p>Wir haben zwei moderne Räume. In der Brücke stehen bequeme Sofas, ein Beamer und ein Kühlschrank. Im Maschinenraum, kann an Projekten gearbeitet werden.</p>
             </div>
             <div class="row">
                 <div class="col-sm-4">
@@ -72,7 +65,7 @@
         <div class="row">
             <div class="col-sm-3"></div>
             <div class="col-sm-6">
-                <h3 class="margin" id="Events">Events</h3>
+                <h2 class="margin" id="Events">Events</h2>
                 <p>Grundsätzlich treffen wir uns jeden Dienstag Abend ab ca. 19:00 Uhr in der Wilhelm-Binder-Str 19, Villingen. Jeder ist herzlich eingeladen vorbei zu schauen.</p>
                 <br>
                 <br>
@@ -81,12 +74,13 @@
     </div>
 
     <div class="container-fluid text-center label-warning" id="state">
-        <h3 style="margin-bottom: 2px">Raumstatus</h3>
-        <h4 style="margin-top:2px" id="stateText">Loading</h4>
+        <h2 style="margin-bottom: 2px">Raumstatus</h2>
+        <br/>
+        <h3 style="margin-top:2px" id="stateText">Loading</h3>
     </div>
 
     <div class="container-fluid bg-2 text-center">
-        <h3 class="margin" id="Ort">Wo findest du uns?</h3>
+        <h2 class="margin" id="Ort">Wo findest du uns?</h2>
         <p>Du findest uns in der Doppelstadt Villingen-Schwenningen.</p>
         <p>Unsere Andresse lautet:<br> Wilhelm-Binder-Str. 19<br> 78048 Villingen</p><br>
         <p></p>
