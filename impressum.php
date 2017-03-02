@@ -23,11 +23,11 @@
         <p>vspace.one e.V.<br /> Ludwig-Weißer-Str. 3<br /> 78112 St. Georgen
         </p>
         <h2>Vertreten durch:</h2>
-        <p>Alexander Votteler<br /> Nils Krause<br /> Max Noppel<br /> Michael Castano</p>
+        <p>Nils Krause<br /> Max Noppel<br /> Michael Castano<br />Damian Jesionek</p>
         <h2>Kontakt:</h2>
         <p>
             <!--Telefon:</br>-->
-            E-Mail: ud@nilskrause.de
+            E-Mail: vorstand@lists.vspace.one
         </p>
         <h2>Registereintrag:</h2>
         <p>Eintragung im Vereinsregister. <br />Registergericht: Amtsgericht Villingen-Schwenningen <br />Registernummer: VR 701636</p>
