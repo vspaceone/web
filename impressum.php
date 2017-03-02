@@ -26,7 +26,7 @@
         <p>Nils Krause<br /> Max Noppel<br /> Michael Castano<br />Damian Jesionek</p>
         <h2>Kontakt:</h2>
         <p>
-            <!--Telefon:</br>-->
+            Telefon: 0176 31642695<br />
             E-Mail: vorstand@lists.vspace.one
         </p>
         <h2>Registereintrag:</h2>
