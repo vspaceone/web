@@ -49,13 +49,24 @@
             </div>
             <div class="row">
                 <div class="col-sm-4">
-                    <img src="pic/ethernetcable.jpg" class="img-responsive margin" style="width:100%" alt="Ethernetcable">
+                    <img src="pic/vspaceone_ausstattung_1.jpg" class="img-responsive margin" style="width:100%" alt="Maschinenraum">
                 </div>
                 <div class="col-sm-4">
-                    <img src="pic/schraubenschluessel.jpg" class="img-responsive margin" style="width:100%" alt="Schraubenschlüssel">
+                    <img src="pic/vspaceone_ausstattung_2.jpg" class="img-responsive margin" style="width:100%" alt="vspace.one Logo">
                 </div>
                 <div class="col-sm-4">
-                    <img src="pic/mainboard.jpg" class="img-responsive margin" style="width:100%" alt="Mainboard">
+                    <img src="pic/vspaceone_ausstattung_3.jpg" class="img-responsive margin" style="width:100%" alt="Brücke">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="pic/vspaceone_ausstattung_4.jpg" class="img-responsive margin" style="width:100%" alt="Make things awesome Logo">
+                </div>
+                <div class="col-sm-4">
+                    <img src="pic/vspaceone_ausstattung_5.jpg" class="img-responsive margin" style="width:100%" alt="Arbeitsplatz">
+                </div>
+                <div class="col-sm-4">
+                    <img src="pic/vspaceone_ausstattung_6.jpg" class="img-responsive margin" style="width:100%" alt="Lager und Projektboxen">
                 </div>
             </div>
         </div>
