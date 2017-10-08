@@ -27,7 +27,7 @@
         <h2>Kontakt:</h2>
         <p>
             Telefon: 0176 31642695<br />
-            E-Mail: vorstand@lists.vspace.one
+            E-Mail: public@lists.vspace.one oder vorstand@lists.vspace.one
         </p>
         <h2>Registereintrag:</h2>
         <p>Eintragung im Vereinsregister. <br />Registergericht: Amtsgericht Villingen-Schwenningen <br />Registernummer: VR 701636</p>
