@@ -80,6 +80,16 @@
                 <p>Grundsätzlich treffen wir uns jeden Dienstag Abend ab ca. 19:00 Uhr in der Wilhelm-Binder-Str 19, Villingen. Jeder ist herzlich eingeladen vorbei zu schauen.</p>
                 <br>
                 <br>
+
+                <h3 class="margin">1. TechEvent: Konfigurative Code- und Dokumentationsgenerierung mit dem Pythontool Cog</h3>
+                <p>Datum: Samstag, 21.Oktober 2017 16:00 bis 18:30 Uhr</p>
+                <p>Von: Max</p>
+                <p>Tags: C, C++, Python, Dokumentation, Aktuell Halten, Embedded, Cog, Buildprozess</p>
+
+                <p>Beschreibung: Im TechEvent möchte ich eine Pythontool names Cog vorstellen mit dessen Hilfe sich Sourcecode jeglicher Form generieren lässt. Gezeigt wird das am Beispiel eines exemplarischen C++ Projektes. Außerdem erzeugen wir TeX-Code zur Dokumentationsgenerierung. Die wesentlichen Vorzüge des Systems sind, dass die Dokumentation immer exakt zum Sourcecode passt, nur eine Informationsquelle gepflegt werden muss, aus der Code und Doc generiert werden und die Informationen vernünftig validiert werden können, im Buildprozess. Insbesondere macht das natürlich für eingebettete Systeme ohne Dateisystem Sinn, weil diese keine Konfigurationsdateien dynamisch nachladen können. Ich liebe dieses Thema und freue mich auf die Diskussion mit euch.
+                </p>
+                <br>
+                <br>
             </div>
         </div>
     </div>
