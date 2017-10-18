@@ -86,8 +86,9 @@
                 <p>Von: Max</p>
                 <p>Tags: C, C++, Python, Dokumentation, Aktuell Halten, Embedded, Cog, Buildprozess</p>
 
-                <p>Beschreibung: Im TechEvent möchte ich eine Pythontool names Cog vorstellen mit dessen Hilfe sich Sourcecode jeglicher Form generieren lässt. Gezeigt wird das am Beispiel eines exemplarischen C++ Projektes. Außerdem erzeugen wir TeX-Code zur Dokumentationsgenerierung. Die wesentlichen Vorzüge des Systems sind, dass die Dokumentation immer exakt zum Sourcecode passt, nur eine Informationsquelle gepflegt werden muss, aus der Code und Doc generiert werden und die Informationen vernünftig validiert werden können, im Buildprozess. Insbesondere macht das natürlich für eingebettete Systeme ohne Dateisystem Sinn, weil diese keine Konfigurationsdateien dynamisch nachladen können. Ich liebe dieses Thema und freue mich auf die Diskussion mit euch.
+                <p class="text-left">Beschreibung: Im TechEvent möchte ich eine Pythontool names Cog vorstellen mit dessen Hilfe sich Sourcecode jeglicher Form generieren lässt. Gezeigt wird das am Beispiel eines exemplarischen C++ Projektes. Außerdem erzeugen wir TeX-Code zur Dokumentationsgenerierung. Die wesentlichen Vorzüge des Systems sind, dass die Dokumentation immer exakt zum Sourcecode passt, nur eine Informationsquelle gepflegt werden muss, aus der Code und Doc generiert werden und die Informationen vernünftig validiert werden können, im Buildprozess. Insbesondere macht das natürlich für eingebettete Systeme ohne Dateisystem Sinn, weil diese keine Konfigurationsdateien dynamisch nachladen können. Ich liebe dieses Thema und freue mich auf die Diskussion mit euch.
                 </p>
+                <p>Kurz unverbindliche Rückmeldung wäre klasse unter <a href="https://wiki.vspace.one/doku.php?id=termine:techevent20171021#techeventkonfigurative_code-_und_dokumentationsgenerierung_mit_dem_pythontool_cog">diesem Link</a>.</p>
                 <br>
                 <br>
             </div>
