@@ -83,6 +83,7 @@
 
                 <h3 class="margin">1. TechEvent: Konfigurative Code- und Dokumentationsgenerierung mit dem Pythontool Cog</h3>
                 <p class="text-left">Datum: Samstag, 21.Oktober 2017 16:00 bis 18:30 Uhr</p>
+                <p class="text-left"><b>TERMIN FÄLLT AUS! Ersatztermin ist in Arbeit.</b></p>
                 <p class="text-left">Von: Max</p>
                 <p class="text-left">Tags: C, C++, Python, Dokumentation, Embedded, Cog, Buildprozess</p>
 
