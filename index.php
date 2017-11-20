@@ -5,16 +5,16 @@
     <title>vspace.one - Hackerspace, Makerspace und Chaostreff für Villignen-Schwenningen und Umgebung</title>
     <meta name="description" content="Der Makerspace und Hackerspace für Villingen-Schwenningen und Umgebung. Basteln, hacken und Wissen austauschen.">
     <?php
-    //Including Standard Head 
-    include('includes/stdhead.php'); 
+    //Including Standard Head
+    include('includes/stdhead.php');
     ?>
 </head>
 
 <body>
 
     <?php
-    //Including navigation 
-    include('includes/nav.php'); 
+    //Including navigation
+    include('includes/nav.php');
     ?>
 
     <!-- First Container -->
@@ -81,15 +81,30 @@
                 <br>
                 <br>
 
-                <h3 class="margin">1. TechEvent: Konfigurative Code- und Dokumentationsgenerierung mit dem Pythontool Cog</h3>
-                <p class="text-left">Datum: Samstag, 21.Oktober 2017 16:00 bis 18:30 Uhr</p>
-                <p class="text-left"><b>TERMIN FÄLLT AUS! Ersatztermin ist in Arbeit.</b></p>
+                <h3 class="margin">2. TechEvent: Konfigurative Code- und Dokumentationsgenerierung mit dem Pythontool Cog</h3>
+                <p class="text-left">Datum: Samstag, 02.Dezember 16:00 bis 18:30 Uhr</p>
                 <p class="text-left">Von: Max</p>
                 <p class="text-left">Tags: C, C++, Python, Dokumentation, Embedded, Cog, Buildprozess</p>
 
                 <p class="text-left">Beschreibung: Im TechEvent möchte ich eine Pythontool names Cog vorstellen mit dessen Hilfe sich Sourcecode jeglicher Form generieren lässt. Gezeigt wird das am Beispiel eines exemplarischen C++ Projektes. Außerdem erzeugen wir TeX-Code zur Dokumentationsgenerierung. Die wesentlichen Vorzüge des Systems sind, dass die Dokumentation immer exakt zum Sourcecode passt, nur eine Informationsquelle gepflegt werden muss, aus der Code und Doc generiert werden und die Informationen vernünftig validiert werden können, im Buildprozess. Insbesondere macht das natürlich für eingebettete Systeme ohne Dateisystem Sinn, weil diese keine Konfigurationsdateien dynamisch nachladen können. Ich freue mich auf die Diskussion mit euch.
                 </p>
-                <p class="text-left">Kurz unverbindliche Rückmeldung wäre klasse unter <a href="https://wiki.vspace.one/doku.php?id=termine:techevent20171021#techeventkonfigurative_code-_und_dokumentationsgenerierung_mit_dem_pythontool_cog">diesem Link</a>.</p>
+                <p class="text-left">Kurz unverbindliche Rückmeldung wäre klasse unter <a href="https://wiki.vspace.one/doku.php?id=termine:techevent20171202#techeventkonfigurative_code-_und_dokumentationsgenerierung_mit_dem_pythontool_cog">diesem Link</a>.</p>
+                <br>
+                <br>
+
+                <h3 class="margin">34. Chaos Communication Congress in Leipzig</h3>
+                <p class="text-left">Datum: 27.Dezember bis 31.Dezember 2017</p>
+                <p class="text-left">Tags: CCC, Congress</p>
+
+                <p class="text-left"></p>
+                <br>
+                <br>
+
+                <h3 class="margin">Global Game Jam 2018</h3>
+                <p class="text-left">Datum: 26.Januar bis 28.Januar im vspace.one</p>
+                <p class="text-left">Tags: Game, Programming, Music, Design</p>
+
+                <p class="text-left">Wir haben eine Game-Site für den GlobalGameJam 2018. Kommt vorbei und habt Spaß. Näheres folgt. <a href="https://globalgamejam.org/2018/jam-sites/vspaceone">Link zur Site</a></p>
                 <br>
                 <br>
             </div>
@@ -126,8 +141,8 @@
     </div>
 
     <?php
-    //Including footer 
-    include('includes/foot.php'); 
+    //Including footer
+    include('includes/foot.php');
     ?>
 
     <!-- Scripts -->
