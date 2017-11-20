@@ -96,7 +96,7 @@
                 <p class="text-left">Datum: 27.Dezember bis 31.Dezember 2017</p>
                 <p class="text-left">Tags: CCC, Congress</p>
 
-                <p class="text-left"></p>
+                <p class="text-left"><a href="https://events.ccc.de/congress/2017/wiki/index.php/Assembly:Vspace.one">Link zum Assembly</a></p>
                 <br>
                 <br>
 
