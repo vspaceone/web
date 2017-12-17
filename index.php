@@ -81,23 +81,11 @@
                 <br>
                 <br>
 
-                <h3 class="margin">Glühweinprogrammiernacht 17,5</h3>
-                <p class="text-left">Datum: 24.November bis 26.November 2017</p>
-                <p class="text-left">Tags: CCC, Entropia, Karlsruhe</p>
-                <p class="text-left">Beschreibung: Die Glühweinprogrammiernacht, auch GPN17,5, setzt den Schwerpunkt auf Hacken, Lounge und Zusammensein. Wir wollen versuchen, die Vorzüge von Lounge und Hackcenter in einem zu kombinieren. Ohne großen Aufwand und locker organisiert. Die Veranstaltung soll auch wie die GPN freien Eintritt haben und durch Spenden eurerseits finanziert werden. Die Veranstaltung findet vom Fr., 24. bis So., 26.11.2017 statt. </p>
-                <p class="text-left">Einige von uns vom vspace.one werden dort sein, wenn du also auch Lust hast komm vorbei und treff dich mit uns! Kontakt per Mail an public@lists.vspace.one.</p>
-                <p class="text-left"><a href="https://entropia.de/GPN17,5">Link zur Glühweinprogrammiernacht</a></p>
-                <br>
-                <br>
-
-                <h3 class="margin">2. TechEvent: Konfigurative Code- und Dokumentationsgenerierung mit dem Pythontool Cog</h3>
-                <p class="text-left">Datum: Samstag, 02.Dezember 16:00 bis 18:30 Uhr</p>
-                <p class="text-left">Von: Max</p>
-                <p class="text-left">Tags: C, C++, Python, Dokumentation, Embedded, Cog, Buildprozess</p>
-
-                <p class="text-left">Beschreibung: Im TechEvent möchte ich eine Pythontool names Cog vorstellen mit dessen Hilfe sich Sourcecode jeglicher Form generieren lässt. Gezeigt wird das am Beispiel eines exemplarischen C++ Projektes. Außerdem erzeugen wir TeX-Code zur Dokumentationsgenerierung. Die wesentlichen Vorzüge des Systems sind, dass die Dokumentation immer exakt zum Sourcecode passt, nur eine Informationsquelle gepflegt werden muss, aus der Code und Doc generiert werden und die Informationen vernünftig validiert werden können, im Buildprozess. Insbesondere macht das natürlich für eingebettete Systeme ohne Dateisystem Sinn, weil diese keine Konfigurationsdateien dynamisch nachladen können. Ich freue mich auf die Diskussion mit euch.
-                </p>
-                <p class="text-left">Kurze unverbindliche Rückmeldung wäre klasse unter <a href="https://wiki.vspace.one/doku.php?id=termine:techevent20171202#techeventkonfigurative_code-_und_dokumentationsgenerierung_mit_dem_pythontool_cog">diesem Link</a>.</p>
+                <h3 class="margin">Weihnachtsfeier</h3>
+                <p class="text-left">Datum: 23.Dezember 2017 ab 17:00 Uhr</p>
+                <p class="text-left">Tags: Weihnachten </p>
+                <p class="text-left">Beschreibung: Zu unserer ersten Weihnachtsfeier legen wir mit Glühwein, Lebkuchen, Keksen und natürlich auch Punsch los. Später werden wir $Nahrung auf eigene Kosten bestellen und gemeinsam verspeisen. </p>
+                <p class="text-left">Um uns die Planung zu erleichtern bitte <a href="https://wiki.vspace.one/doku.php?id=treffen:2017_weihnachtsfeier">hier</a> anmelden.</p>
                 <br>
                 <br>
 
