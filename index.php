@@ -81,22 +81,6 @@
                 <br>
                 <br>
 
-                <h3 class="margin">Weihnachtsfeier</h3>
-                <p class="text-left">Datum: 23.Dezember 2017 ab 17:00 Uhr</p>
-                <p class="text-left">Tags: Weihnachten </p>
-                <p class="text-left">Beschreibung: Zu unserer ersten Weihnachtsfeier legen wir mit Glühwein, Lebkuchen, Keksen und natürlich auch Punsch los. Später werden wir $Nahrung auf eigene Kosten bestellen und gemeinsam verspeisen. </p>
-                <p class="text-left">Um uns die Planung zu erleichtern bitte <a href="https://wiki.vspace.one/doku.php?id=treffen:2017_weihnachtsfeier">hier</a> anmelden.</p>
-                <br>
-                <br>
-
-                <h3 class="margin">34. Chaos Communication Congress in Leipzig</h3>
-                <p class="text-left">Datum: 27.Dezember bis 31.Dezember 2017</p>
-                <p class="text-left">Tags: CCC, Congress</p>
-
-                <p class="text-left"><a href="https://events.ccc.de/congress/2017/wiki/index.php/Assembly:Vspace.one">Link zum Assembly</a></p>
-                <br>
-                <br>
-
                 <h3 class="margin">Global Game Jam 2018</h3>
                 <p class="text-left">Datum: 26.Januar bis 28.Januar im vspace.one</p>
                 <p class="text-left">Tags: Game, Programming, Music, Design</p>
