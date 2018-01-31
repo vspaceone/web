@@ -31,7 +31,7 @@
     <div class="container-fluid bg-2 text-center" id="Mitmachen">
         <h2 class="margin">Mitmachen</h2>
         <p>Bei uns kann jeder und jede mitmachen. Interessierte Schüler, Studenten und Erwachsene, die sich für kreativen Umgang mit Technik interessieren.</p>
-        <p>Trag dich einfach in unsere <a href="https://ml06.ispgateway.de/mailman/listinfo/public_lists.vspace.one">Mailingliste</a> ein und bleib up-to-date.</p>
+        <p>Trag dich einfach in unsere <a href="https://lists.vspace.one/postorius/lists/public.lists.vspace.one/">Mailingliste</a> ein und bleib up-to-date.</p>
     </div>
 
     <!-- Third Container (Grid) -->
