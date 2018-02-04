@@ -90,7 +90,7 @@ function updateTemperature() {
 }
 
 function updateCharts() {
-    var xhttp = new XMLHttpRequest();
+    /*var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
             handleCharts($.parseJSON(xhttp.responseText), 'maschinenraum');
@@ -104,10 +104,20 @@ function updateCharts() {
         since: Date.now() - (86400000 * 7) // since 7 days ago
 
     }, true);
-    xhttp.send();
+    xhttp.send();*/
+
+    $.post("/spaceapi/sensors", {
+        request: "both",
+        location: "Brücke",
+        filter: "hour",
+        since: Date.now() - (86400000 * 7) // since 7 days ago
+
+    }, function(result){
+        console.log(result)
+    });
 
 
-    var xhttp2 = new XMLHttpRequest();
+    /*var xhttp2 = new XMLHttpRequest();
     xhttp2.onreadystatechange = function() {
         if (xhttp2.readyState == 4 && xhttp2.status == 200) {
             handleCharts($.parseJSON(xhttp2.responseText), 'bruecke');
@@ -120,7 +130,7 @@ function updateCharts() {
         since: Date.now() - (86400000 * 7) // since 7 days ago
 
     }, true);
-    xhttp.send();
+    xhttp.send();*/
 }
 
 function handleCharts(resp, room) {
