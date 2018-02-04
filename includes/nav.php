@@ -11,10 +11,10 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#Mitmachen">Mitmachen</a></li>
-                <li><a href="#Ausstattung">Ausstattung</a></li>
-                <li><a href="#Ort">Ort</a></li>
-                <li><a href="#Events">Events</a></li>
+                <li><a href="/#Mitmachen">Mitmachen</a></li>
+                <li><a href="/#Ausstattung">Ausstattung</a></li>
+                <li><a href="/#Ort">Ort</a></li>
+                <li><a href="/#Events">Events</a></li>
                 <li><a href="https://wiki.vspace.one">Wiki</a></li>
                 <li>
                     <div id="doorstate" class="label label-success"><a href="#state" id="doorstateString">loading</a></div>
