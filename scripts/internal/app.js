@@ -106,7 +106,7 @@ function updateCharts() {
     }, true);
     xhttp.send();*/
 
-    $.post("/spaceapi/sensors", {
+    /*$.post("/spaceapi/sensors", {
         request: "both",
         location: "Brücke",
         filter: "hour",
@@ -114,7 +114,7 @@ function updateCharts() {
 
     }, function(result){
         console.log(result)
-    });
+    });*/
 
 
     /*var xhttp2 = new XMLHttpRequest();
