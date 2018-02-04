@@ -94,19 +94,32 @@ function updateCharts() {
     xhttp.onreadystatechange = function() {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
             handleCharts($.parseJSON(xhttp.responseText), 'maschinenraum');
-        }
-
-        var xhttp2 = new XMLHttpRequest();
-        xhttp2.onreadystatechange = function() {
-            if (xhttp2.readyState == 4 && xhttp2.status == 200) {
-                handleCharts($.parseJSON(xhttp2.responseText), 'bruecke');
-            }
-        };
-        xhttp2.open("GET", "scripts/internal/app.php?room=bruecke&sensor=th&valuec=200&days=7", true);
-        xhttp2.send();
+        } 
 
     };
-    xhttp.open("GET", "scripts/internal/app.php?room=maschinenraum&sensor=th&valuec=200&days=7", true);
+    xhttp.open("GET", {
+        request: "both",
+        location: "Maschinenraum",
+        filter: "hour",
+        since: Date.now() - (86400000 * 7) // since 7 days ago
+
+    }, true);
+    xhttp.send();
+
+
+    var xhttp2 = new XMLHttpRequest();
+    xhttp2.onreadystatechange = function() {
+        if (xhttp2.readyState == 4 && xhttp2.status == 200) {
+            handleCharts($.parseJSON(xhttp2.responseText), 'bruecke');
+        }
+    };
+    xhttp.open("GET", {
+        request: "both",
+        location: "Brücke",
+        filter: "hour",
+        since: Date.now() - (86400000 * 7) // since 7 days ago
+
+    }, true);
     xhttp.send();
 }
 
