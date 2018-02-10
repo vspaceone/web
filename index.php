@@ -81,11 +81,13 @@
                 <br>
                 <br>
 
-                <h3 class="margin">Global Game Jam 2018</h3>
-                <p class="text-left">Datum: 26.Januar bis 28.Januar im vspace.one</p>
-                <p class="text-left">Tags: Game, Programming, Music, Design</p>
+                <h3 class="margin">Jahreshauptversammlung 2018</h3>
+                <p class="text-left">Datum: 17.Februar im vspace.one</p>
 
-                <p class="text-left">Wir haben eine Game-Site für den GlobalGameJam 2018 angemeldet. Kommt vorbei und habt Spaß. Näheres folgt. <a href="https://globalgamejam.org/2018/jam-sites/vspaceone">Link zur Site</a></p>
+                <p class="text-left">
+                    Die Jahreshauptversammlung für das Jahr 2018.
+                    <a href="https://wiki.vspace.one/doku.php?id=treffen:2017jahreshauptversammlung">Link zur Site</a>
+                </p>
                 <br>
                 <br>
             </div>
