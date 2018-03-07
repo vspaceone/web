@@ -81,12 +81,20 @@
                 <br>
                 <br>
 
-                <h3 class="margin">Jahreshauptversammlung 2018</h3>
-                <p class="text-left">Datum: 17.Februar im vspace.one</p>
+                <h3 class="margin">Aufräumaktion I</h3>
+                <p class="text-left">Datum: Samstag, 21.April im vspace.one</p>
 
                 <p class="text-left">
-                    Die Jahreshauptversammlung für das Jahr 2018.
-                    <a href="https://wiki.vspace.one/doku.php?id=treffen:2017jahreshauptversammlung">Link zur Site</a>
+                    Unser Space soll schöner werden! Am 21. April und am 28.April starten wir eine größere Aufräumaktion im Space um auch wieder Platz für neue Mitglieder und deren Projektboxen zu schaffen.
+                </p>
+                <br>
+                <br>
+
+                <h3 class="margin">Aufräumaktion II</h3>
+                <p class="text-left">Datum: Samstag, 28.April im vspace.one</p>
+
+                <p class="text-left">
+                    Unser Space soll schöner werden! Am 21. April und am 28.April starten wir eine größere Aufräumaktion im Space um auch wieder Platz für neue Mitglieder und deren Projektboxen zu schaffen.
                 </p>
                 <br>
                 <br>
