@@ -81,7 +81,7 @@
                 <br>
                 <br>
 
-                <?php if(date("d") <=28 | date("m") < 4 | date("y") < 2018){
+                <?php if(date("Y-m-d") <= "2018-04-28"){
                     echo '<h3 class="margin">Aufräumaktion II</h3>';
                     echo '<p class="text-left">Datum: Samstag, 28.April im vspace.one</p>';
                     echo '<p class="text-left">';
