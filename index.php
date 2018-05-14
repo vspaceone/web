@@ -81,23 +81,13 @@
                 <br>
                 <br>
 
-                <h3 class="margin">Aufräumaktion I</h3>
-                <p class="text-left">Datum: Samstag, 21.April im vspace.one</p>
-
-                <p class="text-left">
-                    Unser Space soll schöner werden! Am 21. April und am 28.April starten wir eine größere Aufräumaktion im Space um auch wieder Platz für neue Mitglieder und deren Projektboxen zu schaffen.
-                </p>
-                <br>
-                <br>
-
-                <h3 class="margin">Aufräumaktion II</h3>
-                <p class="text-left">Datum: Samstag, 28.April im vspace.one</p>
-
-                <p class="text-left">
-                    Unser Space soll schöner werden! Am 21. April und am 28.April starten wir eine größere Aufräumaktion im Space um auch wieder Platz für neue Mitglieder und deren Projektboxen zu schaffen.
-                </p>
-                <br>
-                <br>
+                <?php if(date("Y-m-d") <= "2018-04-28"){
+                    echo '<h3 class="margin">Aufräumaktion II</h3>';
+                    echo '<p class="text-left">Datum: Samstag, 28.April im vspace.one</p>';
+                    echo '<p class="text-left">';
+                    echo '    Unser Space soll schöner werden! Am 21. April und am 28.April starten wir eine größere Aufräumaktion im Space um auch wieder Platz für neue Mitglieder und deren Projektboxen zu schaffen.'
+                    echo '</p><br><br>';
+                }?>
             </div>
         </div>
     </div>
@@ -105,7 +95,8 @@
     <div class="container-fluid text-center label-warning" id="state">
         <h2 style="margin-bottom: 2px">Raumstatus</h2>
         <br/>
-        <h3 style="margin-top:2px" id="stateText">Loading</h3>
+        <!-- <h3 style="margin-top:2px" id="stateText">Loading</h3> -->
+        <h3 style="margin-top:2px" id="stateText">Defect</h3>
     </div>
 
     <div class="container-fluid bg-2 text-center">
@@ -144,10 +135,10 @@
     <script>
         $(document).ready(function() {
             window.setInterval(updateDoorstate, 10000);
-            window.setInterval(updateState, 10000);
+            // window.setInterval(updateState, 10000);
             window.setInterval(updateTemperature, 10000);
             updateDoorstate();
-            updateState();
+            // updateState();
             updateTemperature();
         });
     </script>
