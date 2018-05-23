@@ -80,14 +80,6 @@
                 <p>Grundsätzlich treffen wir uns jeden Dienstag Abend ab ca. 19:00 Uhr in der Wilhelm-Binder-Str 19, Villingen. Jeder ist herzlich eingeladen vorbei zu schauen.</p>
                 <br>
                 <br>
-
-                <?php if(date("Y-m-d") <= "2018-04-28"){
-                    echo '<h3 class="margin">Aufräumaktion II</h3>';
-                    echo '<p class="text-left">Datum: Samstag, 28.April im vspace.one</p>';
-                    echo '<p class="text-left">';
-                    echo '    Unser Space soll schöner werden! Am 21. April und am 28.April starten wir eine größere Aufräumaktion im Space um auch wieder Platz für neue Mitglieder und deren Projektboxen zu schaffen.'
-                    echo '</p><br><br>';
-                }?>
             </div>
         </div>
     </div>
@@ -135,10 +127,10 @@
     <script>
         $(document).ready(function() {
             window.setInterval(updateDoorstate, 10000);
-            // window.setInterval(updateState, 10000);
+            window.setInterval(updateState, 10000);
             window.setInterval(updateTemperature, 10000);
             updateDoorstate();
-            // updateState();
+            updateState();
             updateTemperature();
         });
     </script>
