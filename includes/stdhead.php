@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="scripts/external/bootstrap-3.3.5-dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="style.css">
 
-<link rel="apple-touch-icon" sizes="57x57" href="/pic/favicon/apple-icon-57x57.png">
+<!--<link rel="apple-touch-icon" sizes="57x57" href="/pic/favicon/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/pic/favicon/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/pic/favicon/apple-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="76x76" href="/pic/favicon/apple-icon-76x76.png">
@@ -18,5 +18,5 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/pic/favicon/favicon-16x16.png">
 <link rel="manifest" href="/pic/favicon/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/pic/favicon/ms-icon-144x144.png">
+<meta name="msapplication-TileImage" content="/pic/favicon/ms-icon-144x144.png">-->
 <meta name="theme-color" content="#ffffff">
