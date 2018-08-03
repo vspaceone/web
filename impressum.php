@@ -20,9 +20,7 @@
     <div class="container-fluid bg-1 text-center">
         <h1>Impressum</h1>
         <h2>Angaben gemäß § 5 TMG:</h2>
-        <p>vspace.one e.V.<br /> Ludwig-Weißer-Str. 3<br /> 78112 St. Georgen
-        </p>
-        <p>ab 1.8.2018: <br />vspace.one e.V.<br /> Neue Heimat Str. 24<br /> 78112 St. Georgen
+        <p>vspace.one e.V.<br /> Wilhelm-Binder-Str. 19<br /> 78048 Villingen
         </p>
         <h2>Vertreten durch:</h2>
         <p>Nils Krause<br /> Maximilian Noppel<br /> Michael Castano<br />Damian Jesionek</p>
