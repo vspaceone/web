@@ -22,6 +22,8 @@
         <h2>Angaben gemäß § 5 TMG:</h2>
         <p>vspace.one e.V.<br /> Ludwig-Weißer-Str. 3<br /> 78112 St. Georgen
         </p>
+        <p>ab 1.8.2018: <br />vspace.one e.V.<br /> Neue Heimat Str. 24<br /> 78112 St. Georgen
+        </p>
         <h2>Vertreten durch:</h2>
         <p>Nils Krause<br /> Maximilian Noppel<br /> Michael Castano<br />Damian Jesionek</p>
         <h2>Kontakt:</h2>
