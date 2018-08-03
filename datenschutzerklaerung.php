@@ -24,8 +24,8 @@
     </p>
 
     <h3 id="dsg-general-controller">Verantwortlicher</h3><p><span class="tsmcontroller">vspace.one e.V.<br>
-    Ludwig-Weißer-Str. 3<br>
-    78112 St. Georgen <br>
+    Wilhelm-Binder-Str. 19<br>
+    78048 Villingen <br>
     <br>
     Emailadresse: vorstand@lists.vspace.one<br>
     Vorstände: Nils Krause,Maximilian Noppel,Michael Castano,Damian Jesionek<br>
