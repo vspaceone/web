@@ -16,6 +16,7 @@
                 <li><a href="#Ort">Ort</a></li>
                 <li><a href="#Events">Events</a></li>
                 <li><a href="https://wiki.vspace.one">Wiki</a></li>
+                <li><a class="faw-link" href="https://t.me/joinchat/DmNdswpnKgoa2KIPjZfxZA"><i class="fab fa-telegram"></i></a></li>
                 <li>
                     <div id="doorstate" class="label label-success"><a href="#state" id="doorstateString">loading</a></div>
                 </li>
