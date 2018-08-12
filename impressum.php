@@ -2,7 +2,7 @@
 <html lang="de">
 
 <head>
-    <title>vspace.one - Impressum - Hackerspace, Makerspace und Chaostreff für Villignen-Schwenningen und Umgebung</title>
+    <title>vspace.one - Impressum - Hackerspace, Makerspace und Chaostreff für Villingen-Schwenningen und Umgebung</title>
     <meta name="description" content="Das Impressum der vspace.one e.V. Webseite.">
     <?php
     //Including Standard Head

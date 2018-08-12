@@ -2,7 +2,7 @@
 <html lang="de">
 
 <head>
-    <title>vspace.one - Hackerspace, Makerspace und Chaostreff für Villignen-Schwenningen und Umgebung</title>
+    <title>vspace.one - Hackerspace, Makerspace und Chaostreff für Villingen-Schwenningen und Umgebung</title>
     <meta name="description" content="Der Makerspace und Hackerspace für Villingen-Schwenningen und Umgebung. Basteln, hacken und Wissen austauschen.">
     <?php
     //Including Standard Head

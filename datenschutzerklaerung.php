@@ -2,7 +2,7 @@
 <html lang="de">
 
 <head>
-    <title>vspace.one - Datenschutzerklärung - Hackerspace, Makerspace und Chaostreff für Villignen-Schwenningen und Umgebung</title>
+    <title>vspace.one - Datenschutzerklärung - Hackerspace, Makerspace und Chaostreff für Villingen-Schwenningen und Umgebung</title>
     <meta name="description" content="Die Datenschutzerklärung des vspace.one e.V.">
     <?php
     //Including Standard Head

@@ -2,7 +2,7 @@
 <html lang="de">
 
   <head>
-    <title>vspace.one - Downloads - Hackerspace, Makerspace und Chaostreff für Villignen-Schwenningen und Umgebung</title>
+    <title>vspace.one - Downloads - Hackerspace, Makerspace und Chaostreff für Villingen-Schwenningen und Umgebung</title>
     <?php
     //Including Standard Head 
     include('includes/stdhead.php'); 
