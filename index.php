@@ -78,7 +78,19 @@
             <div class="col-sm-3"></div>
             <div class="col-sm-6">
                 <h2 class="margin" id="Events">Events</h2>
+                <h3 class="margin">Chaostreff</h3>
                 <p>Grundsätzlich treffen wir uns jeden Dienstag Abend ab ca. 19:00 Uhr in der Wilhelm-Binder-Str 19, Villingen. Jeder ist herzlich eingeladen vorbei zu schauen.</p>
+                <br>
+                <br>
+                <h3 class="margin">6. TechEvent: Einführung in das CAD/CAM-Tool Fusion360</h3>
+                <p>Am Samstag, 20.Oktober ‘18 16:00 bis 18:00</p>
+                <p>Im vspace.one e.V.,</p>
+                <p>Wilhelm-Binderstr. 19</p>
+                <p>78048 Villingen-Schwenningen</p>
+                <p>Teilnahme kostenfrei!</p>
+                <p>Vorstellung des CAD/CAM Tools Fusion360 von Autodesk.</p>
+                <p>Wie kann ich das Tool für mich und meine Projekte nutzen? Wie funktioniert es und welche Tricks und Kniffe gibt es? Was hat das ganze mit der CNC-Fräse zu tun?</p>
+                <p><a href="download/20181020_TechEvent_Fusion360.pdf">Einladung (pdf)</a></p>
                 <br>
                 <br>
             </div>
@@ -102,15 +114,15 @@
         <p><i>Telefon Brücke: 0221 596196639</i></p>
         <p><i>Telefon Maschinenraum: 0221 596196640</i></p>
         <iframe id="map-big" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=8.453952670097351%2C48.06383033098609%2C8.458941578865051%2C48.066199996379204&amp;layer=mapnik&amp;marker=48.06501338483433%2C8.456447124481201"
-            style="border: 1px solid black"></iframe>
+        style="border: 1px solid black"></iframe>
 
         <iframe id="map-medium" width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=8.453952670097351%2C48.06383033098609%2C8.458941578865051%2C48.066199996379204&amp;layer=mapnik&amp;marker=48.06501338483433%2C8.456447124481201"
-            style="border: 1px solid black"></iframe>
+        style="border: 1px solid black"></iframe>
 
         <br/>
         <small>
-        <a href="http://www.openstreetmap.org/?mlat=48.06501&amp;mlon=8.45645#map=18/48.06502/8.45645" style="color: #ffffff"><i>Große Karte anzeigen</i></a>
-      </small>
+            <a href="http://www.openstreetmap.org/?mlat=48.06501&amp;mlon=8.45645#map=18/48.06502/8.45645" style="color: #ffffff"><i>Große Karte anzeigen</i></a>
+        </small>
         <!--<span class="glyphicon glyphicon-search"></span> Search -->
 
     </div>
