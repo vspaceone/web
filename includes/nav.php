@@ -11,10 +11,10 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#Mitmachen">Mitmachen</a></li>
-                <li><a href="#Ausstattung">Ausstattung</a></li>
-                <li><a href="#Ort">Ort</a></li>
-                <li><a href="#Events">Events</a></li>
+                <li><a href="?page=main#Mitmachen">Mitmachen</a></li>
+                <li><a href="?page=main#Ausstattung">Ausstattung</a></li>
+                <li><a href="?page=main#Ort">Ort</a></li>
+                <li><a href="?page=main#Events">Events</a></li>
                 <li><a href="https://wiki.vspace.one">Wiki</a></li>
                 <li><a class="faw-link" href="https://t.me/joinchat/DmNdswpnKgoa2KIPjZfxZA"><i class="fab fa-telegram"></i></a></li>
                 <li>
