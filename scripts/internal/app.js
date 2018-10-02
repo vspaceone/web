@@ -8,6 +8,7 @@ function updateDoorstate() {
     //console.log("Updating doorstate!");
     $.getJSON("/spaceapi.json")
         .done(function(data, textStatus) {
+          //$("#doorstate").removeClass('invisible');
             if (data.state.open == true) {
                 $("#doorstate").addClass("label-success");
                 $("#doorstate").removeClass("label-danger");
@@ -29,6 +30,7 @@ function updateState() {
     //console.log("Updating state!");
     $.getJSON("/spaceapi.json")
         .done(function(data, textStatus) {
+
             if (data.state.open == true) {
                 $("#state").removeClass("label-warning");
                 $("#state").removeClass("label-danger");
