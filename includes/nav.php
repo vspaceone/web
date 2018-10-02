@@ -1,4 +1,11 @@
 <!-- Navbar -->
+<style>
+.doorstatelabel {
+  min-width: 110px !important;
+  display: inline-block !important
+}
+</style>
+
 <nav class="navbar navbar-default">
     <div class="container">
         <div class="navbar-header">
@@ -11,16 +18,22 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#Mitmachen">Mitmachen</a></li>
-                <li><a href="#Ausstattung">Ausstattung</a></li>
-                <li><a href="#Ort">Ort</a></li>
-                <li><a href="#Events">Events</a></li>
+                <li><a href="?page=main#Mitmachen">Mitmachen</a></li>
+                <li><a href="?page=main#Ausstattung">Ausstattung</a></li>
+                <li><a href="?page=main#Ort">Ort</a></li>
+                <li><a href="?page=main#Events">Events</a></li>
                 <li><a href="https://wiki.vspace.one">Wiki</a></li>
                 <li><a class="faw-link" href="https://t.me/joinchat/DmNdswpnKgoa2KIPjZfxZA"><i class="fab fa-telegram"></i></a></li>
                 <li>
-                    <div id="doorstate" class="label label-success"><a href="#state" id="doorstateString">loading</a></div>
+                    <div id="doorstate" class="label label-success invisible doorstatelabel"><a href="#state" id="doorstateString">loading</a></div>
                 </li>
             </ul>
         </div>
     </div>
+    <script>
+        $(document).ready(function() {
+            window.setInterval(updateDoorstate, 10000);
+            updateDoorstate();
+        });
+    </script>
 </nav>
