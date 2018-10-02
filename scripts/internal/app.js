@@ -8,7 +8,7 @@ function updateDoorstate() {
     //console.log("Updating doorstate!");
     $.getJSON("/spaceapi.json")
         .done(function(data, textStatus) {
-          //$("#doorstate").removeClass('invisible');
+            $("#doorstate").removeClass('invisible');
             if (data.state.open == true) {
                 $("#doorstate").addClass("label-success");
                 $("#doorstate").removeClass("label-danger");
@@ -20,6 +20,7 @@ function updateDoorstate() {
             }
         })
         .fail(function(data, textStatus) {
+            $("#doorstate").removeClass('invisible');
             $("#doorstate").addClass("label-danger");
             $("#doorstate").removeClass("label-success");
             $("#doorstate").text("error");
