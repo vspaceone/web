@@ -43,20 +43,6 @@
     include('includes/foot.php');
     ?>
 
-
-
-    <script type="text/javascript">
-        var canvasDiv = document.getElementById('particles');
-        var options = {
-            particleColor: '#0ac26c',
-            background: '#08A059',
-            interactive: false,
-            speed: 'slow',
-            density: 'high'
-        };
-        var particleCanvas = new ParticleNetwork(canvasDiv, options);
-    </script>
-
 </body>
 
 </html>
