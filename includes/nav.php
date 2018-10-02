@@ -1,7 +1,7 @@
 <!-- Navbar -->
 <style>
 .doorstatelabel {
-  min-width: 200px !important;
+  min-width: 110px !important;
   display: inline-block !important
 }
 </style>
