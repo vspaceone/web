@@ -110,14 +110,6 @@
 
 </div>
 
-<script>
-    $(document).ready(function() {
-        window.setInterval(updateState, 10000);
-        window.setInterval(updateTemperature, 10000);
-        updateState();
-        updateTemperature();
-    });
-</script>
 <script type="text/javascript">
     var canvasDiv = document.getElementById('particles');
     var options = {

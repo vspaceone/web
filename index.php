@@ -43,6 +43,18 @@
     include('includes/foot.php');
     ?>
 
+    <script>
+        $(document).ready(function() {
+            window.setInterval(updateDoorstate, 10000);
+            window.setInterval(updateState, 10000);
+            window.setInterval(updateTemperature, 10000);
+            updateDoorstate();
+            updateState();
+            updateTemperature();
+            updateCharts();
+        });
+    </script>
+
 </body>
 
 </html>
