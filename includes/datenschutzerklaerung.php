@@ -12,7 +12,7 @@
         <br/>
         Emailadresse: vorstand@lists.vspace.one<br/>
         Vorstände: Nils Krause,Maximilian Noppel,Michael Castano,Damian Jesionek<br/>
-        Impressum: https://vspace.one/impressum.php<br/>
+        Impressum: <a href="?page=impressum">https://vspace.one/index.php?page=impressum</a><br/>
     Kontakt Datenschutzbeauftragter: vorstand@lists.vspace.one</span></p>
 
     <h3 id="dsg-general-datatype">Arten der verarbeiteten Daten:</h3><p>-	Bestandsdaten (z.B., Namen, Adressen).<br/>
@@ -110,5 +110,3 @@
                 <br/>
             Dies setzt immer voraus, dass die Drittanbieter dieser Inhalte, die IP-Adresse der Nutzer wahrnehmen, da sie ohne die IP-Adresse die Inhalte nicht an deren Browser senden könnten. Die IP-Adresse ist damit für die Darstellung dieser Inhalte erforderlich. Wir bemühen uns nur solche Inhalte zu verwenden, deren jeweilige Anbieter die IP-Adresse lediglich zur Auslieferung der Inhalte verwenden. Drittanbieter können ferner so genannte Pixel-Tags (unsichtbare Grafiken, auch als "Web Beacons" bezeichnet) für statistische oder Marketingzwecke verwenden. Durch die "Pixel-Tags" können Informationen, wie der Besucherverkehr auf den Seiten dieser Website ausgewertet werden. Die pseudonymen Informationen können ferner in Cookies auf dem Gerät der Nutzer gespeichert werden und unter anderem technische Informationen zum Browser und Betriebssystem, verweisende Webseiten, Besuchszeit sowie weitere Angaben zur Nutzung unseres Onlineangebotes enthalten, als auch mit solchen Informationen aus anderen Quellen verbunden werden.</span></p><a href="https://datenschutz-generator.de" class="dsg1-5" rel="nofollow" target="_blank">Erstellt mit Datenschutz-Generator.de von RA Dr. Thomas Schwenke</a>
         </div>
-
-

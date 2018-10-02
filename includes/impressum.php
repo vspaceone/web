@@ -13,7 +13,7 @@
         E-Mail: public@lists.vspace.one oder vorstand@lists.vspace.one
     </p>
     <h2>Datenschutzerklärung</h2>
-    <p>Es gilt die folgenden <a href="datenschutzerklärung.php" style="color: #ffffff">Datenschutzerklärung</a>.</p>
+    <p>Es gilt die folgenden <a href="?page=datenschutzerklärung" style="color: #ffffff">Datenschutzerklärung</a>.</p>
     <p></p>
     <h2>Registereintrag:</h2>
     <p>Eintragung im Vereinsregister. <br />Registergericht: Amtsgericht Villingen-Schwenningen <br />Registernummer: VR 701636</p>
