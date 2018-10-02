@@ -23,4 +23,10 @@
             </ul>
         </div>
     </div>
+    <script>
+        $(document).ready(function() {
+            window.setInterval(updateDoorstate, 10000);
+            updateDoorstate();
+        });
+    </script>
 </nav>
