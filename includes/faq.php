@@ -85,9 +85,9 @@
         Es gibt eine öffentliche Mailingliste: <a mailto="public@lists.vspace.one">public@lists.vspace.one<a>
         Dieser Liste könnt ihr natürlich bei Interesse an aktuellen Informationen <a href="https://lists.vspace.one/postorius/lists/public.lists.vspace.one/">hier beitreten!</a>
         <br>
-        Unserer Telegram Gruppe könnt ihr <a href="">hier beitreten!</a>
+        Unserer Telegram Gruppe könnt ihr <a href="https://t.me/joinchat/DmNdswpnKgox_zzqENYXiA">hier beitreten!</a>
         <br>
-        Wir haben ebenfalls einen Workspace auf Slack dem ihr <a href="">hier beitreten könnt!</a>
+        Wir haben ebenfalls einen Workspace auf Slack dem ihr <a href="https://join.slack.com/t/vspaceone/shared_invite/enQtNDgzOTU2ODI4MTE4LTc1NTI5YjZjYjA0ZDU5N2UxOThiZTljYmY1ZGY1ZmRlMDM0MmYyMGNlZDA1NDk2YTAxODMxYWEzOWM5NWU5OGE">hier beitreten könnt!</a>
     </p>
 </div>
 

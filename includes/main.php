@@ -35,7 +35,7 @@
     <p class="text-center">
         Trag dich einfach in unsere <a href="https://lists.vspace.one/postorius/lists/public.lists.vspace.one/">Mailingliste</a> ein und bleib up-to-date.
         <br><br>
-        Oder tritt unserer Telegram Gruppe bei: <a href="https://t.me/joinchat/DmNdswpnKgoa2KIPjZfxZA">Join</a>
+        Oder tritt unserer Telegram Gruppe bei: <a href="https://t.me/joinchat/DmNdswpnKgox_zzqENYXiA">Join</a>
     </p>
 </div>
 
