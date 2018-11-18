@@ -58,7 +58,7 @@
 <!-- grey -->
 <div class="container-fluid bg-2 text-left">
     <h2 class="margin">Wo finde ich euch?</h2>
-    <p>Die Antwort auf diese Frage sollte <a href="https://vspace.one/#Ort">hier auf der Website immer aktuell sein.</a></p>
+    <p>Die Antwort auf diese Frage sollte <a href="?page=main#Ort">hier auf der Website immer aktuell sein.</a></p>
 </div>
 
 <!-- white -->
@@ -72,7 +72,7 @@
     <h2 class="margin">Wann treffe ich euch an?</h2>
     <p>
         Überwiegend treffen wir uns jeden Dienstagabend ab etwa 19.00 Uhr. Die meisten Mitglieder haben ihren eigenen Schlüssel und können somit rein, wann immer sie wollen. 
-        Ob gerade jemand da ist, erfährst du unter <a href="https://vspace.one/dashboard.php">https://vspace.one/dashboard.php</a> sowie auch auf direkt auf vspace.one. 
+        Ob gerade jemand da ist, erfährst du unter <a href="?page=dashboard">https://vspace.one/dashboard.php</a> sowie auch auf direkt auf vspace.one. 
         Durch die SpaceAPI gibt es zudem auch fertige Apps, um sich den Raumstatus anzeigen zu lassen. Wer die Daten lieber selbst verarbeiten möchte, 
         findet sie hier: <a href="https://vspace.one/spaceapi.json">https://vspace.one/spaceapi.json</a>
     </p>
