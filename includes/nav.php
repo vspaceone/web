@@ -18,11 +18,19 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="?page=faq">Fragen und Antworten</a></li>
-                <li><a href="?page=main#Mitmachen">Mitmachen</a></li>
-                <li><a href="?page=main#Ausstattung">Ausstattung</a></li>
-                <li><a href="?page=main#Ort">Ort</a></li>
-                <li><a href="?page=main#Events">Events</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="?page=main#Mitmachen">Mitmachen</a></li>
+                        <li><a href="?page=main#Ausstattung">Ausstattung</a></li>
+                        <li><a href="?page=main#Ort">Ort</a></li>
+                        <li><a href="?page=main#Events">Events</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="?page=faq">F&A</a></li>
+                <li><a href="?page=mitgliedwerden">Mitglied werden</a></li>
+                
                 <li><a href="https://wiki.vspace.one">Wiki</a></li>
                 <li><a class="faw-link" href="https://t.me/joinchat/DmNdswpnKgoa2KIPjZfxZA"><i class="fab fa-telegram"></i></a></li>
                 <li>
