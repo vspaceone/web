@@ -18,6 +18,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
+                <li><a href="?page=faq">Fragen und Antworten</a></li>
                 <li><a href="?page=main#Mitmachen">Mitmachen</a></li>
                 <li><a href="?page=main#Ausstattung">Ausstattung</a></li>
                 <li><a href="?page=main#Ort">Ort</a></li>
