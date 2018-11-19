@@ -10,16 +10,37 @@
     </div>
 </div>
 
+<div class="container-fluid bg-3 text-left">
+    <h2 class="margin">Was wir machen</h2>
+    <p>
+        Unser Ziel ist der Wissensaustausch sowie die Bildung aller interessierten 
+        in den Bereichen neuartiger computergestützter Technologien (wie zum Beispiel aber nicht ausschließlich
+        3D-­Druck, CNC, Internet der Dinge und Robotik), der Elektrotechnik und Elektronik
+        sowie auf dem Gebiet der Reparatur und Wartung.
+        Natürlich aber auch ganz im Sinne aller anderen Hacker- und Makerspaces das bieten einer Plattform,
+        um seinen Interessen in diesen Gebieten nachzugehen.
+    </p>
+    <br><br>
+    <p class="text-center"><a href="?page=faq">Mehr Fragen zu uns und was wir machen beantworten wir hier!</a></p>
+</div>
+
 <!-- Second Container -->
-<div class="container-fluid bg-2 text-center" id="Mitmachen">
+<div class="container-fluid bg-2 text-left" id="Mitmachen">
     <h2 class="margin">Mitmachen</h2>
-    <p>Bei uns kann jeder und jede mitmachen. Interessierte Schüler, Studenten und Erwachsene, die sich für kreativen Umgang mit Technik interessieren.</p>
-    <p>Trag dich einfach in unsere <a href="https://lists.vspace.one/postorius/lists/public.lists.vspace.one/">Mailingliste</a> ein und bleib up-to-date.</p>
-    <p>Oder tritt unserer Telegram Gruppe bei: <a href="https://t.me/joinchat/DmNdswpnKgoa2KIPjZfxZA">Join</a></p>
+    <p>
+        Bei uns kann jeder und jede mitmachen. Interessierte Schüler, Studenten und Erwachsene, die sich für kreativen Umgang mit Technik interessieren.
+        Wenn euch gefällt was wir tun und ihr uns unterstützen wollt findet ihr Beitrittsformular <a href="?page=mitgliedwerden">hier</a>.
+    </p>
+    <br>
+    <p class="text-center">
+        Trag dich einfach in unsere <a href="https://lists.vspace.one/postorius/lists/public.lists.vspace.one/">Mailingliste</a> ein und bleib up-to-date.
+        <br><br>
+        Oder tritt unserer Telegram Gruppe bei: <a href="https://t.me/joinchat/DmNdswpnKgox_zzqENYXiA">Join</a>
+    </p>
 </div>
 
 <!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center" id="Ausstattung">
+<div class="container-fluid no-side-padding bg-3 text-center" id="Ausstattung">
     <h2 class="margin">Ausstattung</h2><br>
     <div class="row">
         <div class="col-sm-4">
@@ -63,19 +84,6 @@
             <h2 class="margin" id="Events">Events</h2>
             <h3 class="margin">Chaostreff</h3>
             <p>Grundsätzlich treffen wir uns jeden Dienstag Abend ab ca. 19:00 Uhr in der Wilhelm-Binder-Str 19, Villingen. Jeder ist herzlich eingeladen vorbei zu schauen.</p>
-            <br>
-            <br>
-            <h3 class="margin">6. TechEvent: Einführung in das CAD/CAM-Tool Fusion360</h3>
-            <p>Am Samstag, 20.Oktober ‘18 16:00 bis 18:00</p>
-            <p>Im vspace.one e.V.,</p>
-            <p>Wilhelm-Binderstr. 19</p>
-            <p>78048 Villingen-Schwenningen</p>
-            <p>Teilnahme kostenfrei!</p>
-            <p>Vorstellung des CAD/CAM Tools Fusion360 von Autodesk.</p>
-            <p>Wie kann ich das Tool für mich und meine Projekte nutzen? Wie funktioniert es und welche Tricks und Kniffe gibt es? Was hat das ganze mit der CNC-Fräse zu tun?</p>
-            <p><a href="download/20181020_TechEvent_Fusion360.pdf">Einladung (pdf)</a></p>
-            <br>
-            <br>
         </div>
     </div>
 </div>

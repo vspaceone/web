@@ -6,6 +6,14 @@ body {
     color: #f5f6f7;
 }
 
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
 p {
     font-size: 16px;
 }
@@ -38,10 +46,6 @@ p {
     color: #fff;
 }
 
-.container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
 
 .navbar {
     padding-top: 15px;
@@ -94,10 +98,31 @@ p {
     height: 670px;
 }
 
+#particles-topper {
+    height: 200px;
+}
+
 #particles-overlay {
     height: 100%;
     margin-top: 60px;
     z-index: 10;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.no-side-padding {
+    padding-left: 0px !important;
+    padding-right: 0px !important; 
+}
+
+@media (min-width: 800px){
+    .container-fluid {
+        padding-right: 25vw;
+        padding-left: 25vw;
+    }
 }
 
 @media (min-width:450px) {

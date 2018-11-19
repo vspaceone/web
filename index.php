@@ -52,6 +52,7 @@
     $page = isset($_GET['page']) ? $_GET['page'] : 'main';
     switch ($page) {
         case "main": include("includes/main.php"); break;
+        case "faq": include("includes/faq.php"); break;
         case "impressum": include("includes/impressum.php"); break;
         case "mitgliedwerden": include("includes/mitgliedwerden.php"); break;
         case "press": include("includes/press.php"); break;
