@@ -3,10 +3,12 @@ var tmpChartBruecke;
 var humChartMaschinenraum;
 var humChartBruecke;
 
+var SPACEAPIURL = "https://vspace.one/spaceapi.json"
+
 function updateDoorstate() {
 
-    //console.log("Updating doorstate!");
-    $.getJSON("/spaceapi.json")
+    console.log("Updating doorstate!");
+    $.getJSON(SPACEAPIURL)
         .done(function(data, textStatus) {
             $("#doorstate").removeClass('invisible');
             if (data.state.open == true) {
@@ -29,7 +31,7 @@ function updateDoorstate() {
 
 function updateState() {
     //console.log("Updating state!");
-    $.getJSON("/spaceapi.json")
+    $.getJSON(SPACEAPIURL)
         .done(function(data, textStatus) {
 
             if (data.state.open == true) {
@@ -57,7 +59,7 @@ function updateState() {
 
 function updateTemperature() {
     console.log("Updating charts!");
-    $.getJSON("/spaceapi.json")
+    $.getJSON(SPACEAPIURL)
         .done(function(data, textStatus) {
             var receivedMaschinenraum = 0;
             var receivedBruecke = 0;
