@@ -7,7 +7,7 @@ body {
 }
 
 p {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .margin {
@@ -116,6 +116,43 @@ p {
     #map-medium {
         display: initial;
     }
+}
+.event {
+  max-width: 80%;
+  text-align: left;
+}
+.event_pre {
+  color: white;
+  font-size: 0.8em;
+}
+
+.event_title {
+  font-size: 1.4em;
+  display: block;
+}
+
+.event_date {
+  display: block;
+}
+
+.event_loc {
+  display: block;
+}
+
+.event_time {
+  display: block;
+}
+
+.event_price {
+  display: block;
+}
+
+.event_desc {
+  display: block;
+}
+
+.event_download {
+  display: block;
 }
 
 .faw-link {

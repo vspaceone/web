@@ -16,6 +16,7 @@
     <p>Bei uns kann jeder und jede mitmachen. Interessierte Schüler, Studenten und Erwachsene, die sich für kreativen Umgang mit Technik interessieren.</p>
     <p>Trag dich einfach in unsere <a href="https://lists.vspace.one/postorius/lists/public.lists.vspace.one/">Mailingliste</a> ein und bleib up-to-date.</p>
     <p>Oder tritt unserer Telegram Gruppe bei: <a href="https://t.me/joinchat/DmNdswpnKgoa2KIPjZfxZA">Join</a></p>
+    <p>Wir treffen uns jeden Dienstag ab 19:00 Uhr im 'Space'. Schau doch einfach mal vorbei oder schreib uns auf der Mailingliste!<p>
 </div>
 
 <!-- Third Container (Grid) -->
@@ -61,6 +62,22 @@
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
             <h2 class="margin" id="Events">Events</h2>
+            <span class="event">
+            <span class="event_title">6. TechEvent: Einführung in das CAD/CAM-Tool Fusion360</span>
+            <span class="event_date"><span class="event_date_pre event_pre">Am:</span><span class="event_date_data"> 20.Oktober 2018</span></span>
+            <span class="event_time"><span class="event_time_pre event_pre">Um:</span><span class="event_time_data"> 16:00 bis 18:00 Uhr</span></span>
+            <span class="event_loc_l1 event_loc">vspace.one e.V.</span>
+            <span class="event_loc_l2 event_loc">Wilhelm-Binderstraße 19</span>
+            <span class="event_loc_l3 event_loc">78050 Villingen-Schwenningen</span>
+            <span class="event_price"><span class="event_price_pre event_pre">Preis:</span><span class="event_price_data"> Teilnahme ist kostenlos!</span></span>
+            <span class="event_desc"><span class="event_desc_pre">Beschreibung:</span><span class="event_desc_data">
+              <p>Vorstellung des CAD/CAM Tools Fusion360 von Autodesk.</p>
+              <p>Wie kann ich das Tool für mich und meine Projekte nutzen? Wie funktioniert es und welche Tricks und Kniffe gibt es? Was hat das ganze mit der CNC-Fräse zu tun?</p>
+            </span>
+          </span>
+            <span class="event_download"><span class="event_download_pre event_pre">Download: </span><span class="event_download_data"><a href="download/20181020_TechEvent_Fusion360.pdf">Einladung (pdf)</a></span></span>
+            <span class="event">
+
             <h3 class="margin">Chaostreff</h3>
             <p>Grundsätzlich treffen wir uns jeden Dienstag Abend ab ca. 19:00 Uhr in der Wilhelm-Binder-Str 19, Villingen. Jeder ist herzlich eingeladen vorbei zu schauen.</p>
             <br>
