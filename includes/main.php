@@ -101,9 +101,7 @@
     <p>Unsere Andresse lautet:<br> Wilhelm-Binder-Str. 19<br> 78048 Villingen</p><br>
     <p></p>
     <p>Wenn der vspace.one offen ist kannst du uns auch anrufen.</p>
-    <p>Telefon Rundruf: 0221 596196638</p>
-    <p><i>Telefon Brücke: 0221 596196639</i></p>
-    <p><i>Telefon Maschinenraum: 0221 596196640</i></p>
+    <p>Telefon: <a href="tel:+4977219463980">07721-9463980</a></p>
     <iframe id="map-big" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=8.453952670097351%2C48.06383033098609%2C8.458941578865051%2C48.066199996379204&amp;layer=mapnik&amp;marker=48.06501338483433%2C8.456447124481201"
     style="border: 1px solid black"></iframe>
 
