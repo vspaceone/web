@@ -19,8 +19,11 @@
 <div class="container-fluid bg-3 text-left">
     <h2 class="margin">Was ist ein Hackerspace? Und wo wir gleich dabei sind... Was ist ein Makerspace?</h2><br>
     <p>
-        Ein Hackerspace ist primär ein Ort für Wissensaustausch und Bildung in verschiedenen Bereichen
+        Hacker- und Makerspaces sind primär Orte für Wissensaustausch und Bildung in verschiedenen Bereichen
         der Wissenschaft und unterschiedlicher Technologien.
+        <br>
+        Hackerspaces konzentrieren sich dabei eher auf informationstechnische Wissensgebiete wie bspw. Programmierung,
+        während sich Makerspaces eher auf mechanische bzw. handwerkliche Gebiete konzentrieren wie unter anderem 3D-Druck und Holzbearbeitung.
     </p>
 </div>
 
