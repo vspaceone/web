@@ -143,33 +143,65 @@ p {
     }
 }
 .event {
-  max-width: 80%;
+  margin: auto;
   text-align: left;
+
 }
 
 .event_title {
-  font-size: 1.4em;
-  display: block;
+  font-size: 1.6em;
+  padding-right: 5px;
 }
 
 .event_day {
+  padding-top: 0em;
   display: block;
+  font-size: 6em;
 }
 
 .event_time {
-
 }
 
 .event_month {
-  
+  font-size: 2.2em;
+  display: block;
+  line-height: 0.1em
+
+
 }
 
+.event_date {
+  width: 13em;
+  float: right;
+  background-color: #08A059;
+  padding: 0%;
+  margin: 5px;
+  height: 13em;
+}
+
+.event_details {
+  min-width: 50em;
+  width: 50em;
+  max-width: 50em%;
+  float: right;
+  background-color: white;
+  color: black;
+  padding: 1em;
+  margin: 5px;
+  height: 13em;
+}
 .event_price {
   display: block;
 }
 
+.event_icons {
+  float: right;
+}
+
 .event_desc {
   display: block;
+  float: left;
+  text-align: left;
 }
 
 .event_download {

@@ -78,24 +78,45 @@
     </div>
   </div>
 
-  <div class="container-fluid bg-2 text-center">
+  <div class="container-fluid bg-2 text-center no-side-padding">
     <div class="row">
-      <div class="col-sm-3"></div>
-      <div class="col-sm-6">
+      <div class="col">
         <h2 class="margin" id="Events">Events</h2>
         <span class="event">
-          <span class="card">
-            <span class="event_day">22</span>
-            <span class="event_month">Dez</span>
-          </span>
-          <span class="card">
+
+          <span class="event_details">
             <span class="event_title">Chaostreff</span>
             <span class="event_time">11:00 Uhr bis 12:00 Uhr</span>
-
-            <span class="event_price"></span>
+            <span class="event_icons">
+            <span class="glyphicon-plus glyphicon"></span>
+            <span class="glyphicon-pencil glyphicon"></span>
+          </span>
             <span class="event_desc">
               <p>Grundsätzlich treffen wir uns jeden Dienstag Abend ab ca. 19:00 Uhr in der Wilhelm-Binder-Str 19, Villingen. Jeder ist herzlich eingeladen vorbei zu schauen.</p>
             </span>
+          </span>
+          <span class="event_date align-middle">
+            <span class="event_day text-center">22</span>
+            <span class="event_month text-center">Dezember</span>
+          </span>
+        </span>
+
+        <span class="event">
+
+          <span class="event_details">
+            <span class="event_title">All Creatures Welcome</span>
+            <span class="event_time">ab 20 Uhr</span>
+            <span class="event_icons">
+            <span class="glyphicon-plus glyphicon"></span>
+            <span class="glyphicon-pencil glyphicon"></span>
+          </span>
+            <span class="event_desc">
+              <p>Grundsätzlich treffen wir uns jeden Dienstag Abend ab ca. 19:00 Uhr in der Wilhelm-Binder-Str 19, Villingen. Jeder ist herzlich eingeladen vorbei zu schauen.</p>
+            </span>
+          </span>
+          <span class="event_date align-middle">
+            <span class="event_day text-center">12</span>
+            <span class="event_month text-center">Januar</span>
           </span>
         </span>
       </div>
