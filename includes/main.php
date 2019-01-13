@@ -84,18 +84,18 @@
         <div class="col-sm-6">
             <h2 class="margin" id="Events">Events</h2>
             <span class="event">
-            <span class="event_title">Weihnachtsfeier</span>
-            <span class="event_date"><span class="event_date_pre event_pre"></span><span class="event_date_data"> Sa., 22.Dezember 2018</span></span>
-            <span class="event_time"><span class="event_time_pre event_pre"></span><span class="event_time_data"> ab 18:00 Uhr</span></span>
+            <span class="event_title">7. TechEvent: 1. Let's Hack Together</span>
+            <span class="event_date"><span class="event_date_pre event_pre"></span><span class="event_date_data"> Di., 15. Januar 2019</span></span>
+            <span class="event_time"><span class="event_time_pre event_pre"></span><span class="event_time_data"> ab 19:00 Uhr</span></span>
             <span class="event_loc_l1 event_loc">vspace.one e.V.</span>
             <span class="event_loc_l2 event_loc"></span>
             <span class="event_loc_l3 event_loc"></span>
             <span class="event_price"><span class="event_price_pre event_pre"></span><span class="event_price_data"></span></span>
             <span class="event_desc"><span class="event_desc_pre"></span><span class="event_desc_data">
-              <p>Bald ist es wieder soweit! Weihnachten steht vor der Tür und auch wir wollen uns zusammenfinden und mit glühendem Wein und Plätzchen einen schönen Abend geniesen. Jeder der Interessiert ist, ist herzlich eingeladen. </p>
+              <p>Es ist eine Art Live-Hacking, bei dem wir gemeinsam versuchen werden ein System zu hacken. Also etwas anderes als die üblichen TechEvents bei denen ein Themengebiet präsentiert und erklärt wird. Als erstes muss Windows XP dran glauben! Warum? Ich dachte mir dass das relativ einfach sein sollte…  </p>
             </span>
           </span>
-            <span class="event_download"><span class="event_download_pre event_pre">Download: </span><span class="event_download_data"><a href="download/20181222_Einladung_Weihnachtsfeier.pdf">Einladung (pdf)</a></span></span>
+            <span class="event_download"><span class="event_download_pre event_pre"></span><span class="event_download_data"><a href="https://wiki.vspace.one/doku.php?id=treffen:techevent20181020">Wiki-Eintrag</a></span></span>
           </span>
 
           <span class="event">
