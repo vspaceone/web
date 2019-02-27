@@ -84,18 +84,24 @@
         <div class="col-sm-6">
             <h2 class="margin" id="Events">Events</h2>
             <span class="event">
-            <span class="event_title">7. TechEvent: 1. Let's Hack Together</span>
-            <span class="event_date"><span class="event_date_pre event_pre"></span><span class="event_date_data"> Di., 15. Januar 2019</span></span>
-            <span class="event_time"><span class="event_time_pre event_pre"></span><span class="event_time_data"> ab 19:00 Uhr</span></span>
+            <span class="event_title">Hackerjeopardy, Lounge and Chill</span>
+            <span class="event_date"><span class="event_date_pre event_pre"></span><span class="event_date_data"> Sa., 2. März 2019</span></span>
+            <span class="event_time"><span class="event_time_pre event_pre"></span><span class="event_time_data"> ab 20:00 Uhr</span></span>
             <span class="event_loc_l1 event_loc">vspace.one e.V.</span>
             <span class="event_loc_l2 event_loc"></span>
             <span class="event_loc_l3 event_loc"></span>
             <span class="event_price"><span class="event_price_pre event_pre"></span><span class="event_price_data"></span></span>
             <span class="event_desc"><span class="event_desc_pre"></span><span class="event_desc_data">
-              <p>Es ist eine Art Live-Hacking, bei dem wir gemeinsam versuchen werden ein System zu hacken. Also etwas anderes als die üblichen TechEvents bei denen ein Themengebiet präsentiert und erklärt wird. Als erstes muss Windows XP dran glauben! Warum? Ich dachte mir dass das relativ einfach sein sollte…  </p>
+              <p>Am Samstag dem 2.März wird im vspace.one das "Hackerjeopardy, Lounge and Chill"-Event stattfinden! Du bist herzlich eingeladen! Los gehts um 20 Uhr in der
+Wilhelm-Binderstr 19 in 78048 Villingen. Es wird einige Runden
+Hackerjeopardy, Loungig-Musik vom DJ sowie Tschunk geben.<br>
+
+Insbesondere auch andere Hackerspaces in der Umgebung sind herzlich
+eingeladen vorbeizuschauen. Wenn du mit einer größeren Gruppe kommst,
+schreib mir bitte kurz einen Mail damit ich mich drauf einstellen kann. ;)</p>
             </span>
           </span>
-            <span class="event_download"><span class="event_download_pre event_pre"></span><span class="event_download_data"><a href="https://wiki.vspace.one/doku.php?id=treffen:techevent20181020">Wiki-Eintrag</a></span></span>
+            <span class="event_download"><span class="event_download_pre event_pre"></span><span class="event_download_data"><a href="download/20190302_Hackerjeopardy.pdf">Download Einladung</a></span></span>
           </span>
 
           <span class="event">
