@@ -105,6 +105,28 @@ schreib mir bitte kurz einen Mail damit ich mich drauf einstellen kann. ;)</p>
           </span>
 
           <span class="event">
+          <span class="event_title">Hackathon Webseite I</span>
+          <span class="event_date"><span class="event_date_pre event_pre"></span><span class="event_date_data"> Di., 5. März 2019</span></span>
+          <span class="event_time"><span class="event_time_pre event_pre"></span><span class="event_time_data"> ab 19:00 Uhr</span></span>
+          <span class="event_loc_l1 event_loc">vspace.one e.V.</span>
+          <span class="event_loc_l2 event_loc"></span>
+          <span class="event_loc_l3 event_loc"></span>
+          <span class="event_price"><span class="event_price_pre event_pre"></span><span class="event_price_data"></span></span>
+          <span class="event_desc"><span class="event_desc_pre"></span><span class="event_desc_data">
+            <p>Unsere Website https://vspace.one könnte etwas Coding-
+Arbeit ganz gut vertragen. Etwas Refactoring, neue
+Funktionen und ein verbessertes Design wären
+wünschenswert. Dafür wollen wir uns zu einem Hackathon
+im vspace.one am Dienstag den 5.März treffen.<br>
+Du hast Bock unsere Website zu tunen?<br>
+Du hast Bock zu coden, zu designen und konstruktiv zu sein?<br>
+Dann sei dabei!</p>
+          </span>
+        </span>
+          <span class="event_download"><span class="event_download_pre event_pre"></span><span class="event_download_data"><a href="download/20190305_Hackathon_Website.pdf">Download Einladung</a></span></span>
+        </span>
+
+          <span class="event">
           <span class="event_title">Chaostreff</span>
           <span class="event_price"><span class="event_price_pre event_pre"></span><span class="event_price_data"></span></span>
           <span class="event_desc"><span class="event_desc_pre"></span><span class="event_desc_data">
