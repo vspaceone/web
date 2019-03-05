@@ -78,11 +78,11 @@
     </div>
 </div>
 
-<div class="container-fluid bg-2 text-center">
+<div class="container-fluid bg-2 text-center" id="Events">
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
-            <h2 class="margin" id="Events">Events</h2>
+            <h2 class="margin">Events</h2>
             <span class="event">
             <span class="event_title">Hackerjeopardy, Lounge and Chill</span>
             <span class="event_date"><span class="event_date_pre event_pre"></span><span class="event_date_data"> Sa., 2. März 2019</span></span>
@@ -146,8 +146,8 @@ Dann sei dabei!</p>
     <h3 style="margin-top:2px" id="stateText">Defect</h3>
 </div>
 
-<div class="container-fluid bg-2 text-center">
-    <h2 class="margin" id="Ort">Wo findest du uns?</h2>
+<div class="container-fluid bg-2 text-center" id="Ort">
+    <h2 class="margin">Wo findest du uns?</h2>
     <p>Du findest uns in der Doppelstadt Villingen-Schwenningen.</p>
     <p>Unsere Andresse lautet:<br> Wilhelm-Binder-Str. 19<br> 78048 Villingen</p><br>
     <p></p>
