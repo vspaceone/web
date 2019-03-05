@@ -163,6 +163,9 @@ Dann sei dabei!</p>
     <small>
         <a href="http://www.openstreetmap.org/?mlat=48.06501&amp;mlon=8.45645#map=18/48.06502/8.45645" style="color: #ffffff"><i>Große Karte anzeigen</i></a>
     </small>
+    <p>Folge uns auf Twitter:</p>
+    <a href="https://twitter.com/vspaceone?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-lang="de" data-dnt="true" data-show-count="false">Follow @vspaceone</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <a class="twitter-timeline" data-lang="de" data-width=100% data-height="400" data-dnt="true" data-theme="dark" href="https://twitter.com/vspaceone?ref_src=twsrc%5Etfw">Tweets von vspaceone</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
     <!--<span class="glyphicon glyphicon-search"></span> Search -->
 
 </div>
