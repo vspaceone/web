@@ -81,9 +81,9 @@
   <div class="container-fluid bg-2 text-center no-side-padding">
     <div class="row">
       <div class="col">
-        <h2 class="margin" id="Events">Events</h2>
+        <h2 class="margin" id="Events-heading">Events</h2>
+        <div id="events">
         <span class="event">
-
           <span class="event_details">
             <span class="event_title">Chaostreff</span>
             <span class="event_time">11:00 Uhr bis 12:00 Uhr</span>
@@ -100,28 +100,69 @@
             <span class="event_month text-center">Dezember</span>
           </span>
         </span>
+      </div>
 
-        <span class="event">
-
-          <span class="event_details">
-            <span class="event_title">All Creatures Welcome</span>
-            <span class="event_time">ab 20 Uhr</span>
-            <span class="event_icons">
-            <span class="glyphicon-plus glyphicon"></span>
-            <span class="glyphicon-pencil glyphicon"></span>
-          </span>
-            <span class="event_desc">
-              <p>Grundsätzlich treffen wir uns jeden Dienstag Abend ab ca. 19:00 Uhr in der Wilhelm-Binder-Str 19, Villingen. Jeder ist herzlich eingeladen vorbei zu schauen.</p>
-            </span>
-          </span>
-          <span class="event_date align-middle">
-            <span class="event_day text-center">12</span>
-            <span class="event_month text-center">Januar</span>
-          </span>
-        </span>
       </div>
     </div>
   </div>
+
+  <script>
+  var months = [
+    "Jan",
+    "Feb",
+    "März",
+    "Apr",
+    "Mai",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sept",
+    "Okt",
+    "Nov",
+    "Dez"
+  ];
+  Number.prototype.pad = function(size) {
+    var s = String(this);
+    while (s.length < (size || 2)) {s = "0" + s;}
+    return s;
+  }
+
+
+    $.getJSON("events.json",function(data){
+      $.each(data, function(i){
+        console.log(i)
+        d = new Date(data[i].start);
+        if(data[i].end){
+          dend = new Date(data[i].end);
+          tstr = d.getHours().pad(2) + ":" + d.getMinutes().pad(2) + " bis " + dend.getHours().pad(2) + ":" + dend.getMinutes().pad(2);
+        }else{
+          tstr = d.getHours().pad(2) + ":" + d.getMinutes().pad(2);
+        }
+        day = d.getDate()
+        month = months[d.getMonth()]
+
+        $("#events").append(`
+          <span class="event">
+            <span class="event_details">
+              <span class="event_title">`+data[i].title+`</span>
+              <span class="event_time">`+tstr+`</span>
+              <span class="event_icons">
+              <span class="glyphicon-plus glyphicon"></span>
+              <span class="glyphicon-pencil glyphicon"></span>
+            </span>
+              <span class="event_desc">
+                <p>`+data[i].desc+`</p>
+              </span>
+            </span>
+            <span class="event_date align-middle">
+              <span class="event_day text-center">`+day+`</span>
+              <span class="event_month text-center">`+month+`</span>
+            </span>
+          </span>
+        `);
+      });
+    });
+  </script>
 
   <div class="container-fluid text-center label-warning" id="state">
     <h2 style="margin-bottom: 2px">Raumstatus</h2>
@@ -161,4 +202,6 @@
     density: 'high'
   };
   var particleCanvas = new ParticleNetwork(canvasDiv, options);
+
+
   </script>
