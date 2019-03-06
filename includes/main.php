@@ -78,10 +78,10 @@
     </div>
   </div>
 
-  <div class="container-fluid bg-2 text-center no-side-padding">
+  <div class="container-fluid bg-2 text-center no-side-padding"  id="Events">
     <div class="row">
       <div class="col">
-        <h2 class="margin" id="Events-heading">Events</h2>
+        <h2 class="margin">Events</h2>
         <div id="events">
         <span class="event">
           <span class="event_details">
@@ -171,8 +171,8 @@
     <h3 style="margin-top:2px" id="stateText">Defect</h3>
   </div>
 
-  <div class="container-fluid bg-2 text-center">
-    <h2 class="margin" id="Ort">Wo findest du uns?</h2>
+<div class="container-fluid bg-2 text-center" id="Ort">
+    <h2 class="margin">Wo findest du uns?</h2>
     <p>Du findest uns in der Doppelstadt Villingen-Schwenningen.</p>
     <p>Unsere Andresse lautet:<br> Wilhelm-Binder-Str. 19<br> 78048 Villingen</p><br>
     <p></p>

@@ -14,6 +14,14 @@ h2 {
     text-align: center;
 }
 
+.h-text-left > h2 {
+    text-align: left;
+}
+
+.h-text-left > * > li > h2 {
+    text-align: left;
+}
+
 p {
     font-size: 20px;
 }
@@ -26,6 +34,10 @@ p {
     background-color: #08A059;
     /* Green */
     color: #ffffff;
+}
+
+.bg-1 > * > a {
+    color: #cfcfcf;
 }
 
 .bg-2 {
