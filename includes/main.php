@@ -144,8 +144,10 @@
         $("#events").append(`
           <span class="event">
             <span class="event_details">
+            <span class="event_titleline">
               <span class="event_title">`+data[i].title+`</span>
               <span class="event_time">`+tstr+`</span>
+            </span>
               <span class="event_icons">
               <span class="glyphicon-plus glyphicon"></span>
               <span class="glyphicon-pencil glyphicon"></span>

@@ -160,6 +160,10 @@ p {
 
 }
 
+.event_titleline {
+  display: block;
+}
+
 .event_title {
   font-size: 1.6em;
   padding-right: 5px;
