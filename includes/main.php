@@ -157,11 +157,39 @@
     "Dez"
     ];
     Number.prototype.pad = function(size) {
-    var s = String(this);
-    while (s.length < (size || 2)) {s = "0" + s;}
-    return s;
+        var s = String(this);
+        while (s.length < (size || 2)) {s = "0" + s;}
+        return s;
     }
 
+    function appendEvent(eventModel) {
+        $("#events").append(`
+            <div class="event">
+                <div class="row">
+                    <div class="col-xs-offset-4 col-xs-4 col-md-offset-2 col-md-2 no-side-padding" >
+                        <div class="event_date align-middle">
+                            <div class="event_day text-center">`+(eventModel.day || "")+`</div>
+                            <div class="event_month text-center">`+(eventModel.month || "")+`</div>
+                        </div>
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-6 no-side-padding" >
+                        <div class="event_details">
+                            <span class="event_titleline">
+                            <span class="event_title">`+ (eventModel.title || "") +`</span>
+                            <span class="event_time">`+ (eventModel.time || "") +`</span>
+                            <span class="event_icons">`+ (eventModel.link || "") + (eventModel.download || "") +`
+                                <span class="glyphicon-calendar glyphicon"></span>
+                            </span>
+                            </span>
+                            <span class="event_desc">
+                                <p>`+(eventModel.trimmedDesc || "")+(eventModel.trimmed || "")+`</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `);
+    }
 
     $.getJSON("events.json",function(data){
         $.each(data, function(i){
@@ -173,9 +201,8 @@
                 var dend = new Date(data[i].end);
                 tstr = d.getHours().pad(2) + ":" + d.getMinutes().pad(2) + " bis " + dend.getHours().pad(2) + ":" + dend.getMinutes().pad(2) + " Uhr";
             }else{
-                tstr = d.getHours().pad(2) + ":" + d.getMinutes().pad(2) + " Uhr";
+                tstr = 'ab' + d.getHours().pad(2) + ":" + d.getMinutes().pad(2) + " Uhr";
             }
-
 
             eventModel.time = tstr;
             eventModel.day = d.getDate()
@@ -209,32 +236,8 @@
                 eventModel.trimmedDesc = "no description!";
             }
 
-            $("#events").append(`
-                <div class="event">
-                    <div class="row">
-                        <div class="col-xs-offset-4 col-xs-4 col-md-offset-2 col-md-2 no-side-padding" >
-                            <div class="event_date align-middle">
-                                <div class="event_day text-center">`+(eventModel.day || "")+`</div>
-                                <div class="event_month text-center">`+(eventModel.month || "")+`</div>
-                            </div>
-                        </div>
-                        <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-6 no-side-padding" >
-                            <div class="event_details">
-                                <span class="event_titleline">
-                                <span class="event_title">`+ (eventModel.title || "") +`</span>
-                                <span class="event_time">`+ (eventModel.time || "") +`</span>
-                                <span class="event_icons">`+ (eventModel.link || "") + (eventModel.download || "") +`
-                                    <span class="glyphicon-calendar glyphicon"></span>
-                                </span>
-                                </span>
-                                <span class="event_desc">
-                                    <p>`+(eventModel.trimmedDesc || "")+(eventModel.trimmed || "")+`</p>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            `);
+            appendEvent(eventModel)
+            
         });
     });
 </script>
