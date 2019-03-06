@@ -83,7 +83,9 @@
       <div class="col">
         <h2 class="margin">Events</h2>
         <div id="events">
-        <span class="event">
+          <!-- Is getting field by a script loading the events.json file -->
+
+        <!--span class="event">
           <span class="event_details">
             <span class="event_title">Chaostreff</span>
             <span class="event_time">11:00 Uhr bis 12:00 Uhr</span>
@@ -96,10 +98,9 @@
             </span>
           </span>
           <span class="event_date align-middle">
-            <span class="event_day text-center">22</span>
-            <span class="event_month text-center">Dezember</span>
+            <span class="event_day text-center">Di</span>
           </span>
-        </span>
+        </span-->
       </div>
 
       </div>
@@ -134,33 +135,67 @@
         d = new Date(data[i].start);
         if(data[i].end){
           dend = new Date(data[i].end);
-          tstr = d.getHours().pad(2) + ":" + d.getMinutes().pad(2) + " bis " + dend.getHours().pad(2) + ":" + dend.getMinutes().pad(2);
+          tstr = d.getHours().pad(2) + ":" + d.getMinutes().pad(2) + " bis " + dend.getHours().pad(2) + ":" + dend.getMinutes().pad(2) + " Uhr";
         }else{
-          tstr = d.getHours().pad(2) + ":" + d.getMinutes().pad(2);
+          tstr = d.getHours().pad(2) + ":" + d.getMinutes().pad(2) + " Uhr";
         }
         day = d.getDate()
         month = months[d.getMonth()]
 
+        if(data[i].download){
+          download = `<a href="download/` + data[i].download + `" class="glyphicon-file glyphicon" style="color: black;"></a>`
+        }else{
+          download = ""
+        }
+
+        /*var trimmedDesc = data[i].desc.substr(0, 1000);
+        if(trimmedDesc != data[i].desc){
+          if(data[i].download){
+            trimmed = "... <a href=\"download/" + data[i].download + "\">mehr</a>";
+          }else{
+            trimmed = "... ";
+          }
+          trimmedDesc = trimmedDesc.substr(0, Math.min(trimmedDesc.length, trimmedDesc.lastIndexOf(" ")))
+        }else{
+          trimmed = ""
+        }*/
+
+        if(data[i].desc){
+          trimmedDesc = data[i].desc;
+          trimmed = "";
+        }else{
+          trimmedDesc = "no description!";
+          trimmed = "";
+        }
+
+
+
+
         $("#events").append(`
-          <span class="event">
-            <span class="event_details">
-            <span class="event_titleline">
-              <span class="event_title">`+data[i].title+`</span>
-              <span class="event_time">`+tstr+`</span>
-            </span>
-              <span class="event_icons">
-              <span class="glyphicon-plus glyphicon"></span>
-              <span class="glyphicon-pencil glyphicon"></span>
-            </span>
-              <span class="event_desc">
-                <p>`+data[i].desc+`</p>
+          <div class="event">
+          <div class="row justify-content-center">
+            <div class="col-md-5" style="padding-right: 0;">
+              <div class="event_date align-middle">
+                <div class="event_day text-center">`+day+`</div>
+                <div class="event_month text-center">`+month+`</div>
+              </div>
+            </div>
+            <div class="col-md-6" style="padding-left: 0;">
+              <div class="event_details">
+              <span class="event_titleline">
+                <span class="event_title">`+data[i].title+`</span>
+                <span class="event_time">`+tstr+`</span>
+                <span class="event_icons">`+download+`
+                  <span class="glyphicon-calendar glyphicon"></span>
+                </span>
               </span>
-            </span>
-            <span class="event_date align-middle">
-              <span class="event_day text-center">`+day+`</span>
-              <span class="event_month text-center">`+month+`</span>
-            </span>
-          </span>
+                <span class="event_desc">
+                  <p>`+trimmedDesc+trimmed+`</p>
+                </span>
+              </div>
+            </div>
+          </div>
+          </div>
         `);
       });
     });
