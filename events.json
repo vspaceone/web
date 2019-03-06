@@ -1,0 +1,24 @@
+[
+  {
+		"title":"Hackathon Webseite",
+		"start":"2019-03-05T19:00:00+01:00",
+		"end":"2019-03-05T23:00:00+01:00",
+    "loc1":"vspace.one",
+    "loc2":"Wilhelm-Binderstraße 19",
+    "loc3":"78048 Villingen-Schwenningen",
+    "price":0,
+    "desc":"Unsere Web",
+    "download":""
+	},
+  {
+    "title":"Hackathon Webseite 2",
+    "start":"2019-03-05T19:00:00+01:00",
+    "end":"2019-03-05T23:00:00+01:00",
+    "loc1":"vspace.one",
+    "loc2":"Wilhelm-Binderstraße 19",
+    "loc3":"78048 Villingen-Schwenningen",
+    "price":0,
+    "desc":"Unsere Web",
+    "download":""
+  }
+]
