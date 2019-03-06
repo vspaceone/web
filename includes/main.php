@@ -80,36 +80,34 @@
 
 <div class="container-fluid bg-2 text-center no-side-padding"  id="Events">
     <div class="row">
-        <div class="col">
         <h2 class="margin">Events</h2>
         <div id="events">
-            <!-- Is getting field by a script loading the events.json file -->
+            <!-- Is getting filled by a script loading the events.json file -->
 
             <div class="event">
-            <div class="row justify-content-center">
-            <div class="col-md-5" style="padding-right: 0;">
-                <div class="event_date align-middle">
-                <div class="event_day text-center">Di</div>
-                <div class="event_month text-center"></div>
+                <div class="row">
+                    <div class="col-xs-offset-4 col-xs-4 col-md-offset-2 col-md-2 no-side-padding" >
+                        <div class="event_date align-middle">
+                            <div class="event_day text-center">Di</div>
+                            <div class="event_month text-center"></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-6 no-side-padding" >
+                        <div class="event_details">
+                            <span class="event_titleline">
+                            <span class="event_title">Chaostreff</span>
+                            <span class="event_time">ab 19:00 Uhr</span>
+                            <span class="event_icons">
+                                <span class="glyphicon-calendar glyphicon"></span>
+                            </span>
+                            </span>
+                            <span class="event_desc">
+                                <p>Wir treffen uns jeden Dienstag ab 19:00 Uhr im vspace.one. Das ist der perfekte Termin, wenn uns kennenlernen willst oder einfach mal vorbeischauen möchtest. Komm einfach vorbei und sei willkommen!</p>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6" style="padding-left: 0;">
-                <div class="event_details">
-                <span class="event_titleline">
-                <span class="event_title">Chaostreff</span>
-                <span class="event_time">ab 19:00 Uhr</span>
-                <span class="event_icons">
-                    <span class="glyphicon-calendar glyphicon"></span>
-                </span>
-                </span>
-                <span class="event_desc">
-                    <p>Wir treffen uns jeden Dienstag ab 19:00 Uhr im vspace.one. Das ist der perfekte Termin, wenn uns kennenlernen willst oder einfach mal vorbeischauen möchtest. Komm einfach vorbei und sei willkommen!</p>
-                </span>
-                </div>
-            </div>
-            </div>
-            </div>
-        </div>
 
         </div>
     </div>
@@ -167,72 +165,76 @@
 
     $.getJSON("events.json",function(data){
         $.each(data, function(i){
-        console.log(i)
-        d = new Date(data[i].start);
-        if(data[i].end){
-            dend = new Date(data[i].end);
-            tstr = d.getHours().pad(2) + ":" + d.getMinutes().pad(2) + " bis " + dend.getHours().pad(2) + ":" + dend.getMinutes().pad(2) + " Uhr";
-        }else{
-            tstr = d.getHours().pad(2) + ":" + d.getMinutes().pad(2) + " Uhr";
-        }
-        day = d.getDate()
-        month = months[d.getMonth()]
+            var eventModel = {}
+            var tstr
 
-        if(data[i].download){
-            download = `<a href="download/` + data[i].download + `" class="glyphicon-file glyphicon" style="color: black;"></a>`
-        }else{
-            download = ""
-        }
-
-        /*var trimmedDesc = data[i].desc.substr(0, 1000);
-        if(trimmedDesc != data[i].desc){
-            if(data[i].download){
-            trimmed = "... <a href=\"download/" + data[i].download + "\">mehr</a>";
+            var d = new Date(data[i].start);
+            if(data[i].end){
+                var dend = new Date(data[i].end);
+                tstr = d.getHours().pad(2) + ":" + d.getMinutes().pad(2) + " bis " + dend.getHours().pad(2) + ":" + dend.getMinutes().pad(2) + " Uhr";
             }else{
-            trimmed = "... ";
+                tstr = d.getHours().pad(2) + ":" + d.getMinutes().pad(2) + " Uhr";
             }
-            trimmedDesc = trimmedDesc.substr(0, Math.min(trimmedDesc.length, trimmedDesc.lastIndexOf(" ")))
-        }else{
-            trimmed = ""
-        }*/
-
-        if(data[i].desc){
-            trimmedDesc = data[i].desc;
-            trimmed = "";
-        }else{
-            trimmedDesc = "no description!";
-            trimmed = "";
-        }
 
 
+            eventModel.time = tstr;
+            eventModel.day = d.getDate()
+            eventModel.month = months[d.getMonth()]
 
+            if (data[i].link){
+                eventModel.link = `<a href="` + data[i].link + `" target="_blank" class="glyphicon-link glyphicon" style="color: black;"></a>`            
+            }
 
-        $("#events").append(`
-            <div class="event">
-            <div class="row justify-content-center">
-            <div class="col-md-5" style="padding-right: 0;">
-                <div class="event_date align-middle">
-                <div class="event_day text-center">`+day+`</div>
-                <div class="event_month text-center">`+month+`</div>
+            if(data[i].download){
+                eventModel.download = `<a href="` + data[i].download + `" target="_blank" class="glyphicon-file glyphicon" style="color: black;"></a>`
+            }
+
+            /*var trimmedDesc = data[i].desc.substr(0, 1000);
+            if(trimmedDesc != data[i].desc){
+                if(data[i].download){
+                trimmed = "... <a href=\"download/" + data[i].download + "\">mehr</a>";
+                }else{
+                trimmed = "... ";
+                }
+                trimmedDesc = trimmedDesc.substr(0, Math.min(trimmedDesc.length, trimmedDesc.lastIndexOf(" ")))
+            }else{
+                trimmed = ""
+            }*/
+
+            eventModel.title = data[i].title
+
+            if(data[i].desc){
+                eventModel.trimmedDesc = data[i].desc;
+            }else{
+                eventModel.trimmedDesc = "no description!";
+            }
+
+            $("#events").append(`
+                <div class="event">
+                    <div class="row">
+                        <div class="col-xs-offset-4 col-xs-4 col-md-offset-2 col-md-2 no-side-padding" >
+                            <div class="event_date align-middle">
+                                <div class="event_day text-center">`+(eventModel.day || "")+`</div>
+                                <div class="event_month text-center">`+(eventModel.month || "")+`</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-6 no-side-padding" >
+                            <div class="event_details">
+                                <span class="event_titleline">
+                                <span class="event_title">`+ (eventModel.title || "") +`</span>
+                                <span class="event_time">`+ (eventModel.time || "") +`</span>
+                                <span class="event_icons">`+ (eventModel.link || "") + (eventModel.download || "") +`
+                                    <span class="glyphicon-calendar glyphicon"></span>
+                                </span>
+                                </span>
+                                <span class="event_desc">
+                                    <p>`+(eventModel.trimmedDesc || "")+(eventModel.trimmed || "")+`</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6" style="padding-left: 0;">
-                <div class="event_details">
-                <span class="event_titleline">
-                <span class="event_title">`+data[i].title+`</span>
-                <span class="event_time">`+tstr+`</span>
-                <span class="event_icons">`+download+`
-                    <span class="glyphicon-calendar glyphicon"></span>
-                </span>
-                </span>
-                <span class="event_desc">
-                    <p>`+trimmedDesc+trimmed+`</p>
-                </span>
-                </div>
-            </div>
-            </div>
-            </div>
-        `);
+            `);
         });
     });
 </script>

@@ -162,6 +162,7 @@ p {
 .event {
   margin: auto;
   text-align: left;
+  margin-bottom: 10px;
 }
 
 .event_titleline {
@@ -189,8 +190,8 @@ p {
 }
 
 .event_date {
-  width: 13em;
-  float: right;
+  /*width: 13em;*/
+  /*float: right;*/
   background-color: #08A059;
   margin: 5px;
   height: 13em;
