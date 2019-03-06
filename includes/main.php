@@ -85,22 +85,30 @@
         <div id="events">
           <!-- Is getting field by a script loading the events.json file -->
 
-        <!--span class="event">
-          <span class="event_details">
-            <span class="event_title">Chaostreff</span>
-            <span class="event_time">11:00 Uhr bis 12:00 Uhr</span>
-            <span class="event_icons">
-            <span class="glyphicon-plus glyphicon"></span>
-            <span class="glyphicon-pencil glyphicon"></span>
-          </span>
-            <span class="event_desc">
-              <p>Grundsätzlich treffen wir uns jeden Dienstag Abend ab ca. 19:00 Uhr in der Wilhelm-Binder-Str 19, Villingen. Jeder ist herzlich eingeladen vorbei zu schauen.</p>
-            </span>
-          </span>
-          <span class="event_date align-middle">
-            <span class="event_day text-center">Di</span>
-          </span>
-        </span-->
+          <div class="event">
+          <div class="row justify-content-center">
+            <div class="col-md-5" style="padding-right: 0;">
+              <div class="event_date align-middle">
+                <div class="event_day text-center">Di</div>
+                <div class="event_month text-center"></div>
+              </div>
+            </div>
+            <div class="col-md-6" style="padding-left: 0;">
+              <div class="event_details">
+              <span class="event_titleline">
+                <span class="event_title">Chaostreff</span>
+                <span class="event_time">ab 19:00 Uhr</span>
+                <span class="event_icons">
+                  <span class="glyphicon-calendar glyphicon"></span>
+                </span>
+              </span>
+                <span class="event_desc">
+                  <p>Wir treffen uns jeden Dienstag ab 19:00 Uhr im vspace.one. Das ist der perfekte Termin, wenn uns kennenlernen willst oder einfach mal vorbeischauen möchtest. Komm einfach vorbei und sei willkommen!</p>
+                </span>
+              </div>
+            </div>
+          </div>
+          </div>
       </div>
 
       </div>
