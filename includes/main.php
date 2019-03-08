@@ -86,7 +86,7 @@
 
             <div class="event">
                 <div class="row">
-                    <div class="col-xs-offset-4 col-xs-4 col-md-offset-2 col-md-2 no-side-padding" >
+                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-2 no-side-padding" >
                         <div class="event_date align-middle">
                             <div class="event_day text-center">Di</div>
                             <div class="event_month text-center"></div>
@@ -166,7 +166,7 @@
         $("#events").append(`
             <div class="event">
                 <div class="row">
-                    <div class="col-xs-offset-4 col-xs-4 col-md-offset-2 col-md-2 no-side-padding" >
+                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-2 no-side-padding" >
                         <div class="event_date align-middle">
                             <div class="event_day text-center">`+(eventModel.day || "")+`</div>
                             <div class="event_month text-center">`+(eventModel.month || "")+`</div>
