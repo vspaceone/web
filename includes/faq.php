@@ -5,7 +5,7 @@
         <h1 class="margin">Fragen und Antworten</h1>
         <!--img src="pic/logo_vspaceone.svg" class="img-responsive img-circle margin" style="display:inline;" alt="Bird" width="350" height="350">
         <h1>Ein <i><a href="https://de.wikipedia.org/wiki/FabLab" style="color: #ffffff">Makerspace</a></i> und <i><a href="https://de.wikipedia.org/wiki/Hackerspace" style="color: #ffffff">Hackerspace</a></i>.</h1-->
-        
+
     </div>
 </div>
 
@@ -32,7 +32,7 @@
     <h2 class="margin">Was ist ein Hacker? Sollte ich Angst haben?</h2>
     <p>
         Der Begriff "Hacker" bezeichnet für uns primär nicht das, was im Allgemeinen umgangssprachlich
-        darunter verstanden wird. 
+        darunter verstanden wird.
         <br><br>
         Die kurze und oberflächliche Antwort: Ein Hacker ist ein Tüftler.
         <br><br>
@@ -49,7 +49,7 @@
 <div class="container-fluid bg-3 text-left">
     <h2 class="margin">Was macht ihr nun?</h2><br>
     <p>
-        Unser Ziel ist der Wissensaustausch sowie die Bildung aller interessierten 
+        Unser Ziel ist der Wissensaustausch sowie die Bildung aller interessierten
         in den Bereichen neuartiger computergestützter Technologien (wie zum Beispiel aber nicht ausschließlich
         3D-­Druck, CNC, Internet der Dinge und Robotik), der Elektrotechnik und Elektronik
         sowie auf dem Gebiet der Reparatur und Wartung.
@@ -66,7 +66,7 @@
 
 <!-- white -->
 <div class="container-fluid bg-3 text-left">
-    <h2 class="margin">Wo darf ich Parken?</h2><br>
+    <h2 class="margin">Wo darf ich parken?</h2><br>
     <p>Für Fahrräder steht am mittleren Eingang ein Fahrradständer bereit. Autos von Mitgliedern und Besuchern dürfen werktags ab 16 Uhr sowie am Wochenende und feiertags ganztags im Innenhof geparkt werden.</p>
 </div>
 
@@ -74,9 +74,9 @@
 <div class="container-fluid bg-2 text-left">
     <h2 class="margin">Wann treffe ich euch an?</h2>
     <p>
-        Überwiegend treffen wir uns jeden Dienstagabend ab etwa 19.00 Uhr. Die meisten Mitglieder haben ihren eigenen Schlüssel und können somit rein, wann immer sie wollen. 
-        Ob gerade jemand da ist, erfährst du unter <a href="https://vspace.one/dashboard.php">https://vspace.one/dashboard.php</a> sowie auch auf direkt auf vspace.one. 
-        Durch die SpaceAPI gibt es zudem auch fertige Apps, um sich den Raumstatus anzeigen zu lassen. Wer die Daten lieber selbst verarbeiten möchte, 
+        Überwiegend treffen wir uns jeden Dienstagabend ab etwa 19.00 Uhr. Die meisten Mitglieder haben ihren eigenen Schlüssel und können somit rein, wann immer sie wollen.
+        Ob gerade jemand da ist, erfährst du unter <a href="https://vspace.one/dashboard.php">https://vspace.one/dashboard.php</a> sowie auch auf direkt auf vspace.one.
+        Durch die SpaceAPI gibt es zudem auch fertige Apps, um sich den Raumstatus anzeigen zu lassen. Wer die Daten lieber selbst verarbeiten möchte,
         findet sie hier: <a href="https://vspace.one/spaceapi.json">https://vspace.one/spaceapi.json</a>
     </p>
 </div>
@@ -113,7 +113,7 @@
         Wenn du nachts kommst, idealerweise ein Mobiltelefon und unsere Nummer, um im Space anzurufen, damit wir dir die Tür öffnen.
         Wir arbeiten aktuell daran, dass eingehende Anrufe auf jeden Fall bemerkt werden!
         <br><br>
-        Ansonsten wäre Zeit und Interesse praktisch. Ein Notebook dabei zu haben ist üblicherweise auch gut. 
+        Ansonsten wäre Zeit und Interesse praktisch. Ein Notebook dabei zu haben ist üblicherweise auch gut.
         Getränke gibt es bei uns für je 1€, du darfst aber auch eigene mitbringen.
     </p>
 </div>

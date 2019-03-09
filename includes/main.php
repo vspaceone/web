@@ -28,14 +28,14 @@
 <div class="container-fluid bg-2 text-left" id="Mitmachen">
     <h2 class="margin">Mitmachen</h2>
     <p>
-        Bei uns kann jeder und jede mitmachen. Interessierte Schüler, Studenten und Erwachsene, die sich für kreativen Umgang mit Technik interessieren.
-        Wenn euch gefällt was wir tun und ihr uns unterstützen wollt findet ihr Beitrittsformular <a href="?page=mitgliedwerden">hier</a>.
+    Bei uns kann jeder und jede mitmachen. Interessierte Schüler, Studenten und Erwachsene, die sich für kreativen Umgang mit Technik interessieren.
+    Wenn euch gefällt was wir tun und ihr uns unterstützen wollt findet ihr Beitrittsformular <a href="?page=mitgliedwerden">hier</a>.
     </p>
     <br>
     <p class="text-center">
-        Trag dich einfach in unsere <a href="https://lists.vspace.one/postorius/lists/public.lists.vspace.one/">Mailingliste</a> ein und bleib up-to-date.
-        <br><br>
-        Oder tritt unserer Telegram Gruppe bei: <a href="https://t.me/joinchat/DmNdswpnKgox_zzqENYXiA">Join</a>
+    Trag dich einfach in unsere <a href="https://lists.vspace.one/postorius/lists/public.lists.vspace.one/">Mailingliste</a> ein und bleib up-to-date.
+    <br><br>
+    Oder tritt unserer Telegram Gruppe bei: <a href="https://t.me/joinchat/DmNdswpnKgox_zzqENYXiA">Join</a>
     </p>
     <p>Wir treffen uns jeden Dienstag ab 19:00 Uhr im 'Space'. Schau doch einfach mal vorbei oder schreib uns auf der Mailingliste!<p>
 </div>
@@ -45,95 +45,69 @@
     <h2 class="margin">Ausstattung</h2><br>
     <div class="row">
         <div class="col-sm-4">
-            <p>Für unsere Verbindung und Vernetzung in aller Welt sorgt ein Router mit Internetzugang. Für Gäste betreiben wir einen <a href=https://freifunk.net/>Freifunk Zugangspunkt</a>.</p>
+        <p>Für unsere Verbindung und Vernetzung in aller Welt sorgt ein Router mit Internetzugang. Für Gäste betreiben wir einen <a href=https://freifunk.net/>Freifunk Zugangspunkt</a>.</p>
         </div>
         <div class="col-sm-4">
-            <p>Für die Umsetzung cooler Projekte haben wir eine Vielzahl an Werkzeugen und Maschinen (z.B. einen 3D-Drucker). Eine aktuelle Liste gibt es im <a href="https://wiki.vspace.one">Wiki</a>.</p>
+        <p>Für die Umsetzung cooler Projekte haben wir eine Vielzahl an Werkzeugen und Maschinen (z.B. einen 3D-Drucker). Eine aktuelle Liste gibt es im <a href="https://wiki.vspace.one">Wiki</a>.</p>
         </div>
         <div class="col-sm-4">
-            <p>Wir haben zwei moderne Räume. In der Brücke stehen bequeme Sofas, ein Beamer und ein Kühlschrank. Im Maschinenraum, kann an Projekten gearbeitet werden.</p>
+        <p>Wir haben zwei moderne Räume. In der Brücke stehen bequeme Sofas, ein Beamer und ein Kühlschrank. Im Maschinenraum, kann an Projekten gearbeitet werden.</p>
         </div>
         <div class="row">
-            <div class="col-sm-4">
-                <img src="pic/vspaceone_ausstattung_1.jpg" class="img-responsive margin" style="width:100%" alt="Maschinenraum">
-            </div>
-            <div class="col-sm-4">
-                <img src="pic/vspaceone_ausstattung_2.jpg" class="img-responsive margin" style="width:100%" alt="vspace.one Logo">
-            </div>
-            <div class="col-sm-4">
-                <img src="pic/vspaceone_ausstattung_3.jpg" class="img-responsive margin" style="width:100%" alt="Brücke">
-            </div>
+        <div class="col-sm-4">
+            <img src="pic/vspaceone_ausstattung_1.jpg" class="img-responsive margin" style="width:100%" alt="Maschinenraum">
+        </div>
+        <div class="col-sm-4">
+            <img src="pic/vspaceone_ausstattung_2.jpg" class="img-responsive margin" style="width:100%" alt="vspace.one Logo">
+        </div>
+        <div class="col-sm-4">
+            <img src="pic/vspaceone_ausstattung_3.jpg" class="img-responsive margin" style="width:100%" alt="Brücke">
+        </div>
         </div>
         <div class="row">
-            <div class="col-sm-4">
-                <img src="pic/vspaceone_ausstattung_4.jpg" class="img-responsive margin" style="width:100%" alt="Make things awesome Logo">
-            </div>
-            <div class="col-sm-4">
-                <img src="pic/vspaceone_ausstattung_5.jpg" class="img-responsive margin" style="width:100%" alt="Arbeitsplatz">
-            </div>
-            <div class="col-sm-4">
-                <img src="pic/vspaceone_ausstattung_6.jpg" class="img-responsive margin" style="width:100%" alt="Lager und Projektboxen">
-            </div>
+        <div class="col-sm-4">
+            <img src="pic/vspaceone_ausstattung_4.jpg" class="img-responsive margin" style="width:100%" alt="Make things awesome Logo">
+        </div>
+        <div class="col-sm-4">
+            <img src="pic/vspaceone_ausstattung_5.jpg" class="img-responsive margin" style="width:100%" alt="Arbeitsplatz">
+        </div>
+        <div class="col-sm-4">
+            <img src="pic/vspaceone_ausstattung_6.jpg" class="img-responsive margin" style="width:100%" alt="Lager und Projektboxen">
+        </div>
         </div>
     </div>
 </div>
 
-<div class="container-fluid bg-2 text-center" id="Events">
+<div class="container-fluid bg-2 text-center no-side-padding"  id="Events">
     <div class="row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6">
-            <h2 class="margin">Events</h2>
-            <span class="event">
-            <span class="event_title">Hackerjeopardy, Lounge and Chill</span>
-            <span class="event_date"><span class="event_date_pre event_pre"></span><span class="event_date_data"> Sa., 2. März 2019</span></span>
-            <span class="event_time"><span class="event_time_pre event_pre"></span><span class="event_time_data"> ab 20:00 Uhr</span></span>
-            <span class="event_loc_l1 event_loc">vspace.one e.V.</span>
-            <span class="event_loc_l2 event_loc"></span>
-            <span class="event_loc_l3 event_loc"></span>
-            <span class="event_price"><span class="event_price_pre event_pre"></span><span class="event_price_data"></span></span>
-            <span class="event_desc"><span class="event_desc_pre"></span><span class="event_desc_data">
-              <p>Am Samstag dem 2.März wird im vspace.one das "Hackerjeopardy, Lounge and Chill"-Event stattfinden! Du bist herzlich eingeladen! Los gehts um 20 Uhr in der
-Wilhelm-Binderstr 19 in 78048 Villingen. Es wird einige Runden
-Hackerjeopardy, Loungig-Musik vom DJ sowie Tschunk geben.<br>
+        <h2 class="margin">Events</h2>
+        <div id="events">
+            <!-- Is getting filled by a script loading the events.json file -->
 
-Insbesondere auch andere Hackerspaces in der Umgebung sind herzlich
-eingeladen vorbeizuschauen. Wenn du mit einer größeren Gruppe kommst,
-schreib mir bitte kurz einen Mail damit ich mich drauf einstellen kann. ;)</p>
-            </span>
-          </span>
-            <span class="event_download"><span class="event_download_pre event_pre"></span><span class="event_download_data"><a href="download/20190302_Hackerjeopardy.pdf">Download Einladung</a></span></span>
-          </span>
-
-          <span class="event">
-          <span class="event_title">Hackathon Webseite I</span>
-          <span class="event_date"><span class="event_date_pre event_pre"></span><span class="event_date_data"> Di., 5. März 2019</span></span>
-          <span class="event_time"><span class="event_time_pre event_pre"></span><span class="event_time_data"> ab 19:00 Uhr</span></span>
-          <span class="event_loc_l1 event_loc">vspace.one e.V.</span>
-          <span class="event_loc_l2 event_loc"></span>
-          <span class="event_loc_l3 event_loc"></span>
-          <span class="event_price"><span class="event_price_pre event_pre"></span><span class="event_price_data"></span></span>
-          <span class="event_desc"><span class="event_desc_pre"></span><span class="event_desc_data">
-            <p>Unsere Website https://vspace.one könnte etwas Coding-
-Arbeit ganz gut vertragen. Etwas Refactoring, neue
-Funktionen und ein verbessertes Design wären
-wünschenswert. Dafür wollen wir uns zu einem Hackathon
-im vspace.one am Dienstag den 5.März treffen.<br>
-Du hast Bock unsere Website zu tunen?<br>
-Du hast Bock zu coden, zu designen und konstruktiv zu sein?<br>
-Dann sei dabei!</p>
-          </span>
-        </span>
-          <span class="event_download"><span class="event_download_pre event_pre"></span><span class="event_download_data"><a href="download/20190305_Hackathon_Website.pdf">Download Einladung</a></span></span>
-        </span>
-
-          <span class="event">
-          <span class="event_title">Chaostreff</span>
-          <span class="event_price"><span class="event_price_pre event_pre"></span><span class="event_price_data"></span></span>
-          <span class="event_desc"><span class="event_desc_pre"></span><span class="event_desc_data">
-            <p>Grundsätzlich treffen wir uns jeden Dienstag Abend ab ca. 19:00 Uhr in der Wilhelm-Binder-Str 19, Villingen. Jeder ist herzlich eingeladen vorbei zu schauen.</p>
-          </span>
-        </span>
-        </span>
+            <div class="event">
+                <div class="row">
+                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-2 no-side-padding" >
+                        <div class="event_date align-middle">
+                            <div class="event_day text-center">Di</div>
+                            <div class="event_month text-center"></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-6 no-side-padding" >
+                        <div class="event_details">
+                            <span class="event_titleline">
+                            <span class="event_title">Chaostreff</span>
+                            <span class="event_time">ab 19:00 Uhr</span>
+                            <span class="event_icons">
+                                <span class="glyphicon-calendar glyphicon"></span>
+                            </span>
+                            </span>
+                            <span class="event_desc">
+                                <p>Wir treffen uns jeden Dienstag ab 19:00 Uhr im vspace.one. Das ist der perfekte Termin, wenn uns kennenlernen willst oder einfach mal vorbeischauen möchtest. Komm einfach vorbei und sei willkommen!</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
@@ -161,20 +135,121 @@ Dann sei dabei!</p>
 
     <br/>
     <small>
-        <a href="http://www.openstreetmap.org/?mlat=48.06501&amp;mlon=8.45645#map=18/48.06502/8.45645" style="color: #ffffff"><i>Große Karte anzeigen</i></a>
+      <a href="http://www.openstreetmap.org/?mlat=48.06501&amp;mlon=8.45645#map=18/48.06502/8.45645" style="color: #ffffff"><i>Große Karte anzeigen</i></a>
     </small>
     <!--<span class="glyphicon glyphicon-search"></span> Search -->
 
 </div>
 
+<script>
+    var months = [
+    "Jan",
+    "Feb",
+    "März",
+    "Apr",
+    "Mai",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sept",
+    "Okt",
+    "Nov",
+    "Dez"
+    ];
+    Number.prototype.pad = function(size) {
+        var s = String(this);
+        while (s.length < (size || 2)) {s = "0" + s;}
+        return s;
+    }
+
+    function appendEvent(eventModel) {
+        $("#events").append(`
+            <div class="event">
+                <div class="row">
+                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-2 no-side-padding" >
+                        <div class="event_date align-middle">
+                            <div class="event_day text-center">`+(eventModel.day || "")+`</div>
+                            <div class="event_month text-center">`+(eventModel.month || "")+`</div>
+                        </div>
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-6 no-side-padding" >
+                        <div class="event_details">
+                            <span class="event_titleline">
+                            <span class="event_title">`+ (eventModel.title || "") +`</span>
+                            <span class="event_time">`+ (eventModel.time || "") +`</span>
+                            <span class="event_icons">`+ (eventModel.link || "") + (eventModel.download || "") +`
+                                <span class="glyphicon-calendar glyphicon"></span>
+                            </span>
+                            </span>
+                            <span class="event_desc">
+                                <p>`+(eventModel.trimmedDesc || "")+(eventModel.trimmed || "")+`</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `);
+    }
+
+    $.getJSON("events.json",function(data){
+        $.each(data, function(i){
+            var eventModel = {}
+            var tstr
+
+            var d = new Date(data[i].start);
+            if(data[i].end){
+                var dend = new Date(data[i].end);
+                tstr = d.getHours().pad(2) + ":" + d.getMinutes().pad(2) + " bis " + dend.getHours().pad(2) + ":" + dend.getMinutes().pad(2) + " Uhr";
+            }else{
+                tstr = 'ab' + d.getHours().pad(2) + ":" + d.getMinutes().pad(2) + " Uhr";
+            }
+
+            eventModel.time = tstr;
+            eventModel.day = d.getDate()
+            eventModel.month = months[d.getMonth()]
+
+            if (data[i].link){
+                eventModel.link = `<a href="` + data[i].link + `" target="_blank" class="glyphicon-link glyphicon" style="color: black;"></a>`            
+            }
+
+            if(data[i].download){
+                eventModel.download = `<a href="` + data[i].download + `" target="_blank" class="glyphicon-file glyphicon" style="color: black;"></a>`
+            }
+
+            /*var trimmedDesc = data[i].desc.substr(0, 1000);
+            if(trimmedDesc != data[i].desc){
+                if(data[i].download){
+                trimmed = "... <a href=\"download/" + data[i].download + "\">mehr</a>";
+                }else{
+                trimmed = "... ";
+                }
+                trimmedDesc = trimmedDesc.substr(0, Math.min(trimmedDesc.length, trimmedDesc.lastIndexOf(" ")))
+            }else{
+                trimmed = ""
+            }*/
+
+            eventModel.title = data[i].title
+
+            if(data[i].desc){
+                eventModel.trimmedDesc = data[i].desc;
+            }else{
+                eventModel.trimmedDesc = "no description!";
+            }
+
+            appendEvent(eventModel)
+            
+        });
+    });
+</script>
+
 <script type="text/javascript">
     var canvasDiv = document.getElementById('particles');
     var options = {
-        particleColor: '#0ac26c',
-        background: '#08A059',
-        interactive: false,
-        speed: 'slow',
-        density: 'high'
+    particleColor: '#0ac26c',
+    background: '#08A059',
+    interactive: false,
+    speed: 'slow',
+    density: 'high'
     };
     var particleCanvas = new ParticleNetwork(canvasDiv, options);
 </script>
