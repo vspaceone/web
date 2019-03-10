@@ -25,4 +25,4 @@ Events could be loaded from /events.json in the following format.
 It's a array of all upcoming events. Most attributes should be self-explaining. Price is a float in euro.
 
 ## License
-See (LICENSE.md)[LICENSE.md].
+See [LICENSE.md](LICENSE.md).
