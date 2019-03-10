@@ -1,4 +1,4 @@
-# vspace.one landing page
+# vspace.one
 This repo is used to create the page at [vspace.one](http://vspace.one).
 
 ## Contribution
