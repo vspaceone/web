@@ -192,13 +192,16 @@
     }
 
     $.getJSON("events.json",function(data){
-        $.each(data, function(i){
+      events = data.events
+
+        $.each(events, function(i){
+           event = events[i];
             var eventModel = {}
             var tstr
 
-            var d = new Date(data[i].start);
-            if(data[i].end){
-                var dend = new Date(data[i].end);
+            var d = new Date(event.start);
+            if(event.end){
+                var dend = new Date(event.end);
                 tstr = d.getHours().pad(2) + ":" + d.getMinutes().pad(2) + " bis " + dend.getHours().pad(2) + ":" + dend.getMinutes().pad(2) + " Uhr";
             }else{
                 tstr = 'ab' + d.getHours().pad(2) + ":" + d.getMinutes().pad(2) + " Uhr";
@@ -208,18 +211,18 @@
             eventModel.day = d.getDate()
             eventModel.month = months[d.getMonth()]
 
-            if (data[i].link){
-                eventModel.link = `<a href="` + data[i].link + `" target="_blank" class="glyphicon-link glyphicon" style="color: black;"></a>`            
+            if (event.link){
+                eventModel.link = `<a href="` + event.link + `" target="_blank" class="glyphicon-link glyphicon" style="color: black;"></a>`
             }
 
-            if(data[i].download){
-                eventModel.download = `<a href="` + data[i].download + `" target="_blank" class="glyphicon-file glyphicon" style="color: black;"></a>`
+            if (event.download){
+                eventModel.download = `<a href="` + event.download + `" target="_blank" class="glyphicon-file glyphicon" style="color: black;"></a>`
             }
 
-            /*var trimmedDesc = data[i].desc.substr(0, 1000);
-            if(trimmedDesc != data[i].desc){
-                if(data[i].download){
-                trimmed = "... <a href=\"download/" + data[i].download + "\">mehr</a>";
+            /*var trimmedDesc = event.desc.substr(0, 1000);
+            if(trimmedDesc != event.desc){
+                if(event.download){
+                trimmed = "... <a href=\"download/" + event.download + "\">mehr</a>";
                 }else{
                 trimmed = "... ";
                 }
@@ -228,16 +231,16 @@
                 trimmed = ""
             }*/
 
-            eventModel.title = data[i].title
+            eventModel.title = event.title
 
-            if(data[i].desc){
-                eventModel.trimmedDesc = data[i].desc;
+            if(event.desc){
+                eventModel.trimmedDesc = event.desc;
             }else{
                 eventModel.trimmedDesc = "no description!";
             }
 
             appendEvent(eventModel)
-            
+
         });
     });
 </script>
