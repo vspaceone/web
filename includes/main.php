@@ -203,10 +203,10 @@
             if(event.end){
                 var dend = new Date(event.end);
                 // TODO fix to working with Timezones!
-                tstr = (d.getHours().pad(2)-1) + ":" + d.getMinutes().pad(2) + " bis " + (dend.getHours().pad(2)-1) + ":" + dend.getMinutes().pad(2) + " Uhr";
+                tstr = (d.getHours() + 1).pad(2) + ":" + d.getMinutes().pad(2) + " bis " + (dend.getHours()+1).pad(2) + ":" + dend.getMinutes().pad(2) + " Uhr CET";
             }else{
                // TODO fix to working with Timezones!
-                tstr = 'ab' + (d.getHours().pad(2)-1) + ":" + d.getMinutes().pad(2) + " Uhr";
+                tstr = 'ab' + (d.getHours()+1).pad(2) + ":" + d.getMinutes().pad(2) + " Uhr CET";
             }
 
             eventModel.time = tstr;
