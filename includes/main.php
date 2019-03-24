@@ -202,9 +202,11 @@
             var d = new Date(event.start);
             if(event.end){
                 var dend = new Date(event.end);
-                tstr = d.getHours().pad(2) + ":" + d.getMinutes().pad(2) + " bis " + dend.getHours().pad(2) + ":" + dend.getMinutes().pad(2) + " Uhr";
+                // TODO fix to working with Timezones!
+                tstr = (d.getHours().pad(2)-1) + ":" + d.getMinutes().pad(2) + " bis " + (dend.getHours().pad(2)-1) + ":" + dend.getMinutes().pad(2) + " Uhr";
             }else{
-                tstr = 'ab' + d.getHours().pad(2) + ":" + d.getMinutes().pad(2) + " Uhr";
+               // TODO fix to working with Timezones!
+                tstr = 'ab' + (d.getHours().pad(2)-1) + ":" + d.getMinutes().pad(2) + " Uhr";
             }
 
             eventModel.time = tstr;
