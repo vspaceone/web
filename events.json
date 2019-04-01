@@ -24,6 +24,18 @@
          "desc":"Am 13.April wird es im vspace.one eine Lightning-Talk-Session geben. Jeder ist herzlich eingeladen ein Thema vorzustellen. Das kann alles möglich sein; Projekte, Elektronik, Geräte, Softwaretools, Serverumstellungen, Experimente und soweiter. Wirklich alles! Ihr könnte auch erklären wie man Bier braut!<br>Ich freu mich auf euch und eure Vorträge (natürlich gerne auch ohne Folien).<br>Max",
          "link":"https://wiki.vspace.one/doku.php?id=treffen:lightningtalks_2019_04_13",
          "download":"download/20190413_LightningTalks.pdf"
+      },
+      {
+         "title":"Kinderferienprogramm: Blinkenrocket Lötworkshop",
+         "start":"2019-08-07T14:00:00+01:00",
+         "end":"2019-08-07T17:00:00+01:00",
+         "loc1":"vspace.one",
+         "loc2":"Wilhelm-Binderstraße 19",
+         "loc3":"78048 Villingen-Schwenningen",
+         "price":0.0,
+         "desc":"<b>Anmeldung über die Webseite des Kinderferienprogramms! Ohne Anmeldung keine Teilnahme!</b><br>Jede/r Teilnehmende lötet unter Anleitung eine kleine Raketenförmig-Platine. Die/Der Teilnehmende kann sich dabei nach und nach an kleinere Bauteile wagen. Die Beleuchtung der Rakete kann anschließend über einen Internetbrowser und ein Lautsprecherkabel selbst programmiert werden. Neben beliebigen Animationen kann der Name der/des Teilnehmenden als Laufschrift auf den 8 mal 8 LEDs der Rakete angezeigt werden. Der Fantasie sind keine Grenzen gesetzt. Das Projekt Blinkenrocket (http://blinkenrocket.de/) hat die Bausätze im Wert von je 26.-€ dafür gespendet.",
+         "link":"https://wiki.vspace.one/doku.php?id=treffen:20190807_loetworkshop",
+         "download":""
       }
    ]
 }
