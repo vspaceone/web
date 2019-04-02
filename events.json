@@ -36,6 +36,18 @@
          "desc":"<b>Anmeldung über die Webseite des Kinderferienprogramms! Ohne Anmeldung keine Teilnahme!</b><br>Jede/r Teilnehmende lötet unter Anleitung eine kleine Raketenförmig-Platine. Die/Der Teilnehmende kann sich dabei nach und nach an kleinere Bauteile wagen. Die Beleuchtung der Rakete kann anschließend über einen Internetbrowser und ein Lautsprecherkabel selbst programmiert werden. Neben beliebigen Animationen kann der Name der/des Teilnehmenden als Laufschrift auf den 8 mal 8 LEDs der Rakete angezeigt werden. Der Fantasie sind keine Grenzen gesetzt. Das Projekt Blinkenrocket (http://blinkenrocket.de/) hat die Bausätze im Wert von je 26.-€ dafür gespendet.",
          "link":"https://wiki.vspace.one/doku.php?id=treffen:20190807_loetworkshop",
          "download":""
+      },
+      {
+         "title":"Kinderferienprogramm: Fidget Spinner Lötworkshop",
+         "start":"2019-08-08T13:00:00+01:00",
+         "end":"2019-08-08T16:00:00+01:00",
+         "loc1":"vspace.one",
+         "loc2":"Wilhelm-Binderstraße 19",
+         "loc3":"78048 Villingen-Schwenningen",
+         "price":0.0,
+         "desc":"<b>Anmeldung über die Webseite des Kinderferienprogramms! Ohne Anmeldung keine Teilnahme!</b><br>Jede/r Teilnehmende wird einen beleuchteten Fidget-Spinner Bausatz aufbauen. Dabei werden den Teilnehmern die grundlegenden Bauteile des Spielzeugs nähergebracht. In einigen kleinen Übungen werden die Teilnehmenden an die Grundlagen des Lötens von Schaltungen herangeführt. Zum Schluss kann jede/r Teilnehmende einen coolen neuen Spinner mit nachhause nehmen.",
+         "link":"https://wiki.vspace.one/doku.php?id=treffen:20190808_loetworkshop",
+         "download":""
       }
    ]
 }
