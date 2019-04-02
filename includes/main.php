@@ -102,7 +102,7 @@
                             </span>
                             </span>
                             <span class="event_desc">
-                                <p>Wir treffen uns jeden Dienstag ab 19:00 Uhr im vspace.one. Das ist der perfekte Termin, wenn uns kennenlernen willst oder einfach mal vorbeischauen möchtest. Komm einfach vorbei und sei willkommen!</p>
+                                <p>Wir treffen uns jeden Dienstag ab 19:00 Uhr im vspace.one. Das ist der perfekte Termin, wenn du uns kennenlernen willst oder einfach mal vorbeischauen möchtest. Komm vorbei und sei willkommen! Tipp: Bring deinen Laptop mit. :)</p>
                             </span>
                         </div>
                     </div>
