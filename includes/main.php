@@ -89,10 +89,10 @@
             <img src="pic/vspaceone_ausstattung_4.jpg" class="img-responsive margin" style="width:100%" alt="Make things awesome Logo">
         </div>
         <div class="col-sm-4">
-            <img src="pic/vspaceone_ausstattung_5.jpg" class="img-responsive margin" style="width:100%" alt="Arbeitsplatz">
+            <img src="pic/vspaceone_arbeitsplatz3.jpg" class="img-responsive margin" style="width:100%" alt="Arbeitsplatz">
         </div>
         <div class="col-sm-4">
-            <img src="pic/vspaceone_ausstattung_6.jpg" class="img-responsive margin" style="width:100%" alt="Lager und Projektboxen">
+            <img src="pic/vspaceone_elektronik.jpg" class="img-responsive margin" style="width:100%" alt="Elektronikwand">
         </div>
         </div>
     </div>
