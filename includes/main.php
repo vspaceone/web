@@ -13,31 +13,51 @@
 <div class="container-fluid bg-3 text-left">
     <h2 class="margin">Was wir machen</h2>
     <p>
-        Unser Ziel ist der Wissensaustausch sowie die Bildung aller interessierten
+        Unser Ziel ist der Wissensaustausch sowie die Bildung aller Interessierten
         in den Bereichen neuartiger computergestützter Technologien (wie zum Beispiel aber nicht ausschließlich
         3D-­Druck, CNC, Internet der Dinge und Robotik), der Elektrotechnik und Elektronik
         sowie auf dem Gebiet der Reparatur und Wartung.
         Natürlich aber auch ganz im Sinne aller anderen Hacker- und Makerspaces das bieten einer Plattform,
-        um seinen Interessen in diesen Gebieten nachzugehen.
+        um seinen Interessen in diesen Gebieten nachzugehen und sich auszutauschen.
     </p>
     <br><br>
     <p class="text-center"><a href="?page=faq">Mehr Fragen zu uns und was wir machen beantworten wir hier!</a></p>
 </div>
 
 <!-- Second Container -->
-<div class="container-fluid bg-2 text-left" id="Mitmachen">
+<div class="container-fluid bg-2 no-side-padding text-center" id="Mitmachen">
     <h2 class="margin">Mitmachen</h2>
-    <p>
-    Bei uns kann jeder und jede mitmachen. Interessierte Schüler, Studenten und Erwachsene, die sich für kreativen Umgang mit Technik interessieren.
-    Wenn euch gefällt was wir tun und ihr uns unterstützen wollt findet ihr Beitrittsformular <a href="?page=mitgliedwerden">hier</a>.
-    </p>
-    <br>
-    <p class="text-center">
-    Trag dich einfach in unsere <a href="https://lists.vspace.one/postorius/lists/public.lists.vspace.one/">Mailingliste</a> ein und bleib up-to-date.
-    <br><br>
-    Oder tritt unserer Telegram Gruppe bei: <a href="https://t.me/joinchat/DmNdswpnKgox_zzqENYXiA">Join</a>
-    </p>
-    <p>Wir treffen uns jeden Dienstag ab 19:00 Uhr im 'Space'. Schau doch einfach mal vorbei oder schreib uns auf der Mailingliste!<p>
+
+    <div class="row" style="margin-right: 10px; margin-left: 10px;">
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>Vorbeischauen</h3>
+          <p>
+            Du möchtest uns und unsere Räumlichkeiten gerne persönlich kennenlernen? Schau doch Dienstags ab 19:00 bei uns in der Wilhelm-Binderstraße 19 in Villingen vorbei. Dienstags findet bei uns jede Woche der Chaostreff statt.
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <h3>Mitglied werden</h3>
+          <p>
+          Bei uns kann Jeder und Jede mitmachen. Interessierte Schüler, Studenten und Erwachsene, die sich für kreativen Umgang mit Technik begeistern sind willkommen. Wenn euch gefällt was wir tun und ihr uns unterstützen wollt findet ihr unser Beitrittsformular <a href="?page=mitgliedwerden">hier</a>.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>Telegram</h3>
+          <p>
+          Für die inoffizielle Kommunikation verwenden wir eine Telegramgruppe. Telegram ist eine Nachrichtenapp, ähnlich WhatsApp. Wenn du dich interessierst und wissen willst, was bei uns los ist, trete ihr bei oder schreibe uns eine Email: <a href="https://t.me/joinchat/DmNdswpnKgox_zzqENYXiA">Telegramgruppe</a> oder info[at]vspace.one.
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <h3>Mailingliste</h3>
+          <p>
+            Die 'offizielle' Kommunikation, wie Einladungen zu Veranstaltungen, läuft über unsere <a href="https://lists.vspace.one/postorius/lists/public.lists.vspace.one/">Mailingliste</a>. Trag dich ein und bleib up-to-date. Das ist die Wahl, falls du nur auf dem Laufenden bleiben willst. (ca. 1 Mail pro Monat)
+          </p>
+        </div>
+      </div>
+    </div>
 </div>
 
 <!-- Third Container (Grid) -->
@@ -200,13 +220,14 @@
             var tstr
 
             var d = new Date(event.start);
+            console.log(d)
+            console.log(d.getHours())
+            console.log(new Date(0).toString())
             if(event.end){
                 var dend = new Date(event.end);
-                // TODO fix to working with Timezones!
-                tstr = (d.getHours()-1).pad(2) + ":" + d.getMinutes().pad(2) + " bis " + (dend.getHours()-1).pad(2) + ":" + dend.getMinutes().pad(2) + " Uhr CET";
+                tstr = (d.getHours()).pad(2) + ":" + d.getMinutes().pad(2) + " bis " + (dend.getHours()).pad(2) + ":" + dend.getMinutes().pad(2) + " Uhr CET";
             }else{
-               // TODO fix to working with Timezones!
-                tstr = 'ab' + (d.getHours()-1).pad(2) + ":" + d.getMinutes().pad(2) + " Uhr CET";
+                tstr = 'ab' + (d.getHours()).pad(2) + ":" + d.getMinutes().pad(2) + " Uhr CET";
             }
 
             eventModel.time = tstr;

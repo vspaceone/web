@@ -1,0 +1,29 @@
+<html>
+  <head>
+  </head>
+
+
+  <body>
+    <h1>UNKNOWN API v0.0.1-dev</h1>
+    Use GET requests to app.php.
+    <h2>Arguments</h2>
+    <h3>room</h3>
+    <p>Use this argument to specify the room you are interessted in. Default is ?.</p></p>
+    <h3>sensor</h3>
+    <p>Set sensor to <code>temperature</code> to receive temperature values for the given room. </p>
+    <p>Set sensor to <code>humidity</code> to receive humidity values for the given room.</p>
+    <p>Set sensor to <code>th</code> to receive both, temperature and humidity datarecords.</p>
+    <p>Default is ?.</p>
+    <h3>valuec</h3>
+    <p>Use valuec to specify how many datarecords you want to receive. Default is ?,</p>
+    <h3>days</h3>
+    <p>Use days to specify how many day in the past your datasets should stay. Default is 7.</p>
+
+    <h2>Examples</h2>
+    <p>Request running to generate the charts on the landingpage: <code>GET app.php?room=bruecke&sensor=th&valuec=200&days=7</code></p>
+
+  </body>
+
+
+
+</html>

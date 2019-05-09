@@ -1,10 +1,22 @@
 {
    "apiversion": "0.2",
    "events":[
+	{
+         "title":"Mini-Linux-Presentation-Day",
+         "start":"2019-05-24T16:00:00+02:00",
+         "end":"2019-05-24T22:00:00+02:00",
+         "loc1":"vspace.one",
+         "loc2":"Wilhelm-Binderstraße 19",
+         "loc3":"78048 Villingen-Schwenningen",
+         "price":0.0,
+         "desc":"<b>Veranstalter: Linux-User-Group Villingen-Schwenningen</b><br>Für alle, die sich über Linux informieren oder es direkt auf dem eigenen Laptop ausprobieren möchten.<br>Erfahre in kurzweiligen Vorträgen und Erfahrungsberichten, wie auch du Linux für dich nutzen kannst.",
+         "link":"https://lug-vs.org/lugvswiki/index.php/LinuxPresentationDay2019",
+         "download":"downloads/minilpd.pdf"
+      },
       {
          "title":"Plenum",
-         "start":"2019-05-07T19:00:00+01:00",
-         "end":"2019-05-07T21:00:00+01:00",
+         "start":"2019-05-07T19:00:00+02:00",
+         "end":"2019-05-07T21:00:00+02:00",
          "loc1":"vspace.one",
          "loc2":"Wilhelm-Binderstraße 19",
          "loc3":"78048 Villingen-Schwenningen",
@@ -15,8 +27,8 @@
       },
       {
          "title":"Blinkenrocket Lötworkshop",
-         "start":"2019-08-07T14:00:00+01:00",
-         "end":"2019-08-07T17:00:00+01:00",
+         "start":"2019-08-07T14:00:00+02:00",
+         "end":"2019-08-07T17:00:00+02:00",
          "loc1":"vspace.one",
          "loc2":"Wilhelm-Binderstraße 19",
          "loc3":"78048 Villingen-Schwenningen",
@@ -27,8 +39,8 @@
       },
       {
          "title":"Fidget Spinner Lötworkshop",
-         "start":"2019-08-08T13:00:00+01:00",
-         "end":"2019-08-08T16:00:00+01:00",
+         "start":"2019-08-08T13:00:00+02:00",
+         "end":"2019-08-08T16:00:00+02:00",
          "loc1":"vspace.one",
          "loc2":"Wilhelm-Binderstraße 19",
          "loc3":"78048 Villingen-Schwenningen",
