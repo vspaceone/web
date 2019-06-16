@@ -1,6 +1,10 @@
 # vspace.one
 This repo is used to create the page at [vspace.one](http://vspace.one).
 
+## Deprecation notice
+**THIS REPOSITORY IS DEPRECATED**
+Please commit further changes to our website in the [vspaceone/web-react](https://github.com/vspaceone/web-react) repo.
+
 ## Contribution
 We use pull requests for every change that may be discussable or may damage the page view. We also provide a beta version where changes get tested at [beta.vspace.one](http://beta.vspace.one). The beta page is mirroring the beta branch every hour. The [vspace.one](http://vspace.one)-page is pulled from the master branch, so keep this in mind when pushing something to it
 
